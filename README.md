@@ -36,13 +36,9 @@
 
             npm install           
 
-5. 在wepy.config.js 的 compilers部分加入以下代码, 使wepy在导入bootstrap的css代码时转换为小程序支持的形式：
-                                     
-                        
+5. 在wepy.config.js 的 compilers部分加入以下代码, 使wepy在导入bootstrap的css代码时转换为小程序支持的形式：                                                            
+     ``` 
     scss2: {
-      // outputStyle: 'compressed',
-      // data: '@import "/src/assets/scss/custom.scss',
-      // includePaths: [path.join(__dirname, 'src/assets/scss')],
       postcss: {
         plugins: [
           require('postcss-mpvue-wxss')({
@@ -55,7 +51,7 @@
           require('postcss-bootstrap-wxss')(),
         ]
       }
-    },     
+    }
               
               
 6. 在wepy.config.js 的plugins部分加入以下代码, 使wepy自动将所有html标签转化为小程序支持的标签，并将标签中的样式选择器按照5的转换方式做相应的修改：
