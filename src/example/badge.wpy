@@ -1,0 +1,89 @@
+<style type="less">
+
+    .wbd-example-div>.badge {
+
+        margin-top: 15rpx;
+        margin-bottom: 15rpx;
+
+        /*align-items: flex-start;*/
+        /*-webkit-writing-mode: horizontal-tb !important;*/
+        /*border-radius:5px;*/
+        /*box-sizing:border-box;*/
+        /*display:block;*/
+
+        /*border-width: 2px;*/
+        /*border-style: outset;*/
+        /*border-color: buttonface;*/
+    }
+</style>
+<template>
+
+    <div class="container">
+        <div class="wbd-example-cd card">
+            <div class="card-body">
+                <h5>用在文本之后, 同样大小</h5>
+                <h3>Example heading <span class="badge badge-secondary">New</span></h3>
+                <h4>Example heading <span class="badge badge-secondary">New</span></h4>
+                <h5>Example heading <span class="badge badge-secondary">New</span></h5>
+                <h6>Example heading <span class="badge badge-secondary">New</span></h6>
+            </div>
+        </div>
+
+
+        <div class="wbd-example-cd card">
+            <div class="card-body">
+                <h5>放在button里</h5>
+                <button type="button" class="btn btn-primary">
+                    Notifications <span class="badge badge-light">4</span>
+                </button>
+            </div>
+        </div>
+
+
+
+        <div class="wbd-example-cd card">
+            <div class="card-body">
+                <h5>用不同色彩来体现上下文含义</h5>
+                <div class="wbd-example-div d-flex justify-content-between flex-wrap">
+                    <span class="badge badge-primary">Primary</span>
+                    <span class="badge badge-secondary">Secondary</span>
+                    <span class="badge badge-success">Success</span>
+                    <span class="badge badge-danger">Danger</span>
+                    <span class="badge badge-warning">Warning</span>
+                    <span class="badge badge-info">Info</span>
+                    <span class="badge badge-light">Light</span>
+                    <span class="badge badge-dark">Dark</span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="wbd-example-cd card">
+            <div class="card-body">
+                <h5>改变形状</h5>
+                <div class="wbd-example-div d-flex justify-content-between flex-wrap">
+                    <span class="badge badge-pill badge-primary">Primary</span>
+                    <span class="badge badge-pill badge-secondary">Secondary</span>
+                    <span class="badge badge-pill badge-success">Success</span>
+                    <span class="badge badge-pill badge-danger">Danger</span>
+                    <span class="badge badge-pill badge-warning">Warning</span>
+                    <span class="badge badge-pill badge-info">Info</span>
+                    <span class="badge badge-pill badge-light">Light</span>
+                    <span class="badge badge-pill badge-dark">Dark</span>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</template>
+
+<script>
+    import wepy from 'wepy'
+
+    export default class Badge extends wepy.page {
+
+    }
+</script>

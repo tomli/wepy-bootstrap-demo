@@ -1,0 +1,36 @@
+
+  <view class="_div container">
+    <view class="_div jumbotron">
+        <view class="_h1"><text class="_strong">Hello, world!</text></view>
+      <view class="_p lead">这是一个使用Bootstrap开发小程序的小样，希望能够帮助到习惯BS开发模式的小伙伴们.</view>
+      <view class="_hr my-4"></view>
+      <view class="_p">下面是一些适用于小程序的bootsrap组件展示.</view>
+      <!--<text class="_a btn btn-success btn-lg" href="#" role="button">Learn more</text>-->
+    </view>
+  </view>
+  <view class="_div container">
+      <view class="_div accordion" id="accordionExample">
+          <block wx:for="{{list}}" wx:for-index="index" wx:for-item="item" wx:key="id">
+              <view class="_div card">
+                  <view class="_div card-header" id="headingOne">
+                      <view class="_h2 mb-0">
+                          <view class="_div btn btn-link" type="button" bindtap="toggle" data-wpytoggle-a="{{item.id}}">
+                              {{item.name}}
+                          </view>
+                      </view>
+                  </view>
+
+                  <view id="collapseOne" class="_div collapse {{item.open ? 'show' : ''}}">
+                      <view class="_div card-body">
+                          <navigator url="./{{page}}" class="_ul list-group list-group-flush"  wx:for="{{item.pages}}" wx:for-item="page" wx:key="*this">
+                            <view class="_li list-group-item d-flex justify-content-between align-items-center">
+                                {{page}}
+                                <text class="_span arrow-most-right"></text>
+                            </view>
+                          </navigator>
+                      </view>
+                  </view>
+              </view>
+          </block>
+      </view>
+  </view>

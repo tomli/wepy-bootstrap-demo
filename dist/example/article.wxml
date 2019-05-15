@@ -1,0 +1,191 @@
+
+
+    <view class="_div container">
+
+        <view class="_div wbd-example-cd card">
+            <view class="_div card-body">
+                <view class="_h5">无序列表</view>
+                <view class="_ul">
+                    <view class="_li">Lorem ipsum dolor sit amet</view>
+                    <view class="_li">Consectetur adipiscing elit</view>
+                    <view class="_li">Integer molestie lorem at massa</view>
+                    <view class="_li">Facilisis in pretium nisl aliquet</view>
+                    <view class="_li">Nulla volutpat aliquam velit
+                        <view class="_ul">
+                            <view class="_li">Phasellus iaculis neque</view>
+                            <view class="_li">Purus sodales ultricies</view>
+                            <view class="_li">Vestibulum laoreet porttitor sem</view>
+                            <view class="_li">Ac tristique libero volutpat at</view>
+                        </view>
+                    </view>
+                    <view class="_li">Faucibus porta lacus fringilla vel</view>
+                    <view class="_li">Aenean sit amet erat nunc</view>
+                    <view class="_li">Eget porttitor lorem</view>
+                </view>
+            </view>
+        </view>
+
+        <view class="_div wbd-example-cd card">
+            <view class="_div card-body">
+                <view class="_h5">有序列表</view>
+                    <view class="_ol">
+                        <view class="_li">Lorem ipsum dolor sit amet</view>
+                        <view class="_li">Consectetur adipiscing elit</view>
+                        <view class="_li">Integer molestie lorem at massa</view>
+                        <view class="_li">Facilisis in pretium nisl aliquet</view>
+                        <view class="_li">Nulla volutpat aliquam velit</view>
+                        <view class="_li">Faucibus porta lacus fringilla vel</view>
+                        <view class="_li">Aenean sit amet erat nunc</view>
+                        <view class="_li">Eget porttitor lorem</view>
+                    </view>
+            </view>
+        </view>
+
+        <view class="_div wbd-example-cd card">
+            <view class="_div card-body">
+                <view class="_h5">标题和段落</view>
+                <view class="_dl">
+                    <view class="_dt">Description lists</view>
+                    <view class="_dd">A description list is perfect for defining terms.</view>
+                    <view class="_dt">Euismod</view>
+                    <view class="_dd">Vestibulum id ligula porta felis euismod semper eget lacinia odio sem.</view>
+                    <view class="_dd">Donec id elit non mi porta gravida at eget metus.</view>
+                    <view class="_dt">Malesuada porta</view>
+                    <view class="_dd">Etiam porta sem malesuada magna mollis euismod.</view>
+                </view>
+            </view>
+        </view>
+
+
+        <view class="_div wbd-example-cd card">
+            <view class="_div card-body">
+                <view class="_h5">地址</view>
+                <view class="_address">
+                    <text class="_strong">Twitter, Inc.</text><text>\n</text>
+                    1355 Market St, Suite 900<text>\n</text>
+                    San Francisco, CA 94103<text>\n</text>
+                    <text class="_abbr" title="Phone">P:</text> (123) 456-7890
+                </view>
+
+                <view class="_address">
+                    <text class="_strong">Full Name</text><text>\n</text>
+                    <text class="_a" href="mailto:first.last@example.com">first.last@example.com</text>
+                </view>
+            </view>
+        </view>
+
+
+        <view class="_div wbd-example-cd card">
+            <view class="_div card-body">
+                <view class="_h5">引用文字</view>
+                <blockquote class="blockquote">
+                    <view class="_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</view>
+                    <view class="_footer">Someone famous in <text class="_cite" title="Source Title">Source Title</text></view>
+                </blockquote>
+            </view>
+        </view>
+
+
+        <view class="_div wbd-example-cd card">
+            <view class="_div card-body">
+                <view class="_h5">段落突出(.lead)</view>
+                <view class="_p lead">
+                    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+                </view>
+            </view>
+        </view>
+
+        <view class="_div wbd-example-cd card">
+            <view class="_div card-body">
+                <view class="_h5">行内修饰//TODO:need check</view>
+                <view class="_p">You can use the mark tag to <text class="_mark">highlight</text> text.</view>
+                <view class="_p"><text class="_del">This line of text is meant to be treated as deleted text.</text></view>
+                <view class="_p"><s>This line of text is meant to be treated as no longer accurate.</s></view>
+                <view class="_p"><ins>This line of text is meant to be treated as an addition to the document.</ins></view>
+                <view class="_p"><u>This line of text will render as underlined</u></view>
+                <view class="_p"><text class="_small">This line of text is meant to be treated as fine print.</text></view>
+                <view class="_p"><text class="_strong">This line rendered as bold text.</text></view>
+                <view class="_p"><text class="_em">This line rendered as italicized text.</text></view>
+            </view>
+        </view>
+
+        <view class="_div wbd-example-cd card">
+            <view class="_div card-body">
+                <view class="_h5">声明出处</view>
+                <blockquote class="blockquote">
+                    <view class="_p mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</view>
+                    <view class="_footer blockquote-footer">Someone famous in <text class="_cite" title="Source Title">Source Title</text></view>
+                </blockquote>
+            </view>
+        </view>
+
+        <view class="_div wbd-example-cd card">
+            <view class="_div card-body">
+                <view class="_h5">居中对齐</view>
+                <blockquote class="blockquote text-center">
+                    <view class="_p mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</view>
+                    <view class="_footer blockquote-footer">Someone famous in <text class="_cite" title="Source Title">Source Title</text></view>
+                </blockquote>
+            </view>
+        </view>
+
+        <view class="_div wbd-example-cd card">
+            <view class="_div card-body">
+                <view class="_h5">列表对齐</view>
+                <view class="_dl row">
+                    <view class="_dt col-sm-3">Description lists</view>
+                    <view class="_dd col-sm-9">A description list is perfect for defining terms.</view>
+
+                    <view class="_dt col-sm-3">Euismod</view>
+                    <view class="_dd col-sm-9">
+                        <view class="_p">Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</view>
+                        <view class="_p">Donec id elit non mi porta gravida at eget metus.</view>
+                    </view>
+
+                    <view class="_dt col-sm-3">Malesuada porta</view>
+                    <view class="_dd col-sm-9">Etiam porta sem malesuada magna mollis euismod.</view>
+
+                    <view class="_dt col-sm-3 text-truncate">Truncated term is truncated</view>
+                    <view class="_dd col-sm-9">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</view>
+
+                    <view class="_dt col-sm-3">Nesting</view>
+                    <view class="_dd col-sm-9">
+                        <view class="_dl row">
+                            <view class="_dt col-sm-4">Nested definition list</view>
+                            <view class="_dd col-sm-8">Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.</view>
+                        </view>
+                    </view>
+                </view>
+
+            </view>
+        </view>
+
+        <view class="_div wbd-example-cd card">
+            <view class="_div card-body">
+                <view class="_h5">标题和段落</view>
+
+            </view>
+        </view>
+
+        <view class="_div wbd-example-cd card">
+            <view class="_div card-body">
+                <view class="_h5">标题和段落</view>
+
+            </view>
+        </view>
+
+        <view class="_div wbd-example-cd card">
+            <view class="_div card-body">
+                <view class="_h5">标题和段落</view>
+
+            </view>
+        </view>
+
+        <view class="_div wbd-example-cd card">
+            <view class="_div card-body">
+                <view class="_h5">标题和段落</view>
+
+            </view>
+        </view>
+
+    </view>

@@ -1,0 +1,61 @@
+
+
+    <view class="_div container">
+        <view class="_div wbd-example-cd card">
+            <view class="_div card-body">
+                <view class="_h5">用在文本之后, 同样大小</view>
+                <view class="_h3">Example heading <text class="_span badge badge-secondary">New</text></view>
+                <view class="_h4">Example heading <text class="_span badge badge-secondary">New</text></view>
+                <view class="_h5">Example heading <text class="_span badge badge-secondary">New</text></view>
+                <view class="_h6">Example heading <text class="_span badge badge-secondary">New</text></view>
+            </view>
+        </view>
+
+
+        <view class="_div wbd-example-cd card">
+            <view class="_div card-body">
+                <view class="_h5">放在button里</view>
+                <button type="button" class="btn btn-primary">
+                    Notifications <text class="_span badge badge-light">4</text>
+                </button>
+            </view>
+        </view>
+
+
+
+        <view class="_div wbd-example-cd card">
+            <view class="_div card-body">
+                <view class="_h5">用不同色彩来体现上下文含义</view>
+                <view class="_div wbd-example-div d-flex justify-content-between flex-wrap">
+                    <text class="_span badge badge-primary">Primary</text>
+                    <text class="_span badge badge-secondary">Secondary</text>
+                    <text class="_span badge badge-success">Success</text>
+                    <text class="_span badge badge-danger">Danger</text>
+                    <text class="_span badge badge-warning">Warning</text>
+                    <text class="_span badge badge-info">Info</text>
+                    <text class="_span badge badge-light">Light</text>
+                    <text class="_span badge badge-dark">Dark</text>
+                </view>
+            </view>
+        </view>
+
+
+
+        <view class="_div wbd-example-cd card">
+            <view class="_div card-body">
+                <view class="_h5">改变形状</view>
+                <view class="_div wbd-example-div d-flex justify-content-between flex-wrap">
+                    <text class="_span badge badge-pill badge-primary">Primary</text>
+                    <text class="_span badge badge-pill badge-secondary">Secondary</text>
+                    <text class="_span badge badge-pill badge-success">Success</text>
+                    <text class="_span badge badge-pill badge-danger">Danger</text>
+                    <text class="_span badge badge-pill badge-warning">Warning</text>
+                    <text class="_span badge badge-pill badge-info">Info</text>
+                    <text class="_span badge badge-pill badge-light">Light</text>
+                    <text class="_span badge badge-pill badge-dark">Dark</text>
+                </view>
+
+            </view>
+        </view>
+
+    </view>

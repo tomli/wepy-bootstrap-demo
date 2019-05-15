@@ -31,13 +31,13 @@ module.exports = {
       postcss: {
         plugins: [
           require('postcss-mpvue-wxss')({
-            cleanSelector: ['*'],
-            remToRpx: 35,  //这个参数可以用来调整转换rem单位到rpx单位时使用的比例
+            remToRpx: 35,  // 这个参数可以用来调整转换rem单位到rpx单位时使用的比例
             replaceTagSelector: Object.assign(require('postcss-mpvue-wxss/lib/wxmlTagMap'), {
+              'button': 'button',
               '*': 'view' // 将覆盖前面的 * 选择器被清理规则
             })
           }),
-          require('postcss-bootstrap-wxss')(),
+          require('postcss-bootstrap-wxss')({remToRpx: 35}),
         ]
       }
     },
@@ -62,7 +62,12 @@ module.exports = {
     //   filter: /\.(wxss|wxml)$/, //文件后缀匹配
     // },
     'htmltag': {
-      filter: /\.(wxml)$/, //文件后缀匹配
+      filter: /\.(wxml)$/, // 文件后缀匹配
+      config: {
+        /* block: [...], */
+        // inline: ['a', 'b', 'br', 'big', 'abbr', 'cite', 'code', 'em', 'i', 'img', 'label', 'mark', 'q', 'small', 'span', 'strike', 'strong', 'sub', 'sup', 'del', 'button']
+      }
+
     }
   },
   appConfig: {

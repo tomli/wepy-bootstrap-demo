@@ -1,0 +1,106 @@
+
+    <view class="_div container">
+
+        <view class="_div wbd-example-cd card">
+            <view class="_div card-body">
+                <view class="_h5">Buttons with contextual color</view>
+                <view class="_div wbd-example-div d-flex justify-content-between flex-wrap">
+                    <button type="button" class="btn btn-primary">Primary</button>
+                    <button type="button" class="btn btn-secondary">Secondary</button>
+                    <button type="button" class="btn btn-success">Success</button>
+                    <button type="button" class="btn btn-danger">Danger</button>
+                    <button type="button" class="btn btn-warning">Warning</button>
+                    <button type="button" class="btn btn-info">Info</button>
+                    <button type="button" class="btn btn-light">Light</button>
+                    <button type="button" class="btn btn-dark">Dark</button>
+                    <button type="button" class="btn btn-link">Link</button>
+                </view>
+            </view>
+        </view>
+
+
+        <view class="_div wbd-example-cd card">
+            <view class="_div card-body">
+                <view class="_h5">Outline buttons</view>
+                <view class="_div wbd-example-div d-flex justify-content-between flex-wrap">
+                    <button type="button" class="btn btn-outline-primary">Primary</button>
+                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                    <button type="button" class="btn btn-outline-success">Success</button>
+                    <button type="button" class="btn btn-outline-danger">Danger</button>
+                    <button type="button" class="btn btn-outline-warning">Warning</button>
+                    <button type="button" class="btn btn-outline-info">Info</button>
+                    <button type="button" class="btn btn-outline-light">Light</button>
+                    <button type="button" class="btn btn-outline-dark">Dark</button>
+                </view>
+            </view>
+        </view>
+
+
+        <view class="_div wbd-example-cd card">
+            <view class="_div card-body">
+                <view class="_h5">Sizes</view>
+                <view class="_div wbd-example-div d-flex justify-content-between flex-wrap">
+                    <button type="button" class="btn btn-primary btn-lg">Large button</button>
+                    <button type="button" class="btn btn-secondary btn-lg">Large button</button>
+                </view>
+                <view class="_div wbd-example-div d-flex justify-content-between flex-wrap">
+                    <button type="button" class="btn btn-primary btn-sm">Small button</button>
+                    <button type="button" class="btn btn-secondary btn-sm">Small button</button>
+                </view>
+                <view class="_div wbd-example-div d-flex justify-content-between flex-wrap">
+                    <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+                    <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
+                </view>
+            </view>
+        </view>
+
+
+        <view class="_div wbd-example-cd card">
+            <view class="_div card-body">
+                <view class="_h5">Active state //TODO:need check</view>
+                <view class="_div wbd-example-div d-flex justify-content-between flex-wrap">
+                    <text href="#" class="_a btn btn-primary btn-lg active" role="button" aria-pressed="true">Primary link</text>
+                    <text href="#" class="_a btn btn-secondary btn-lg active" role="button" aria-pressed="true">Link</text>
+                </view>
+
+            </view>
+        </view>
+
+        <view class="_div wbd-example-cd card">
+            <view class="_div card-body">
+                <view class="_h5">Disabled state //TODO:need check</view>
+                <view class="_div wbd-example-div d-flex justify-content-between flex-wrap">
+                    <button type="button" class="btn btn-lg btn-primary" disabled>Primary button</button>
+                    <button type="button" class="btn btn-secondary btn-lg" disabled>Button</button>
+                </view>
+            </view>
+        </view>
+
+
+        <view class="_div wbd-example-cd card">
+            <view class="_div card-body">
+                <view class="_h5">Checkbox and radio buttons //TODO:need check</view>
+                <view class="_div wbd-example-div d-flex justify-content-between flex-wrap">
+                    <view class="_div btn-group-toggle" data-toggle="buttons">
+                        <text class="_label btn btn-secondary active">
+                            <checkbox type="checkbox" checked="true" autocomplete="off"/> Checked
+                        </text>
+                    </view>
+                </view>
+                <view class="_div wbd-example-div d-flex justify-content-between flex-wrap">
+                    <view class="_div btn-group btn-group-toggle" data-toggle="buttons">
+                        <text class="_label btn btn-secondary active">
+                            <radio type="radio" name="options" id="option1" autocomplete="off" checked="true"/> Active
+                        </text>
+                        <text class="_label btn btn-secondary">
+                            <radio type="radio" name="options" id="option2" autocomplete="off"/> Radio
+                        </text>
+                        <text class="_label btn btn-secondary">
+                            <radio type="radio" name="options" id="option3" autocomplete="off"/> Radio
+                        </text>
+                    </view>
+                </view>
+            </view>
+        </view>
+
+    </view>

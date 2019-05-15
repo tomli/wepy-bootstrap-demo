@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "example/article",
+    "example/index",
+    "example/badge",
+    "example/button"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Bootstrap in WePY",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

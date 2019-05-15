@@ -1,0 +1,223 @@
+<style type="less">
+    /*
+    ._li {
+        display: list-item;
+    }
+
+    ._ul {
+        list-style-type: disc;
+        writing-mode: horizontal-tb;
+        padding-left: 40px;
+        padding-block-start: 40px;
+    }
+
+    ._ol {
+        list-style-type: decimal;
+    }
+
+    ._ul ._ul {
+        list-style-type: circle;
+    }
+    */
+</style>
+<template>
+
+    <div class="container">
+
+        <div class="wbd-example-cd card">
+            <div class="card-body">
+                <h5>无序列表</h5>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Consectetur adipiscing elit</li>
+                    <li>Integer molestie lorem at massa</li>
+                    <li>Facilisis in pretium nisl aliquet</li>
+                    <li>Nulla volutpat aliquam velit
+                        <ul>
+                            <li>Phasellus iaculis neque</li>
+                            <li>Purus sodales ultricies</li>
+                            <li>Vestibulum laoreet porttitor sem</li>
+                            <li>Ac tristique libero volutpat at</li>
+                        </ul>
+                    </li>
+                    <li>Faucibus porta lacus fringilla vel</li>
+                    <li>Aenean sit amet erat nunc</li>
+                    <li>Eget porttitor lorem</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="wbd-example-cd card">
+            <div class="card-body">
+                <h5>有序列表</h5>
+                    <ol>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Consectetur adipiscing elit</li>
+                        <li>Integer molestie lorem at massa</li>
+                        <li>Facilisis in pretium nisl aliquet</li>
+                        <li>Nulla volutpat aliquam velit</li>
+                        <li>Faucibus porta lacus fringilla vel</li>
+                        <li>Aenean sit amet erat nunc</li>
+                        <li>Eget porttitor lorem</li>
+                    </ol>
+            </div>
+        </div>
+
+        <div class="wbd-example-cd card">
+            <div class="card-body">
+                <h5>标题和段落</h5>
+                <dl>
+                    <dt>Description lists</dt>
+                    <dd>A description list is perfect for defining terms.</dd>
+                    <dt>Euismod</dt>
+                    <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem.</dd>
+                    <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+                    <dt>Malesuada porta</dt>
+                    <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+                </dl>
+            </div>
+        </div>
+
+
+        <div class="wbd-example-cd card">
+            <div class="card-body">
+                <h5>地址</h5>
+                <address>
+                    <strong>Twitter, Inc.</strong><br>
+                    1355 Market St, Suite 900<br>
+                    San Francisco, CA 94103<br>
+                    <abbr title="Phone">P:</abbr> (123) 456-7890
+                </address>
+
+                <address>
+                    <strong>Full Name</strong><br>
+                    <a href="mailto:first.last@example.com">first.last@example.com</a>
+                </address>
+            </div>
+        </div>
+
+
+        <div class="wbd-example-cd card">
+            <div class="card-body">
+                <h5>引用文字</h5>
+                <blockquote class="blockquote">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                </blockquote>
+            </div>
+        </div>
+
+
+        <div class="wbd-example-cd card">
+            <div class="card-body">
+                <h5>段落突出(.lead)</h5>
+                <p class="lead">
+                    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+                </p>
+            </div>
+        </div>
+
+        <div class="wbd-example-cd card">
+            <div class="card-body">
+                <h5>行内修饰//TODO:need check</h5>
+                <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+                <p><del>This line of text is meant to be treated as deleted text.</del></p>
+                <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+                <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+                <p><u>This line of text will render as underlined</u></p>
+                <p><small>This line of text is meant to be treated as fine print.</small></p>
+                <p><strong>This line rendered as bold text.</strong></p>
+                <p><em>This line rendered as italicized text.</em></p>
+            </div>
+        </div>
+
+        <div class="wbd-example-cd card">
+            <div class="card-body">
+                <h5>声明出处</h5>
+                <blockquote class="blockquote">
+                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                </blockquote>
+            </div>
+        </div>
+
+        <div class="wbd-example-cd card">
+            <div class="card-body">
+                <h5>居中对齐</h5>
+                <blockquote class="blockquote text-center">
+                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                </blockquote>
+            </div>
+        </div>
+
+        <div class="wbd-example-cd card">
+            <div class="card-body">
+                <h5>列表对齐</h5>
+                <dl class="row">
+                    <dt class="col-sm-3">Description lists</dt>
+                    <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
+
+                    <dt class="col-sm-3">Euismod</dt>
+                    <dd class="col-sm-9">
+                        <p>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</p>
+                        <p>Donec id elit non mi porta gravida at eget metus.</p>
+                    </dd>
+
+                    <dt class="col-sm-3">Malesuada porta</dt>
+                    <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
+
+                    <dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
+                    <dd class="col-sm-9">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+
+                    <dt class="col-sm-3">Nesting</dt>
+                    <dd class="col-sm-9">
+                        <dl class="row">
+                            <dt class="col-sm-4">Nested definition list</dt>
+                            <dd class="col-sm-8">Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.</dd>
+                        </dl>
+                    </dd>
+                </dl>
+
+            </div>
+        </div>
+
+        <div class="wbd-example-cd card">
+            <div class="card-body">
+                <h5>标题和段落</h5>
+
+            </div>
+        </div>
+
+        <div class="wbd-example-cd card">
+            <div class="card-body">
+                <h5>标题和段落</h5>
+
+            </div>
+        </div>
+
+        <div class="wbd-example-cd card">
+            <div class="card-body">
+                <h5>标题和段落</h5>
+
+            </div>
+        </div>
+
+        <div class="wbd-example-cd card">
+            <div class="card-body">
+                <h5>标题和段落</h5>
+
+            </div>
+        </div>
+
+    </div>
+
+</template>
+
+<script>
+    import wepy from 'wepy'
+
+    export default class Article extends wepy.page {
+
+    }
+</script>

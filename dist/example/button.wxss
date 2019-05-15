@@ -1,0 +1,13 @@
+.wbd-example-div > .btn,
+.wbd-example-div > .btn-group {
+  margin-top: 15rpx;
+  margin-bottom: 15rpx;
+  /*align-items: flex-start;*/
+  /*-webkit-writing-mode: horizontal-tb !important;*/
+  /*border-radius:5px;*/
+  /*box-sizing:border-box;*/
+  /*display:block;*/
+  /*border-width: 2px;*/
+  /*border-style: outset;*/
+  /*border-color: buttonface;*/
+}

@@ -1,0 +1,20 @@
+/*
+    ._li {
+        display: list-item;
+    }
+
+    ._ul {
+        list-style-type: disc;
+        writing-mode: horizontal-tb;
+        padding-left: 40px;
+        padding-block-start: 40px;
+    }
+
+    ._ol {
+        list-style-type: decimal;
+    }
+
+    ._ul ._ul {
+        list-style-type: circle;
+    }
+    */

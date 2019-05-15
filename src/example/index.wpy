@@ -1,0 +1,102 @@
+<style lang="less">
+    .arrow-most-right:after{
+        content:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPjxwYXRoIGQ9Ik0yLjUgMEwxIDEuNSAzLjUgNCAxIDYuNSAyLjUgOGw0LTQtNC00eiIgZmlsbD0iY3VycmVudENvbG9yIi8+PC9zdmc+);
+    }
+</style>
+<template>
+  <div class="container">
+    <div class="jumbotron">
+        <h1 ><strong>Hello, world!</strong></h1>
+      <p class="lead">这是一个使用Bootstrap开发小程序的小样，希望能够帮助到习惯BS开发模式的小伙伴们.</p>
+      <hr class="my-4" />
+      <p>下面是一些适用于小程序的bootsrap组件展示.</p>
+      <!--<a class="btn btn-success btn-lg" href="#" role="button">Learn more</a>-->
+    </div>
+  </div>
+  <div class="container">
+      <div class="accordion" id="accordionExample">
+          <repeat for="{{list}}" key="id">
+              <div class="card">
+                  <div class="card-header" id="headingOne">
+                      <h2 class="mb-0">
+                          <div class="btn btn-link" type="button"  @tap="toggle({{item.id}})">
+                              {{item.name}}
+                          </div>
+                      </h2>
+                  </div>
+
+                  <div id="collapseOne" class="collapse {{item.open ? 'show' : ''}}">
+                      <div class="card-body">
+                          <navigator url="./{{page}}" class="_ul list-group list-group-flush" wx:for="{{item.pages}}" wx:for-item="page" wx:key="*this">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                {{page}}
+                                <span class="arrow-most-right"></span>
+                            </li>
+                          </navigator>
+                      </div>
+                  </div>
+              </div>
+          </repeat>
+      </div>
+  </div>
+</template>
+
+<script>
+  import wepy from 'wepy'
+  import Toast from 'wepy-com-toast'
+
+  export default class Index extends wepy.page {
+    config = {
+      navigationBarTitleText: 'Demo using bootstrap4'
+    }
+    components = {
+//      panel: Panel,
+      toast: Toast
+    }
+
+//    mixins = [testMixin]
+
+    data = {
+      list: [
+        {
+          id: 'form',
+          name: '表单',
+          open: false,
+          pages: ['button', 'list', 'input', 'slider', 'uploader']
+        },
+        {
+          id: 'widget',
+          name: '基础组件',
+          open: false,
+          pages: ['article', 'badge', 'flex', 'footer', 'gallery', 'grid', 'icons', 'loadmore', 'panel', 'preview', 'progress']
+        },
+        {
+          id: 'feedback',
+          name: '操作反馈',
+          open: false,
+          pages: ['actionsheet', 'dialog', 'msg', 'picker', 'toast']
+        },
+        {
+          id: 'nav',
+          name: '导航相关',
+          open: false,
+          pages: ['navbar', 'tabbar']
+        },
+        {
+          id: 'search',
+          name: '搜索相关',
+          open: false,
+          pages: ['searchbar']
+        }
+      ]
+    }
+
+    methods = {
+      toggle (id) {
+        this.list.forEach(v => {
+          v.open = (v.id === id) ? !v.open : false
+        })
+      }
+    }
+  }
+</script>
