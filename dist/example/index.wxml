@@ -1,22 +1,21 @@
 
   <view class="_div container">
-    <view class="_div jumbotron bg-white mb-n3">
+    <view class="_div jumbotron bg-white mb-n3 border-primary border">
         <view class="_h2"><text class="_strong">Bootstrap Demo</text></view>
-      <view class="_p lead">这是一个使用Bootstrap开发小程序的小样，希望能够帮助到习惯BS开发模式的小伙伴们.</view>
+      <view class="_p lead">这是一个使用Bootstrap4开发小程序的小样，希望能够帮助到习惯BS开发模式的码农朋友们.</view>
       <view class="_hr my-4"></view>
       <view class="_p">下面是一些适用于小程序的bootsrap组件展示, 详细用法请下载源代码 <text>\n</text>
           <text class="_small">https://github.com/tomli/wepy-bootstrap-demo.git</text>
       </view>
       <!--<text class="_a btn btn-success btn-lg" href="#" role="button">Learn more</text>-->
     </view>
-  </view>
-  <view class="_div container">
+
       <view class="_div accordion" id="accordionExample">
           <block wx:for="{{list}}" wx:for-index="index" wx:for-item="item" wx:key="id">
               <view class="_div card">
-                  <view class="_div card-header bg-primary text-white" bindtap="toggle" data-wpytoggle-a="{{item.id}}">
+                  <view class="_div card-header bg-primary" bindtap="toggle" data-wpytoggle-a="{{item.id}}">
                       <view class="_h2 mb-0">
-                          <view class="_div btn" type="button">
+                          <view class="_div btn text-white" type="button">
                               {{item.name}}
                           </view>
                       </view>
@@ -26,10 +25,10 @@
                       <view class="_div card-body">
                           <view class="_ul list-group list-group-flush">
                               <navigator url="./{{page}}"  wx:for="{{item.pages}}" wx:for-item="page" wx:key="*this">
-                                    <view class="_li list-group-item d-flex justify-content-between align-items-center border-bottom">
-                                        {{page}}
-                                        <text class="_span arrow-most-right"></text>
-                                    </view>
+                                  <view class="_li list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                      {{page}}
+                                      <text class="_span arrow-most-right"></text>
+                                  </view>
                               </navigator>
                           </view>
                       </view>

@@ -24,6 +24,7 @@ module.exports = {
     less: {
       compress: prod
     },
+    /*
     scss2: {
       // outputStyle: 'compressed',
       // data: '@import "/src/assets/scss/custom.scss',
@@ -37,11 +38,11 @@ module.exports = {
               '*': 'view' // 将覆盖前面的 * 选择器被清理规则
             })
           }),
-          require('postcss-bootstrap-wxss')({remToRpx: 35}),
+          require('postcss-bootstrap-wxss')(),
         ]
       }
     },
-    /*sass: {
+    sass: {
       outputStyle: 'compressed'
     },*/
     babel: {
@@ -58,9 +59,10 @@ module.exports = {
     }
   },
   plugins: {
-    // 'rpx': {
-    //   filter: /\.(wxss|wxml)$/, //文件后缀匹配
-    // },
+    'bootstrap': {
+      filter: /app\.(wxss)$/, // 匹配需转换的css文件
+      remToRpx: 35// 这个参数可以用来调整转换rem单位到rpx单位时使用的比例
+    },
     'htmltag': {
       filter: /\.(wxml)$/, // 文件后缀匹配
       config: {

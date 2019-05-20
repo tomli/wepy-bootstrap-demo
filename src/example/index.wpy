@@ -2,26 +2,34 @@
     .arrow-most-right:after{
         content:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPjxwYXRoIGQ9Ik0yLjUgMEwxIDEuNSAzLjUgNCAxIDYuNSAyLjUgOGw0LTQtNC00eiIgZmlsbD0iY3VycmVudENvbG9yIi8+PC9zdmc+);
     }
+    .card-header:first-child {
+        border-radius:0 0 0 0;
+    }
+    .accordion > .card:first-of-type {
+        border-top:0;
+        border-top-right-radius:0;
+        border-top-left-radius:0;
+    }
+
 </style>
 <template>
   <div class="container">
-    <div class="jumbotron bg-white mb-n3">
+    <div class="jumbotron bg-white mb-n3 border-primary border">
         <h2 ><strong>Bootstrap Demo</strong></h2>
-      <p class="lead">这是一个使用Bootstrap开发小程序的小样，希望能够帮助到习惯BS开发模式的小伙伴们.</p>
+      <p class="lead">这是一个使用Bootstrap4开发小程序的小样，希望能够帮助到习惯BS开发模式的码农朋友们.</p>
       <hr class="my-4" />
       <p>下面是一些适用于小程序的bootsrap组件展示, 详细用法请下载源代码 <br/>
           <small>https://github.com/tomli/wepy-bootstrap-demo.git</small>
       </p>
       <!--<a class="btn btn-success btn-lg" href="#" role="button">Learn more</a>-->
     </div>
-  </div>
-  <div class="container">
+
       <div class="accordion" id="accordionExample">
           <repeat for="{{list}}" key="id">
               <div class="card">
-                  <div class="card-header bg-primary text-white"   @tap="toggle({{item.id}})">
+                  <div class="card-header bg-primary"   @tap="toggle({{item.id}})">
                       <h2 class="mb-0">
-                          <div class="btn" type="button" >
+                          <div class="btn text-white" type="button" >
                               {{item.name}}
                           </div>
                       </h2>
@@ -31,10 +39,10 @@
                       <div class="card-body">
                           <ul class="list-group list-group-flush" >
                               <navigator url="./{{page}}"  wx:for="{{item.pages}}" wx:for-item="page" wx:key="*this">
-                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
-                                        {{page}}
-                                        <span class="arrow-most-right"></span>
-                                    </li>
+                                  <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                      {{page}}
+                                      <span class="arrow-most-right"></span>
+                                  </li>
                               </navigator>
                           </ul>
                       </div>
