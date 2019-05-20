@@ -1,0 +1,33 @@
+<template>
+
+    <div class="wbd-example-cd card border-0">
+        <div class="card-body">
+            <div class="bg-light rounded-top  p-2">弹出式提示，采用小程序原生的toast</div>
+            <button class="btn btn-block btn-success" type="button"  @tap="openToast">成功提示</button>
+            <button class="btn btn-block btn-success" type="button"  @tap="openLoading">加载中提示</button>
+
+        </div>
+    </div>
+</template>
+<script>
+  import wepy from 'wepy';
+
+  export default class Toast extends wepy.page {
+    methods = {
+      openToast () {
+        wx.showToast({
+          title: '已完成',
+          icon: 'success',
+          duration: 3000
+        });
+      },
+      openLoading () {
+        wx.showToast({
+          title: '数据加载中',
+          icon: 'loading',
+          duration: 3000
+        });
+      }
+    }
+  }
+</script>

@@ -1,0 +1,52 @@
+<style type="less">
+
+</style>
+<template>
+
+    <div class="container">
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">Home</li>
+            </ol>
+        </nav>
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Library</li>
+            </ol>
+        </nav>
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Library</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Data</li>
+            </ol>
+        </nav>
+
+        <!--
+
+                <div class="wbd-example-cd">
+                    <p>
+                        <br/>
+                        <navigator url="/pages/web?url=https://getbootstrap.com/docs/4.3/components/breadcrumb/"  >
+                            <strong> 详细用法</strong>
+                        </navigator>
+                    </p>
+                </div>
+        -->
+
+
+    </div>
+
+</template>
+
+<script>
+    import wepy from 'wepy'
+
+    export default class Breadcrumb extends wepy.page {
+
+    }
+</script>

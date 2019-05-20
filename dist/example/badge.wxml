@@ -3,10 +3,10 @@
     <view class="_div container">
         <view class="_div wbd-example-cd card">
             <view class="_div card-body">
-                <view class="_h5">用在文本之后, 同样大小</view>
+                <view class="_div bg-light lead rounded-top  p-2">用在文本之后, 同样大小</view>
                 <view class="_h3">Example heading <text class="_span badge badge-secondary">New</text></view>
                 <view class="_h4">Example heading <text class="_span badge badge-secondary">New</text></view>
-                <view class="_h5">Example heading <text class="_span badge badge-secondary">New</text></view>
+                <view class="_div bg-light lead rounded-top  p-2">Example heading <text class="_span badge badge-secondary">New</text></view>
                 <view class="_h6">Example heading <text class="_span badge badge-secondary">New</text></view>
             </view>
         </view>
@@ -14,7 +14,7 @@
 
         <view class="_div wbd-example-cd card">
             <view class="_div card-body">
-                <view class="_h5">放在button里</view>
+                <view class="_div bg-light lead rounded-top  p-2">放在button里</view>
                 <button type="button" class="btn btn-primary">
                     Notifications <text class="_span badge badge-light">4</text>
                 </button>
@@ -25,7 +25,7 @@
 
         <view class="_div wbd-example-cd card">
             <view class="_div card-body">
-                <view class="_h5">用不同色彩来体现上下文含义</view>
+                <view class="_div bg-light lead rounded-top  p-2">用不同色彩来体现上下文含义</view>
                 <view class="_div wbd-example-div d-flex justify-content-between flex-wrap">
                     <text class="_span badge badge-primary">Primary</text>
                     <text class="_span badge badge-secondary">Secondary</text>
@@ -43,7 +43,7 @@
 
         <view class="_div wbd-example-cd card">
             <view class="_div card-body">
-                <view class="_h5">改变形状</view>
+                <view class="_div bg-light lead rounded-top  p-2">改变形状</view>
                 <view class="_div wbd-example-div d-flex justify-content-between flex-wrap">
                     <text class="_span badge badge-pill badge-primary">Primary</text>
                     <text class="_span badge badge-pill badge-secondary">Secondary</text>

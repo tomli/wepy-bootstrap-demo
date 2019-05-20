@@ -19,9 +19,9 @@
 <template>
     <div class="container">
 
-        <div class="wbd-example-cd card">
+        <div class="wbd-example-cd card border-0">
             <div class="card-body">
-                <h5>Buttons with contextual color</h5>
+                <div class="bg-light lead rounded-top  p-2">Buttons with contextual color</div>
                 <div class="wbd-example-div d-flex justify-content-between flex-wrap">
                     <button type="button" class="btn btn-primary">Primary</button>
                     <button type="button" class="btn btn-secondary">Secondary</button>
@@ -37,9 +37,9 @@
         </div>
 
 
-        <div class="wbd-example-cd card">
+        <div class="wbd-example-cd card border-0">
             <div class="card-body">
-                <h5>Outline buttons</h5>
+                <div class="bg-light lead rounded-top  p-2">Outline buttons</div>
                 <div class="wbd-example-div d-flex justify-content-between flex-wrap">
                     <button type="button" class="btn btn-outline-primary">Primary</button>
                     <button type="button" class="btn btn-outline-secondary">Secondary</button>
@@ -54,9 +54,9 @@
         </div>
 
 
-        <div class="wbd-example-cd card">
+        <div class="wbd-example-cd card border-0">
             <div class="card-body">
-                <h5>Sizes</h5>
+                <div class="bg-light lead rounded-top  p-2">Sizes</div>
                 <div class="wbd-example-div d-flex justify-content-between flex-wrap">
                     <button type="button" class="btn btn-primary btn-lg">Large button</button>
                     <button type="button" class="btn btn-secondary btn-lg">Large button</button>
@@ -73,9 +73,9 @@
         </div>
 
 
-        <div class="wbd-example-cd card">
+        <div class="wbd-example-cd card border-0">
             <div class="card-body">
-                <h5>Active state //TODO:need check</h5>
+                <div class="bg-light lead rounded-top  p-2">Active state //TODO:need check</div>
                 <div class="wbd-example-div d-flex justify-content-between flex-wrap">
                     <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Primary link</a>
                     <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Link</a>
@@ -84,9 +84,9 @@
             </div>
         </div>
 
-        <div class="wbd-example-cd card">
+        <div class="wbd-example-cd card border-0">
             <div class="card-body">
-                <h5>Disabled state //TODO:need check</h5>
+                <div class="bg-light lead rounded-top  p-2">Disabled state //TODO:need check</div>
                 <div class="wbd-example-div d-flex justify-content-between flex-wrap">
                     <button type="button" class="btn btn-lg btn-primary" disabled>Primary button</button>
                     <button type="button" class="btn btn-secondary btn-lg" disabled>Button</button>
@@ -94,10 +94,9 @@
             </div>
         </div>
 
-
-        <div class="wbd-example-cd card">
+        <div class="wbd-example-cd card border-0">
             <div class="card-body">
-                <h5>Checkbox and radio buttons //TODO:need check</h5>
+                <div class="bg-light lead rounded-top  p-2">Checkbox and radio buttons //TODO:need check</div>
                 <div class="wbd-example-div d-flex justify-content-between flex-wrap">
                     <div class="btn-group-toggle" data-toggle="buttons">
                         <label class="btn btn-secondary active">
@@ -121,6 +120,20 @@
             </div>
         </div>
 
+
+        <div class="wbd-example-cd card border-0 border-0">
+            <div class="card-body">
+                <div class="bg-light lead rounded-top  p-2">按钮组</div>
+                待完成。。。
+                <!--
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-secondary">Left</button>
+                    <button type="button" class="btn btn-secondary">Middle</button>
+                    <button type="button" class="btn btn-secondary">Right</button>
+                </div>
+                -->
+            </div>
+        </div>
     </div>
 </template>
 

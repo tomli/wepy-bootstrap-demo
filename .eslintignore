@@ -1,1 +1,5 @@
 dist/*
+src/example/actionsheet.wpy
+src/example/dialog.wpy
+src/example/picker.wpy
+src/example/toast.wpy

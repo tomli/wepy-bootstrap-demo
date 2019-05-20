@@ -1,0 +1,219 @@
+<style type="less">
+    .bd-highlight {
+        background-color: rgba(86,61,124,.15);
+        border: 1px solid rgba(86,61,124,.15);
+    }
+</style>
+<template>
+
+    <div class="container">
+
+        <div class="wbd-example-cd card border-0">
+            <div class="card-body">
+                <div class="bg-light lead rounded-top  p-2">简单的flexbox 容器</div>
+                <div class="d-flex p-2 bd-highlight justify-content-around">
+                    <div>珍惜生命</div>
+                    <div>远离９９６</div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="wbd-example-cd card border-0">
+            <div class="card-body">
+                <div class="bg-light lead rounded-top  p-2">行内flexbox容器</div>
+                <div class="d-inline-flex p-2 bd-highlight justify-content-around">
+                    <div>珍惜生命</div>
+                    <div>远离９９６</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wbd-example-cd card border-0">
+            <div class="card-body">
+                <div class="bg-light lead rounded-top  p-2">水平排列</div>
+                <div class="d-flex flex-row bd-highlight mb-3">
+                    <div class="p-2 bd-highlight">Red Hot Chili Peppers</div>
+                    <div class="p-2 bd-highlight">Nirvana</div>
+                    <div class="p-2 bd-highlight">The Smashing Pumpkins</div>
+                </div>
+                <div class="d-flex flex-row-reverse bd-highlight">
+                    <div class="p-2 bd-highlight">Red Hot Chili Peppers</div>
+                    <div class="p-2 bd-highlight">Nirvana</div>
+                    <div class="p-2 bd-highlight">The Smashing Pumpkins</div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="wbd-example-cd card border-0">
+            <div class="card-body">
+                <div class="bg-light lead rounded-top  p-2">竖直排列</div>
+                <div class="d-flex flex-row bd-highlight mb-3">
+                    <div class="p-2 bd-highlight">Red Hot Chili Peppers</div>
+                    <div class="p-2 bd-highlight">Nirvana</div>
+                    <div class="p-2 bd-highlight">The Smashing Pumpkins</div>
+                </div>
+                <div class="d-flex flex-row-reverse bd-highlight">
+                    <div class="p-2 bd-highlight">Red Hot Chili Peppers</div>
+                    <div class="p-2 bd-highlight">Nirvana</div>
+                    <div class="p-2 bd-highlight">The Smashing Pumpkins</div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="wbd-example-cd card border-0">
+            <div class="card-body">
+                <div class="bg-light lead rounded-top  p-2">调整内容（justify-content）</div>
+                <div class="d-flex justify-content-start bd-highlight mb-3">
+                    <div class="p-2 bd-highlight">Blur</div>
+                    <div class="p-2 bd-highlight">The Cure</div>
+                    <div class="p-2 bd-highlight">Radiohead</div>
+                </div>
+                <div class="d-flex justify-content-end bd-highlight  mb-3">
+                    <div class="p-2 bd-highlight">Blur</div>
+                    <div class="p-2 bd-highlight">The Cure</div>
+                    <div class="p-2 bd-highlight">Radiohead</div>
+                </div>
+                <div class="d-flex justify-content-center bd-highlight  mb-3">
+                    <div class="p-2 bd-highlight">Blur</div>
+                    <div class="p-2 bd-highlight">The Cure</div>
+                    <div class="p-2 bd-highlight">Radiohead</div>
+                </div>
+                <div class="d-flex justify-content-between bd-highlight  mb-3">
+                    <div class="p-2 bd-highlight">Blur</div>
+                    <div class="p-2 bd-highlight">The Cure</div>
+                    <div class="p-2 bd-highlight">Radiohead</div>
+                </div>
+                <div class="d-flex justify-content-around bd-highlight  mb-3">
+                    <div class="p-2 bd-highlight">Blur</div>
+                    <div class="p-2 bd-highlight">The Cure</div>
+                    <div class="p-2 bd-highlight">Radiohead</div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="wbd-example-cd card border-0">
+            <div class="card-body">
+                <div class="bg-light lead rounded-top  p-2">元素排列（align-items）</div>
+                <div class="d-flex align-items-start bd-highlight mb-3" style="height: 150rpx">
+                    <div class="p-2 bd-highlight">Blur</div>
+                    <div class="p-2 bd-highlight">The Cure</div>
+                    <div class="p-2 bd-highlight">Radiohead</div>
+                </div>
+                <div class="d-flex align-items-end bd-highlight  mb-3" style="height: 150rpx">
+                    <div class="p-2 bd-highlight">Blur</div>
+                    <div class="p-2 bd-highlight">The Cure</div>
+                    <div class="p-2 bd-highlight">Radiohead</div>
+                </div>
+                <div class="d-flex align-items-center bd-highlight  mb-3" style="height: 150rpx">
+                    <div class="p-2 bd-highlight">Blur</div>
+                    <div class="p-2 bd-highlight">The Cure</div>
+                    <div class="p-2 bd-highlight">Radiohead</div>
+                </div>
+                <div class="d-flex align-items-baseline bd-highlight  mb-3" style="height: 150rpx">
+                    <div class="p-2 bd-highlight">Blur</div>
+                    <div class="p-2 bd-highlight">The Cure</div>
+                    <div class="p-2 bd-highlight">Radiohead</div>
+                </div>
+                <div class="d-flex align-items-stretch bd-highlight  mb-3" style="height: 150rpx">
+                    <div class="p-2 bd-highlight">Blur</div>
+                    <div class="p-2 bd-highlight">The Cure</div>
+                    <div class="p-2 bd-highlight">Radiohead</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="wbd-example-cd card border-0">
+            <div class="card-body">
+                <div class="bg-light lead rounded-top  p-2">自身排列（align-self）</div>
+                <div class="d-flex bd-highlight mb-3" style="height: 150rpx">
+                    <div class="p-2 bd-highlight">Blur</div>
+                    <div class="p-2 align-self-start bd-highlight">The Cure</div>
+                    <div class="p-2 bd-highlight">Radiohead</div>
+                </div>
+                <div class="d-flex bd-highlight  mb-3" style="height: 150rpx">
+                    <div class="p-2 bd-highlight">Blur</div>
+                    <div class="p-2 align-self-end bd-highlight">The Cure</div>
+                    <div class="p-2 bd-highlight">Radiohead</div>
+                </div>
+                <div class="d-flex bd-highlight  mb-3" style="height: 150rpx">
+                    <div class="p-2 bd-highlight">Blur</div>
+                    <div class="p-2 align-self-center bd-highlight">The Cure</div>
+                    <div class="p-2 bd-highlight">Radiohead</div>
+                </div>
+                <div class="d-flex bd-highlight  mb-3" style="height: 150rpx">
+                    <div class="p-2 bd-highlight">Blur</div>
+                    <div class="p-2 align-self-baseline bd-highlight">The Cure</div>
+                    <div class="p-2 bd-highlight">Radiohead</div>
+                </div>
+                <div class="d-flex bd-highlight  mb-3" style="height: 150rpx">
+                    <div class="p-2 bd-highlight">Blur</div>
+                    <div class="p-2 align-self-stretch bd-highlight">The Cure</div>
+                    <div class="p-2 bd-highlight">Radiohead</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wbd-example-cd card border-0">
+            <div class="card-body">
+                <div class="bg-light lead rounded-top  p-2">自动填充</div>
+                <div class="d-flex bd-highlight">
+                    <div class="p-2 flex-fill bd-highlight">Ludwig van Beethoven</div>
+                    <div class="p-2 flex-fill bd-highlight">Bach</div>
+                    <div class="p-2 flex-fill bd-highlight">Mozart</div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="wbd-example-cd card border-0">
+            <div class="card-body">
+                <div class="bg-light lead rounded-top  p-2">伸长第一个元素</div>
+                <div class="d-flex bd-highlight">
+                    <div class="p-2 flex-grow-1 bd-highlight">Bach</div>
+                    <div class="p-2 bd-highlight">Mozart</div>
+                    <div class="p-2 bd-highlight">Ludwig van Beethoven</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wbd-example-cd card border-0">
+            <div class="card-body">
+                <div class="bg-light lead rounded-top  p-2">压缩某个元素</div>
+                <div class="d-flex bd-highlight">
+                    <div class="p-2 w-100 bd-highlight">Mozart</div>
+                    <div class="p-2 flex-shrink-1 bd-highlight">Ludwig van Beethoven</div>
+                </div>
+            </div>
+        </div>
+
+        未完待续。。。
+<!--
+        <div class="wbd-example-cd">
+            <p>
+                <br/>
+                <navigator url="/pages/web?url=https://getbootstrap.com/docs/4.3/content/typography/"  >
+                    <strong> 详细用法</strong>
+                </navigator>
+            </p>
+        </div>
+        -->
+
+    </div>
+
+</template>
+
+<script>
+    import wepy from 'wepy'
+
+    export default class Flex extends wepy.page {
+
+    }
+</script>

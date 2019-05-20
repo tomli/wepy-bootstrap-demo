@@ -1,0 +1,298 @@
+<style type="less">
+
+    .wbd-example-cd .row>.col,
+    .wbd-example-cd .row>.col-auto ,
+    .wbd-example-cd .row>.col-12 ,
+    .wbd-example-cd .row>.col-2 ,
+    .wbd-example-cd .row>.col-3 ,
+    .wbd-example-cd .row>.col-4 ,
+    .wbd-example-cd .row>.col-5 ,
+    .wbd-example-cd .row>.col-8 ,
+    .wbd-example-cd .row>.col-9 ,
+    .wbd-example-cd .row>.col-6{
+        padding-top: .75rem;
+        padding-bottom: .75rem;
+        background-color: rgba(86,61,124,.15);
+        border: 1px solid rgba(86,61,124,.2);
+    }
+    .wbd-example-cd .row+.row {
+        margin-top: 1rem;
+    }
+
+</style>
+<template>
+
+    <div class="container">
+
+        <div class="wbd-example-cd card border-0">
+            <div class="card-body">
+                <div class="bg-light lead rounded-top  p-2">行内等宽</div>
+                <div class="container ">
+                    <div class="row">
+                        <div class="col border">
+                            1 of 2
+                        </div>
+                        <div class="col border">
+                            2 of 2
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col border">
+                            1 of 3
+                        </div>
+                        <div class="col border">
+                            2 of 3
+                        </div>
+                        <div class="col border">
+                            3 of 3
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wbd-example-cd card border-0">
+            <div class="card-body">
+                <div class="bg-light lead rounded-top  p-2">非等宽</div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            1 of 3
+                        </div>
+                        <div class="col-6">
+                            2 of 3 (wider)
+                        </div>
+                        <div class="col">
+                            3 of 3
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            1 of 3
+                        </div>
+                        <div class="col-5">
+                            2 of 3 (wider)
+                        </div>
+                        <div class="col">
+                            3 of 3
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="wbd-example-cd card border-0">
+            <div class="card-body">
+                <div class="bg-light lead rounded-top  p-2">宽度与内容适应</div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col col-2">
+                            1
+                        </div>
+                        <div class="col-auto">
+                            Variable width content
+                        </div>
+                        <div class="col col-2">
+                            3
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            1
+                        </div>
+                        <div class="col-auto">
+                            Variable width content
+                        </div>
+                        <div class="col">
+                            3
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="wbd-example-cd card border-0">
+                <div class="card-body">
+                    <div class="bg-light lead rounded-top  p-2">混合宽度组合</div>
+
+                    <div class="container">
+                        <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+                        <div class="row">
+                            <div class="col-8">.col-8</div>
+                            <div class="col-4">.col-4</div>
+                        </div>
+
+                        <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+                        <div class="row">
+                            <div class="col-4">.col-4</div>
+                            <div class="col-4">.col-4</div>
+                            <div class="col-4"> .col-4</div>
+                        </div>
+
+                        <!-- Columns are always 50% wide, on mobile and desktop -->
+                        <div class="row">
+                            <div class="col-6">.col-6</div>
+                            <div class="col-6">.col-6</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="wbd-example-cd card border-0">
+                <div class="card-body">
+                    <div class="bg-light lead rounded-top  p-2">竖直对齐(Vertical alignment)</div>
+                    <div class="container">
+                        <div class="row"  style="min-height: 300rpx;">
+                            <div class="col align-self-start">
+                                The Doors
+                            </div>
+                            <div class="col align-self-center">
+                                The Doors
+                            </div>
+                            <div class="col align-self-end">
+                                The Doors
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="wbd-example-cd card border-0">
+                <div class="card-body">
+                    <div class="bg-light lead rounded-top  p-2">水平对齐(Horizontal alignment)</div>
+
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-4">
+                                R.E.M.
+                            </div>
+                            <div class="col-4">
+                                R.E.M.
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-4">
+                                R.E.M.
+                            </div>
+                            <div class="col-4">
+                                R.E.M.
+                            </div>
+                        </div>
+                        <div class="row justify-content-end">
+                            <div class="col-4">
+                                R.E.M.
+                            </div>
+                            <div class="col-4">
+                                R.E.M.
+                            </div>
+                        </div>
+                        <div class="row justify-content-around">
+                            <div class="col-4">
+                                R.E.M.
+                            </div>
+                            <div class="col-4">
+                                R.E.M.
+                            </div>
+                        </div>
+                        <div class="row justify-content-between">
+                            <div class="col-4">
+                                R.E.M.
+                            </div>
+                            <div class="col-4">
+                                R.E.M.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="wbd-example-cd card border-0">
+            <div class="card-body">
+                <div class="bg-light lead rounded-top  p-2">强制换行</div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4 ">Metallica</div>
+                        <div class="col-4 ">Metallica</div>
+
+                        <!-- Force next columns to break to new line -->
+                        <div class="w-100"></div>
+
+                        <div class="col-4 ">Metallica</div>
+                        <div class="col-4 ">Metallica</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="wbd-example-cd card border-0">
+            <div class="card-body">
+                <div class="bg-light lead rounded-top  p-2">宽度占位</div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4">U2</div>
+                        <div class="col-4 offset-md-4">U2</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3 offset-3">U2</div>
+                        <div class="col-3 offset-3">U2</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 offset-3">U2</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wbd-example-cd card border-0">
+            <div class="card-body">
+                <div class="bg-light lead rounded-top  p-2">嵌套</div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-9">
+                            L1: Neil Young
+                            <div class="row">
+                                <div class="col-6">
+                                    L2: Elton John
+                                </div>
+                                <div class="col-4">
+                                    L2: The Eagles
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+<!--
+        <div class="wbd-example-cd">
+            <p>
+                <br/>
+                <navigator url="/pages/web?url=https://getbootstrap.com/docs/4.3/content/typography/"  >
+                    <strong> 详细用法</strong>
+                </navigator>
+            </p>
+        </div>
+        -->
+
+    </div>
+
+</template>
+
+<script>
+    import wepy from 'wepy'
+
+    export default class Grid extends wepy.page {
+
+    }
+</script>

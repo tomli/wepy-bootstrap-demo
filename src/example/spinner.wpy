@@ -1,0 +1,126 @@
+<style type="less">
+
+</style>
+<template>
+
+    <div class="container">
+
+        <div class="wbd-example-cd card border-0">
+            <div class="card-body">
+                <div class="bg-light lead rounded-top  p-2">彩色边框</div>
+                <div class="spinner-border text-primary" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-border text-secondary" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-border text-success" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-border text-danger" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-border text-warning" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-border text-info" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-border text-light" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-border text-dark" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="wbd-example-cd card border-0">
+            <div class="card-body">
+                <div class="bg-light lead rounded-top  p-2">扩散</div>
+                <div class="spinner-grow text-primary" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-grow text-secondary" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-grow text-success" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-grow text-danger" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-grow text-warning" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-grow text-info" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-grow text-light" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-grow text-dark" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="wbd-example-cd card border-0">
+            <div class="card-body">
+                <div class="bg-light lead rounded-top  p-2">不同大小</div>
+                <div class="spinner-border spinner-border-sm" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-grow spinner-grow-sm" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-border" style="width: 3rem; height: 3rem;" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-grow" style="width: 3rem; height: 3rem;" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="wbd-example-cd card border-0">
+            <div class="card-body">
+                <div class="bg-light lead rounded-top  p-2">在按钮中使用</div>
+                <button class="btn btn-primary mx-2" type="button" disabled>
+                    <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                    <span class="sr-only">Loading...</span>
+                </button>
+                <button class="btn btn-primary" type="button" disabled>
+                    <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                    Loading...
+                </button>
+
+            </div>
+        </div>
+
+
+<!--
+        <div class="wbd-example-cd">
+            <p>
+                <br/>
+                <navigator url="/pages/web?url=https://getbootstrap.com/docs/4.3/content/typography/"  >
+                    <strong> 详细用法</strong>
+                </navigator>
+            </p>
+        </div>
+        -->
+
+    </div>
+
+</template>
+
+<script>
+    import wepy from 'wepy'
+
+    export default class Spinner extends wepy.page {
+
+    }
+</script>

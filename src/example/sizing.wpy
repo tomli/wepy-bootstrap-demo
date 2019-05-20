@@ -1,0 +1,56 @@
+<style type="less">
+
+</style>
+<template>
+
+    <div class="container">
+
+        <div class="wbd-example-cd card border-0">
+            <div class="card-body">
+                <div class="bg-light lead rounded-top  p-2">设置相对于父容器的宽度</div>
+
+                <div class="w-25 p-3" style="background-color: #eee;">Width 25%</div>
+                <div class="w-50 p-3" style="background-color: #eee;">Width 50%</div>
+                <div class="w-75 p-3" style="background-color: #eee;">Width 75%</div>
+                <div class="w-100 p-3" style="background-color: #eee;">Width 100%</div>
+                <div class="w-auto p-3" style="background-color: #eee;">Width auto</div>
+
+            </div>
+        </div>
+
+        <div class="wbd-example-cd card border-0">
+            <div class="card-body">
+                <div class="bg-light lead rounded-top  p-2">设置相对于父容器的高度</div>
+
+                <div style="height: 100px; background-color: rgba(255,0,0,0.1);">
+                    <div class="h-25 d-inline-block" style="width: 120rpx; background-color: rgba(0,0,255,.1)">Height 25%</div>
+                    <div class="h-50 d-inline-block" style="width: 120rpx; background-color: rgba(0,0,255,.1)">Height 50%</div>
+                    <div class="h-75 d-inline-block" style="width: 120rpx; background-color: rgba(0,0,255,.1)">Height 75%</div>
+                    <div class="h-100 d-inline-block" style="width: 120rpx; background-color: rgba(0,0,255,.1)">Height 100%</div>
+                    <div class="h-auto d-inline-block" style="width: 120rpx; background-color: rgba(0,0,255,.1)">Height auto</div>
+                </div>
+
+            </div>
+        </div>
+<!--
+        <div class="wbd-example-cd">
+            <p>
+                <br/>
+                <navigator url="/pages/web?url=https://getbootstrap.com/docs/4.3/content/typography/"  >
+                    <strong> 详细用法</strong>
+                </navigator>
+            </p>
+        </div>
+        -->
+
+    </div>
+
+</template>
+
+<script>
+    import wepy from 'wepy'
+
+    export default class Sizing extends wepy.page {
+
+    }
+</script>

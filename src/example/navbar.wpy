@@ -1,0 +1,182 @@
+<style type="less">
+
+    .wbd-example-cd .navbar+.navbar{
+        margin-top: 25rpx;
+    }
+
+</style>
+<template>
+
+    <div class="container">
+
+
+        <div class="wbd-example-cd card border-0">
+            <div class="card-body">
+                <div class="border-bottom lead rounded-top  p-2">普通导航栏</div>
+
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Pop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Rock</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Class</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Jazz</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="wbd-example-cd card border-0">
+            <div class="card-body">
+                <div class="border-bottom lead rounded-top  p-2">带高亮导航栏</div>
+
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Pop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Rock</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Class</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="wbd-example-cd card border-0">
+            <div class="card-body">
+                <div class="border-bottom lead rounded-top  p-2">均匀分布</div>
+                <ul class="nav nav-pills nav-fill">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Pop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Rock</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Class</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="wbd-example-cd card border-0">
+            <div class="card-body">
+                <div class="border-bottom lead rounded-top  p-2">带tab页的导航栏</div>
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="wbd-example-cd card border-0">
+            <div class="card-body">
+                <div class="border-bottom lead rounded-top  p-2">带图标的导航栏</div>
+
+                <!-- Image and text -->
+                <nav class="navbar navbar-light bg-light">
+                    <div class="navbar-brand" href="#">
+                        <img src="https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-solid.svg" style="width: 60rpx; height: 60rpx" class="d-inline-block align-top" alt="">
+                        Bootstrap
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+
+        <div class="wbd-example-cd card border-0">
+            <div class="card-body">
+                <div class="border-bottom lead rounded-top  p-2">有背景色的导航栏</div>
+
+                <nav class="navbar navbar-dark bg-dark">
+                    <div class="navbar-brand" href="#">
+                        台北金马影展
+                    </div>
+                </nav>
+
+                <nav class="navbar navbar-dark bg-primary">
+                    <div class="navbar-brand" href="#">
+                        柏林影展
+                    </div>
+                </nav>
+
+                <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+
+                    <div class="navbar-brand" href="#">
+                        旧金山嬉皮士电影节
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="wbd-example-cd card border-0">
+            <div class="card-body">
+                <div class="border-bottom lead rounded-top  p-2">带菜单收缩功能(未完成。。)</div>
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+
+
+
+<!--
+        <div class="wbd-example-cd">
+            <p>
+                <br/>
+                <navigator url="/pages/web?url=https://getbootstrap.com/docs/4.3/content/typography/"  >
+                    <strong> 详细用法</strong>
+                </navigator>
+            </p>
+        </div>
+        -->
+
+    </div>
+
+</template>
+
+<script>
+    import wepy from 'wepy'
+
+    export default class Navbar extends wepy.page {
+
+    }
+</script>

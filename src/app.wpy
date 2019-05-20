@@ -11,14 +11,16 @@
         height: 35rpx;
     }
     .wbd-example-cd {
-        margin-top: 58rpx;
+        /*margin-top: 58rpx;*/
     }
-/*
-    text,
-    text::before,
-    text::after {
-        box-sizing: border-box; }
-     */
+
+    navigator.wbd-example-cd{
+        display: none;
+    }
+
+    .wbd-example-cd > .card-body >  .rounded-top{
+      margin-bottom: 55rpx;
+    }
 /*
     button {
         border-radius: 0; }
@@ -48,10 +50,43 @@ import wepy from 'wepy'
 export default class extends wepy.app {
   config = {
     pages: [
-      'example/article',
       'example/index',
+      'example/jumbotron',
+      'example/accordion',
+      'example/text',
+      'example/shadow',
+      'example/sizing',
+      'example/pagination',
+      'example/popover',
+      'example/scrollspy',
+      'example/searchbar',
+      'example/navbar',
+      'example/media',
+      'example/tabbar',
+      'example/spinner',
+      'example/spacing',
+      'example/grid',
+      'example/flex',
+      'example/progress',
+      'example/toast',
+      'example/actionsheet',
+      'example/picker',
+      'example/dialog',
+      'example/icons',
+      'example/slider',
+      'example/breadcrumb',
+      'example/input',
+      'example/article',
+      'example/uploader',
+      'example/images',
+      'example/card',
+      'example/list',
       'example/badge',
-      'example/button'
+      'example/button',
+      // 'example/weui/actionsheet',
+      // 'example/weui/picker',
+      // 'example/weui/toast',
+      'pages/web'
     ],
     window: {
       backgroundTextStyle: 'light',
@@ -64,11 +99,11 @@ export default class extends wepy.app {
   globalData = {
     userInfo: null
   }
-/*
+
   constructor () {
     super()
+    this.use('promisify')
     this.use('requestfix')
   }
-  */
 }
 </script>

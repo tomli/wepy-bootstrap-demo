@@ -1,0 +1,43 @@
+<style type="less">
+
+</style>
+<template>
+
+    <div class="container">
+
+        <div class="wbd-example-cd card border-0">
+            <div class="card-body">
+                <div class="lead text-center rounded-top  p-2">Jumbotron</div>
+
+                <div class="jumbotron">
+                    <h1 class="display-6">世界是荒谬的</h1>
+                    <p class="lead">我们是一堆对我们自己有妨碍的受约束的存在物，我们丝毫没有理由在这里存在，全体都没有理由；每一个存在物在朦胧中和轻微的不安中，都感觉自己对别的存在物说来是多余的……我对面稍微靠左边的那株橡树是多余的。那座韦列达的雕像是多余的……还有我――软弱，疲惫，下流，胃里在消化着和脑子里在翻腾着一些忧郁的思想――我也是多余的……连我的死亡也是多余的。</p>
+                    <hr class="my-4">
+                    <p>《恶心》之所以震撼人心，是因为萨特将自己的思想彻底化，推出令人惊骇、绝望的结论，拒绝任何的粉饰，不给读者以希望和安慰。</p>
+                    <button class="btn btn-primary btn-lg" href="#" role="button">Learn more</button>
+                </div>
+            </div>
+        </div>
+
+<!--
+        <div class="wbd-example-cd">
+            <p>
+                <br/>
+                <navigator url="/pages/web?url=https://getbootstrap.com/docs/4.3/content/typography/"  >
+                    <strong> 详细用法</strong>
+                </navigator>
+            </p>
+        </div>
+        -->
+
+    </div>
+
+</template>
+
+<script>
+    import wepy from 'wepy'
+
+    export default class Jumbotron extends wepy.page {
+
+    }
+</script>

@@ -1,0 +1,56 @@
+<style type="less">
+
+</style>
+<template>
+
+    <div class="container">
+
+        <div class="wbd-example-cd card border-0">
+            <div class="card-body">
+                待完成。。。
+            </div>
+        </div>
+<!--
+
+        <div class="wbd-example-cd card border-0">
+            <div class="card-body">
+                <div class="bg-light lead rounded-top  p-2">与容器同宽</div>
+                <img src="https://cdn4.buysellads.net/uu/1/41334/1550855391-cc_dark.png" class="img-fluid" alt="Responsive image" />
+            </div>
+        </div>
+
+        <div class="wbd-example-cd card border-0">
+            <div class="card-body">
+                <div class="bg-light lead rounded-top  p-2">标题和段落</div>
+                <img src="https://cdn4.buysellads.net/uu/1/41334/1550855391-cc_dark.png" alt="..." class="img-thumbnail" />
+            </div>
+        </div>
+
+        <div class="wbd-example-cd card border-0">
+            <div class="card-body">
+                <div class="bg-light lead rounded-top  p-2">标题和段落</div>
+
+            </div>
+        </div>
+
+        <div class="wbd-example-cd">
+            <p>
+                <br/>
+                <navigator url="/pages/web?url=https://getbootstrap.com/docs/4.3/content/typography/"  >
+                    <strong> 详细用法</strong>
+                </navigator>
+            </p>
+        </div>
+-->
+
+    </div>
+
+</template>
+
+<script>
+    import wepy from 'wepy'
+
+    export default class Images extends wepy.page {
+
+    }
+</script>

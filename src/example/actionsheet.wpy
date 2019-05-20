@@ -1,0 +1,29 @@
+<template>
+
+    <div class="wbd-example-cd card border-0">
+        <div class="card-body">
+            <div class="bg-light rounded-top  p-2">弹出式菜单，采用小程序原生的actionsheet</div>
+            <button class="btn btn-block btn-success" type="button"  @tap="open">ActionSheet</button>
+
+        </div>
+    </div>
+</template>
+
+<script>
+    import wepy from 'wepy';
+
+    export default class Actionsheet extends wepy.page {
+
+        methods = {
+            open () {
+                let res = wepy.showActionSheet({
+                    itemList: ['A', 'B', 'C']
+                });
+
+                if (!res.cancel) {
+                    console.log(res.tapIndex);
+                }
+            }
+        }
+    }
+</script>

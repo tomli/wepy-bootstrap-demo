@@ -21,10 +21,10 @@
     <div class="container">
         <div class="wbd-example-cd card">
             <div class="card-body">
-                <h5>用在文本之后, 同样大小</h5>
+                <div class="bg-light lead rounded-top  p-2">用在文本之后, 同样大小</div>
                 <h3>Example heading <span class="badge badge-secondary">New</span></h3>
                 <h4>Example heading <span class="badge badge-secondary">New</span></h4>
-                <h5>Example heading <span class="badge badge-secondary">New</span></h5>
+                <div class="bg-light lead rounded-top  p-2">Example heading <span class="badge badge-secondary">New</span></div>
                 <h6>Example heading <span class="badge badge-secondary">New</span></h6>
             </div>
         </div>
@@ -32,7 +32,7 @@
 
         <div class="wbd-example-cd card">
             <div class="card-body">
-                <h5>放在button里</h5>
+                <div class="bg-light lead rounded-top  p-2">放在button里</div>
                 <button type="button" class="btn btn-primary">
                     Notifications <span class="badge badge-light">4</span>
                 </button>
@@ -43,7 +43,7 @@
 
         <div class="wbd-example-cd card">
             <div class="card-body">
-                <h5>用不同色彩来体现上下文含义</h5>
+                <div class="bg-light lead rounded-top  p-2">用不同色彩来体现上下文含义</div>
                 <div class="wbd-example-div d-flex justify-content-between flex-wrap">
                     <span class="badge badge-primary">Primary</span>
                     <span class="badge badge-secondary">Secondary</span>
@@ -61,7 +61,7 @@
 
         <div class="wbd-example-cd card">
             <div class="card-body">
-                <h5>改变形状</h5>
+                <div class="bg-light lead rounded-top  p-2">改变形状</div>
                 <div class="wbd-example-div d-flex justify-content-between flex-wrap">
                     <span class="badge badge-pill badge-primary">Primary</span>
                     <span class="badge badge-pill badge-secondary">Secondary</span>

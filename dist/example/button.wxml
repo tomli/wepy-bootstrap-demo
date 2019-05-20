@@ -1,9 +1,9 @@
 
     <view class="_div container">
 
-        <view class="_div wbd-example-cd card">
+        <view class="_div wbd-example-cd card border-0">
             <view class="_div card-body">
-                <view class="_h5">Buttons with contextual color</view>
+                <view class="_div bg-light lead rounded-top  p-2">Buttons with contextual color</view>
                 <view class="_div wbd-example-div d-flex justify-content-between flex-wrap">
                     <button type="button" class="btn btn-primary">Primary</button>
                     <button type="button" class="btn btn-secondary">Secondary</button>
@@ -19,9 +19,9 @@
         </view>
 
 
-        <view class="_div wbd-example-cd card">
+        <view class="_div wbd-example-cd card border-0">
             <view class="_div card-body">
-                <view class="_h5">Outline buttons</view>
+                <view class="_div bg-light lead rounded-top  p-2">Outline buttons</view>
                 <view class="_div wbd-example-div d-flex justify-content-between flex-wrap">
                     <button type="button" class="btn btn-outline-primary">Primary</button>
                     <button type="button" class="btn btn-outline-secondary">Secondary</button>
@@ -36,9 +36,9 @@
         </view>
 
 
-        <view class="_div wbd-example-cd card">
+        <view class="_div wbd-example-cd card border-0">
             <view class="_div card-body">
-                <view class="_h5">Sizes</view>
+                <view class="_div bg-light lead rounded-top  p-2">Sizes</view>
                 <view class="_div wbd-example-div d-flex justify-content-between flex-wrap">
                     <button type="button" class="btn btn-primary btn-lg">Large button</button>
                     <button type="button" class="btn btn-secondary btn-lg">Large button</button>
@@ -55,9 +55,9 @@
         </view>
 
 
-        <view class="_div wbd-example-cd card">
+        <view class="_div wbd-example-cd card border-0">
             <view class="_div card-body">
-                <view class="_h5">Active state //TODO:need check</view>
+                <view class="_div bg-light lead rounded-top  p-2">Active state //TODO:need check</view>
                 <view class="_div wbd-example-div d-flex justify-content-between flex-wrap">
                     <text href="#" class="_a btn btn-primary btn-lg active" role="button" aria-pressed="true">Primary link</text>
                     <text href="#" class="_a btn btn-secondary btn-lg active" role="button" aria-pressed="true">Link</text>
@@ -66,9 +66,9 @@
             </view>
         </view>
 
-        <view class="_div wbd-example-cd card">
+        <view class="_div wbd-example-cd card border-0">
             <view class="_div card-body">
-                <view class="_h5">Disabled state //TODO:need check</view>
+                <view class="_div bg-light lead rounded-top  p-2">Disabled state //TODO:need check</view>
                 <view class="_div wbd-example-div d-flex justify-content-between flex-wrap">
                     <button type="button" class="btn btn-lg btn-primary" disabled>Primary button</button>
                     <button type="button" class="btn btn-secondary btn-lg" disabled>Button</button>
@@ -76,10 +76,9 @@
             </view>
         </view>
 
-
-        <view class="_div wbd-example-cd card">
+        <view class="_div wbd-example-cd card border-0">
             <view class="_div card-body">
-                <view class="_h5">Checkbox and radio buttons //TODO:need check</view>
+                <view class="_div bg-light lead rounded-top  p-2">Checkbox and radio buttons //TODO:need check</view>
                 <view class="_div wbd-example-div d-flex justify-content-between flex-wrap">
                     <view class="_div btn-group-toggle" data-toggle="buttons">
                         <text class="_label btn btn-secondary active">
@@ -103,4 +102,18 @@
             </view>
         </view>
 
+
+        <view class="_div wbd-example-cd card border-0 border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead rounded-top  p-2">按钮组</view>
+                待完成。。。
+                <!--
+                <view class="_div btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-secondary">Left</button>
+                    <button type="button" class="btn btn-secondary">Middle</button>
+                    <button type="button" class="btn btn-secondary">Right</button>
+                </view>
+                -->
+            </view>
+        </view>
     </view>

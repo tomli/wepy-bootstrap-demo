@@ -24,9 +24,9 @@
 
     <div class="container">
 
-        <div class="wbd-example-cd card">
+        <div class="wbd-example-cd card border-0">
             <div class="card-body">
-                <h5>无序列表</h5>
+                <div class="bg-light lead rounded-top  p-2">无序列表</div>
                 <ul>
                     <li>Lorem ipsum dolor sit amet</li>
                     <li>Consectetur adipiscing elit</li>
@@ -47,9 +47,9 @@
             </div>
         </div>
 
-        <div class="wbd-example-cd card">
+        <div class="wbd-example-cd card border-0">
             <div class="card-body">
-                <h5>有序列表</h5>
+                <div class="bg-light lead rounded-top  p-2">有序列表</div>
                     <ol>
                         <li>Lorem ipsum dolor sit amet</li>
                         <li>Consectetur adipiscing elit</li>
@@ -63,9 +63,9 @@
             </div>
         </div>
 
-        <div class="wbd-example-cd card">
+        <div class="wbd-example-cd card border-0">
             <div class="card-body">
-                <h5>标题和段落</h5>
+                <div class="bg-light lead rounded-top  p-2">标题和段落</div>
                 <dl>
                     <dt>Description lists</dt>
                     <dd>A description list is perfect for defining terms.</dd>
@@ -79,27 +79,27 @@
         </div>
 
 
-        <div class="wbd-example-cd card">
+        <div class="wbd-example-cd card border-0">
             <div class="card-body">
-                <h5>地址</h5>
+                <div class="bg-light lead rounded-top  p-2">地址</div>
                 <address>
-                    <strong>Twitter, Inc.</strong><br>
-                    1355 Market St, Suite 900<br>
-                    San Francisco, CA 94103<br>
+                    <strong>Twitter, Inc.</strong><br/>
+                    1355 Market St, Suite 900<br/>
+                    San Francisco, CA 94103<br/>
                     <abbr title="Phone">P:</abbr> (123) 456-7890
                 </address>
 
                 <address>
-                    <strong>Full Name</strong><br>
+                    <strong>Full Name</strong><br/>
                     <a href="mailto:first.last@example.com">first.last@example.com</a>
                 </address>
             </div>
         </div>
 
 
-        <div class="wbd-example-cd card">
+        <div class="wbd-example-cd card border-0">
             <div class="card-body">
-                <h5>引用文字</h5>
+                <div class="bg-light lead rounded-top  p-2">引用文字</div>
                 <blockquote class="blockquote">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
                     <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
@@ -108,18 +108,18 @@
         </div>
 
 
-        <div class="wbd-example-cd card">
+        <div class="wbd-example-cd card border-0">
             <div class="card-body">
-                <h5>段落突出(.lead)</h5>
+                <div class="bg-light lead rounded-top  p-2">段落突出(.lead)</div>
                 <p class="lead">
                     Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
                 </p>
             </div>
         </div>
 
-        <div class="wbd-example-cd card">
+        <div class="wbd-example-cd card border-0">
             <div class="card-body">
-                <h5>行内修饰//TODO:need check</h5>
+                <div class="bg-light lead rounded-top  p-2">行内修饰//TODO:need check</div>
                 <p>You can use the mark tag to <mark>highlight</mark> text.</p>
                 <p><del>This line of text is meant to be treated as deleted text.</del></p>
                 <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
@@ -131,9 +131,9 @@
             </div>
         </div>
 
-        <div class="wbd-example-cd card">
+        <div class="wbd-example-cd card border-0">
             <div class="card-body">
-                <h5>声明出处</h5>
+                <div class="bg-light lead rounded-top  p-2">声明出处</div>
                 <blockquote class="blockquote">
                     <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
                     <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
@@ -141,73 +141,65 @@
             </div>
         </div>
 
-        <div class="wbd-example-cd card">
+        <div class="wbd-example-cd card border-0">
             <div class="card-body">
-                <h5>居中对齐</h5>
+                <div class="bg-light lead rounded-top  p-2">居中对齐</div>
                 <blockquote class="blockquote text-center">
                     <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
                     <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
                 </blockquote>
             </div>
         </div>
-
-        <div class="wbd-example-cd card">
+        <div class="wbd-example-cd card border-0">
             <div class="card-body">
-                <h5>列表对齐</h5>
+                <div class="bg-light lead rounded-top  p-2">列表对齐</div>
                 <dl class="row">
-                    <dt class="col-sm-3">Description lists</dt>
-                    <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
+                    <dt class="col-4">Description lists</dt>
+                    <dd class="col-8">A description list is perfect for defining terms.</dd>
 
-                    <dt class="col-sm-3">Euismod</dt>
-                    <dd class="col-sm-9">
+                    <dt class="col-4">Euismod</dt>
+                    <dd class="col-8">
                         <p>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</p>
                         <p>Donec id elit non mi porta gravida at eget metus.</p>
                     </dd>
 
-                    <dt class="col-sm-3">Malesuada porta</dt>
-                    <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
 
-                    <dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
-                    <dd class="col-sm-9">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+                    <dt class="col-4">Malesuada porta</dt>
+                    <dd class="col-8">Etiam porta sem malesuada magna mollis euismod.</dd>
 
-                    <dt class="col-sm-3">Nesting</dt>
-                    <dd class="col-sm-9">
+                    <dt class="col-4 text-truncate">Truncated term is truncated</dt>
+                    <dd class="col-8">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+
+                    <dt class="col-4">Nesting</dt>
+                    <dd class="col-8">
                         <dl class="row">
-                            <dt class="col-sm-4">Nested definition list</dt>
-                            <dd class="col-sm-8">Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.</dd>
+                            <dt class="col-4">Nested definition list</dt>
+                            <dd class="col-8">Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.</dd>
                         </dl>
                     </dd>
+
                 </dl>
 
             </div>
         </div>
 
-        <div class="wbd-example-cd card">
+        <div class="wbd-example-cd card border-0">
             <div class="card-body">
-                <h5>标题和段落</h5>
-
+                <div class="bg-light lead rounded-top  p-2">页脚</div>
+                <blockquote class="blockquote text-center">
+                    <p class="mb-0">电影节非官方影迷俱乐部</p>
+                    <footer>Copyright © 2008-2019 <cite title="Source Title">movie.f</cite></footer>
+                </blockquote>
             </div>
         </div>
 
-        <div class="wbd-example-cd card">
-            <div class="card-body">
-                <h5>标题和段落</h5>
-
-            </div>
-        </div>
-
-        <div class="wbd-example-cd card">
-            <div class="card-body">
-                <h5>标题和段落</h5>
-
-            </div>
-        </div>
-
-        <div class="wbd-example-cd card">
-            <div class="card-body">
-                <h5>标题和段落</h5>
-
-            </div>
+        <div class="wbd-example-cd">
+            <p>
+                <br/>
+                <navigator url="/pages/web?url=https://getbootstrap.com/docs/4.3/content/typography/"  >
+                    <strong> 详细用法</strong>
+                </navigator>
+            </p>
         </div>
 
     </div>

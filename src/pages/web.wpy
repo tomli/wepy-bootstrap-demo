@@ -1,0 +1,59 @@
+<style lang="less">
+    /*.avatar {*/
+    /*width: 100px;*/
+    /*width: 100px;*/
+    /*border-radius: 50%;*/
+    /*}*/
+</style>
+<template>
+    <view class="container">
+        <web-view src="{{url}}" @message="postMessage"></web-view>
+    </view>
+
+</template>
+
+<script>
+  import wepy from 'wepy'
+
+  export default class Web extends wepy.page {
+    data = {
+      url: null,
+      path: null,
+      title: null
+    }
+
+    methods = {
+      tap () {
+        console.log('do noting from1 ' + this.$name)
+      },
+      postMessage(e) {
+        console.log(e)
+      }
+    }
+
+    onLoad(res) {
+      console.log(res)
+      this.url = res.url
+/*
+      this.url = config.AUTH_URL
+      if (res.path) {
+        const decodePath = decodeURIComponent(res.path)
+        this.path = decodePath
+        this.url = config.AUTH_URL + '#/' + decodePath
+      }
+      this.title = res.title
+      if (res.title) {
+        this.config.navigationBarTitleText = res.title
+      }
+      this.id = res.id
+      */
+    }
+    onShareAppMessage(options) {
+      console.log(options)
+      return {
+        title: 'Bootstrap in WePY',
+        path: '/pages/web?path=' + encodeURIComponent(this.path)
+      }
+    }
+  }
+</script>

@@ -5,11 +5,13 @@
 </style>
 <template>
   <div class="container">
-    <div class="jumbotron">
-        <h1 ><strong>Hello, world!</strong></h1>
+    <div class="jumbotron bg-white mb-n3">
+        <h2 ><strong>Bootstrap Demo</strong></h2>
       <p class="lead">这是一个使用Bootstrap开发小程序的小样，希望能够帮助到习惯BS开发模式的小伙伴们.</p>
       <hr class="my-4" />
-      <p>下面是一些适用于小程序的bootsrap组件展示.</p>
+      <p>下面是一些适用于小程序的bootsrap组件展示, 详细用法请下载源代码 <br/>
+          <small>https://github.com/tomli/wepy-bootstrap-demo.git</small>
+      </p>
       <!--<a class="btn btn-success btn-lg" href="#" role="button">Learn more</a>-->
     </div>
   </div>
@@ -17,9 +19,9 @@
       <div class="accordion" id="accordionExample">
           <repeat for="{{list}}" key="id">
               <div class="card">
-                  <div class="card-header" id="headingOne">
+                  <div class="card-header bg-primary text-white"   @tap="toggle({{item.id}})">
                       <h2 class="mb-0">
-                          <div class="btn btn-link" type="button"  @tap="toggle({{item.id}})">
+                          <div class="btn" type="button" >
                               {{item.name}}
                           </div>
                       </h2>
@@ -27,12 +29,14 @@
 
                   <div id="collapseOne" class="collapse {{item.open ? 'show' : ''}}">
                       <div class="card-body">
-                          <navigator url="./{{page}}" class="_ul list-group list-group-flush" wx:for="{{item.pages}}" wx:for-item="page" wx:key="*this">
-                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                                {{page}}
-                                <span class="arrow-most-right"></span>
-                            </li>
-                          </navigator>
+                          <ul class="list-group list-group-flush" >
+                              <navigator url="./{{page}}"  wx:for="{{item.pages}}" wx:for-item="page" wx:key="*this">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                        {{page}}
+                                        <span class="arrow-most-right"></span>
+                                    </li>
+                              </navigator>
+                          </ul>
                       </div>
                   </div>
               </div>
@@ -60,33 +64,39 @@
       list: [
         {
           id: 'form',
-          name: '表单',
+          name: '表单相关',
           open: false,
-          pages: ['button', 'list', 'input', 'slider', 'uploader']
+          pages: ['button', 'input', 'slider', 'uploader']
         },
         {
-          id: 'widget',
-          name: '基础组件',
+          id: 'layout',
+          name: '布局与容器',
           open: false,
-          pages: ['article', 'badge', 'flex', 'footer', 'gallery', 'grid', 'icons', 'loadmore', 'panel', 'preview', 'progress']
+          pages: ['flex', 'grid', 'sizing', 'spacing', 'card', 'jumbotron']
+        },
+        {
+          id: 'content',
+          name: '内容相关',
+          open: false,
+          pages: ['article', 'images', 'media', 'text', 'badge', 'list', 'icons', 'shadow', 'spinner', 'progress']
         },
         {
           id: 'feedback',
-          name: '操作反馈',
+          name: '操作反馈(小程序原生)',
           open: false,
-          pages: ['actionsheet', 'dialog', 'msg', 'picker', 'toast']
+          pages: ['actionsheet', 'dialog', 'alert', 'picker', 'toast']
         },
         {
           id: 'nav',
           name: '导航相关',
           open: false,
-          pages: ['navbar', 'tabbar']
+          pages: ['navbar', 'tabbar', 'searchbar', 'pagination', 'breadcrumb']
         },
         {
-          id: 'search',
-          name: '搜索相关',
+          id: 'component',
+          name: '动态组件',
           open: false,
-          pages: ['searchbar']
+          pages: ['accordion', 'popover', 'scrollspy']
         }
       ]
     }

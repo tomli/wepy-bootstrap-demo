@@ -1,9 +1,12 @@
 # wepy-bootstrap-demo
 在wepy开发环境中使用bootstrap来开发微信小程序的小样，包含一些bookstrap官方组件的展示
 
-已经有适合微信开发的WeUI和无数花里胡梢的第三方小程序组件库，为什么还要使用bootstrap？
-1. bootstrap有精简，美观， 一致的样式框架。
-2. 对许多熟悉bootstrap开发模式的前端小伙伴来说， 用bootstrap写页面可以大大提高开发效率。特别是当你有一个同样熟悉bootstrap的designer作搭档的时候
+
+_已经有适合微信开发的WeUI和无数花里胡梢的第三方小程序组件库，为什么还要使用bootstrap？
+1. Bootstrap有精简，美观，一致的样式框架，即使是审美水平欠佳的码农也可以作出美观大方的界面。
+2. 对许多熟悉Bootstrap开发模式的前端小伙伴来说， bootstrap的强大和灵活可以大大提高开发效率。特别是当你有一个同样熟悉bootstrap的designer作搭档的时候。
+3. Bootstrap4有极其好用的定制化功能，改几个参数就能给项目作出不同风格的Theme。_
+
 
 **安装及使用**
 
@@ -84,6 +87,7 @@
          @import "node_modules/bootstrap/scss/media";
          @import "node_modules/bootstrap/scss/close";
          @import "node_modules/bootstrap/scss/nav";
+         @import "node_modules/bootstrap/scss/breadcrumb";
          @import "node_modules/bootstrap/scss/badge";
          @import "node_modules/bootstrap/scss/forms";
          @import "node_modules/bootstrap/scss/jumbotron";

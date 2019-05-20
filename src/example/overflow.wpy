@@ -1,0 +1,61 @@
+<style type="less">
+
+</style>
+<template>
+
+    <div class="container">
+        <div class="fixed-top">
+        <div class="wbd-example-cd card border-0">
+            <div class="card-body">
+                <div class="bg-light lead rounded-top  p-2">滚动溢出部分</div>
+
+                <div class="overflow-hidden">
+                    《罗生门》本身是芥川龙之介根据《今昔物语集》卷二十九第二十三话"具妻行丹波国男 于大江山被缚语"写的一个短篇故事。讲的是在一个战争年代，一个仆役被主人解雇，只好拿起刀来，决心当强盗。但是他力弱胆小，并且总是有些有愧于心。
+
+                    一天，他到罗生门躲雨，那里到处都是死 尸，他想找到一些财物。结果他竟然发现有一个白发的老妇人正在从一个年轻女子的死尸头上拔头发。他冲上去说你这个没人性的，竟然对死尸也不放过。老太婆 说她只是想用这些头发做个假发卖钱谋生罢了。"而且，你以为她生前是个善人吗?她可是把蛇晒干了当成鳝鱼来卖。
+
+                    ""我这么做完全是为了生存啊!"于是， 仆役大悟，既然是为了生存，还有什么不可以做的呢?于是，他就抢了老太婆的衣服走了。
+
+                    1950年黑泽明导演根据芥川龙之介另一部小说《筱竹丛中》改编而成的电影《罗生门》
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="wbd-example-cd card border-0">
+            <div class="card-body">
+                <div class="bg-light lead rounded-top  p-2">隐藏溢出部分</div>
+                <div class="overflow-auto">
+                    《罗生门》本身是芥川龙之介根据《今昔物语集》卷二十九第二十三话"具妻行丹波国男 于大江山被缚语"写的一个短篇故事。讲的是在一个战争年代，一个仆役被主人解雇，只好拿起刀来，决心当强盗。但是他力弱胆小，并且总是有些有愧于心。
+
+                    一天，他到罗生门躲雨，那里到处都是死 尸，他想找到一些财物。结果他竟然发现有一个白发的老妇人正在从一个年轻女子的死尸头上拔头发。他冲上去说你这个没人性的，竟然对死尸也不放过。老太婆 说她只是想用这些头发做个假发卖钱谋生罢了。"而且，你以为她生前是个善人吗?她可是把蛇晒干了当成鳝鱼来卖。
+
+                    ""我这么做完全是为了生存啊!"于是， 仆役大悟，既然是为了生存，还有什么不可以做的呢?于是，他就抢了老太婆的衣服走了。
+
+                    1950年黑泽明导演根据芥川龙之介另一部小说《筱竹丛中》改编而成的电影《罗生门》
+                </div>
+
+            </div>
+        </div>
+<!--
+        <div class="wbd-example-cd">
+            <p>
+                <br/>
+                <navigator url="/pages/web?url=https://getbootstrap.com/docs/4.3/content/typography/"  >
+                    <strong> 详细用法</strong>
+                </navigator>
+            </p>
+        </div>
+        -->
+
+    </div>
+
+</template>
+
+<script>
+    import wepy from 'wepy'
+
+    export default class Overflow extends wepy.page {
+
+    }
+</script>
