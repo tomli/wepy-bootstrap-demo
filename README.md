@@ -25,45 +25,34 @@ _已经有适合微信开发的WeUI和无数花里胡梢的第三方小程序组
 
 **如何在已有wepy项目中使用bootstrap**
 
+
 1. 在project.config.json 的 dependencies部分加入以下包：
 
             "bootstrap": "4.3.1"
 
 3. 在project.config.json 的 devDependencies部分加入以下包：
           
-            "wepy-compiler-scss2": "^1.0.3",
-            "postcss-bootstrap-wxss": "^1.0.0",
-            "wepy-plugin-htmltag": "^1.0.0"
+        "wepy-plugin-htmltag": "^1.0.0"
+        "wepy-plugin-bootstrap": "^1.0.5",
             
 4. 安装依赖
 
             npm install           
 
-5. 在wepy.config.js 的 compilers部分加入以下代码, 使wepy在导入bootstrap的css代码时转换为小程序支持的形式：                                                            
-     ``` 
-    scss2: {
-      postcss: {
-        plugins: [
-          require('postcss-mpvue-wxss')({
-            remToRpx: 35,  // 这个参数可以用来调整转换rem单位到rpx单位时使用的比例
-            replaceTagSelector: Object.assign(require('postcss-mpvue-wxss/lib/wxmlTagMap'), {
-              'button': 'button',
-              '*': 'view' // 将覆盖前面的 * 选择器被清理规则
-            })
-          }),
-          require('postcss-bootstrap-wxss')(),
-        ]
-      }
-    }
-              
-              
-6. 在wepy.config.js 的plugins部分加入以下代码, 使wepy自动将所有html标签转化为小程序支持的标签，并将标签中的样式选择器按照5的转换方式做相应的修改：
-
-        "htmltag": {
-           filter: /\.(wxml)$/, //文件后缀匹配
+5. 在wepy.config.js 中加入以下代码, 使wepy在导入bootstrap的css代码时转换为小程序支持的形式：  
+                                                          
+     ```     
+      plugins: {
+        'bootstrap': {
+          filter: /(app|index)\.(wxss)$/, // 匹配需转换的css文件
+          remToRpx: 35// 这个参数可以用来调整转换rem单位到rpx单位时使用的比例
+        },
+        'htmltag': {
+          filter: /\.(wxml)$/, // 文件后缀匹配
         }
+      },
 
-7. 在src\styles\scss\目录下创建文件custom.scss, 在文件中bootstrap导入bootstrap的样式定义(由于小程序不支持所有的css标记， 所以只能部分导入)。如果需要使用自定义样式，可以在这个文件里定义变量来覆盖bootstrap默认的样式，自定义样式的详细方法请参考 https://getbootstrap.com/docs/4.3/getting-started/theming/
+6. 在src\styles\scss\目录下创建文件custom.scss, 在文件中bootstrap导入bootstrap的样式定义(由于小程序不支持所有的css标记， 所以只能部分导入)。如果需要使用自定义样式，可以在这个文件里定义变量来覆盖bootstrap默认的样式，自定义样式的详细方法请参考 https://getbootstrap.com/docs/4.3/getting-started/theming/
 
      ``` 
      // Required
@@ -109,7 +98,7 @@ _已经有适合微信开发的WeUI和无数花里胡梢的第三方小程序组
 
 7. 在app.wpy文件中加入以下代码，让wepy可以将上一步中加入的scss编译成css
 
-        <style  lang='scss2' src="./styles/scss/custom.scss">
+        <style  lang='scss' src="./styles/scss/custom.scss">
         </style>
 
 8. 开启wepy实时编译, 在dist目录下生成的app.wxss文件可以看到生成的代码中包含已转换的bootstrap代码

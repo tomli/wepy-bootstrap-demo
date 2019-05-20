@@ -60,7 +60,7 @@ module.exports = {
   },
   plugins: {
     'bootstrap': {
-      filter: /app\.(wxss)$/, // 匹配需转换的css文件
+      filter: /(app|index)\.(wxss)$/, // 匹配需转换的css文件
       remToRpx: 35// 这个参数可以用来调整转换rem单位到rpx单位时使用的比例
     },
     'htmltag': {
