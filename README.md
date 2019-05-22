@@ -27,6 +27,10 @@ _已经有适合微信开发的WeUI和无数花里胡梢的第三方小程序组
 
    下载 [dist/app.wxss](URL 'https://github.com/tomli/wepy-bootstrap-demo/tree/master/dist/app.wxss') 文件后，将里面的代码全部copy到你的app.wxss文件中， 或将文件名改掉后在你的app.wxss文件中import进来.
 
+
+**扫码体验**
+ ![微信搜一搜Bootstrap](URL 'https://mp.weixin.qq.com/wxopen/qrcode?action=show&type=2&fakeid=3834109563&token=1665403406') 
+
 **如何在已有wepy项目中使用bootstrap**
 
 
