@@ -24,20 +24,14 @@ _已经有适合微信开发的WeUI和无数花里胡梢的第三方小程序组
     
             wepy build --watch           
 
-
-
-
-**如何在已有wepy项目中使用bootstrap**
-
-
   
-  [在已有wepy项目中使用bootstrap](https://github.com/tomli/wepy-bootstrap-demo/blob/master/howtointro.md)
+  ****[如何在已有wepy项目中使用bootstrap](https://github.com/tomli/wepy-bootstrap-demo/blob/master/howtointro.md)****
   
   
   
 **如何在已有小程序项目中直接使用bootstrap**
 
-   下载 [dist/app.wxss](URL 'https://github.com/tomli/wepy-bootstrap-demo/tree/master/dist/app.wxss') 文件后，将里面的代码全部copy到你的app.wxss文件中， 或将文件名改掉后在你的app.wxss文件中import进来.
+   下载 [dist/app.wxss](URL 'https://github.com/tomli/wepy-bootstrap-demo/dist/app.wxss') 文件后，将里面的代码全部copy到你的app.wxss文件中， 或将文件名改掉后在你的app.wxss文件中import进来.
   
   
   
