@@ -29,7 +29,7 @@ _已经有适合微信开发的WeUI和无数花里胡梢的第三方小程序组
 
 
 **扫码体验**
- ![微信搜一搜Bootstrap](URL 'https://mp.weixin.qq.com/wxopen/qrcode?action=show&type=2&fakeid=3834109563&token=1665403406') 
+  ![微信搜一搜Bootstrap](https://mp.weixin.qq.com/wxopen/qrcode?action=show&type=2&fakeid=3834109563&token=1665403406 "微信搜一搜Bootstrap") 
 
 **如何在已有wepy项目中使用bootstrap**
 
