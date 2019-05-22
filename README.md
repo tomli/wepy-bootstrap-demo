@@ -27,7 +27,7 @@ _已经有适合微信开发的WeUI和无数花里胡梢的第三方小程序组
 
    下载 [dist/app.wxss](URL 'https://github.com/tomli/wepy-bootstrap-demo/tree/master/dist/app.wxss') 文件后，将里面的代码全部copy到你的app.wxss文件中， 或将文件名改掉后在你的app.wxss文件中import进来.
 
-![GitHub](https://avatars2.githubusercontent.com/u/3265208?v=3&s=100 "GitHub,Social Coding")
+![GitHub](https://mp.weixin.qq.com/wxopen/qrcode?action=show&type=2&fakeid=3834109563&token=1665403406 "GitHub,Social Coding")
 
 **扫码体验**
 
