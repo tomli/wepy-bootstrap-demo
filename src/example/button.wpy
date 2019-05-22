@@ -75,7 +75,7 @@
 
         <div class="wbd-example-cd card border-0">
             <div class="card-body">
-                <div class="bg-light lead rounded-top  p-2">Active state //TODO:need check</div>
+                <div class="bg-light lead rounded-top  p-2">Active stat</div>
                 <div class="wbd-example-div d-flex justify-content-between flex-wrap">
                     <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Primary link</a>
                     <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Link</a>
@@ -86,7 +86,7 @@
 
         <div class="wbd-example-cd card border-0">
             <div class="card-body">
-                <div class="bg-light lead rounded-top  p-2">Disabled state //TODO:need check</div>
+                <div class="bg-light lead rounded-top  p-2">Disabled state</div>
                 <div class="wbd-example-div d-flex justify-content-between flex-wrap">
                     <button type="button" class="btn btn-lg btn-primary" disabled>Primary button</button>
                     <button type="button" class="btn btn-secondary btn-lg" disabled>Button</button>
@@ -96,8 +96,10 @@
 
         <div class="wbd-example-cd card border-0">
             <div class="card-body">
-                <div class="bg-light lead rounded-top  p-2">Checkbox and radio buttons //TODO:need check</div>
-                <div class="wbd-example-div d-flex justify-content-between flex-wrap">
+                <div class="bg-light lead rounded-top  p-2">Checkbox and radio buttons </div>
+
+                待完成。。。
+     <!--           <div class="wbd-example-div d-flex justify-content-between flex-wrap">
                     <div class="btn-group-toggle" data-toggle="buttons">
                         <label class="btn btn-secondary active">
                             <checkbox type="checkbox" checked="true" autocomplete="off" /> Checked
@@ -116,7 +118,7 @@
                             <radio type="radio" name="options" id="option3" autocomplete="off" /> Radio
                         </label>
                     </div>
-                </div>
+                </div>-->
             </div>
         </div>
 

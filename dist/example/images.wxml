@@ -1,0 +1,43 @@
+
+
+    <view class="_div container">
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                待完成。。。
+            </view>
+        </view>
+<!--
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead rounded-top  p-2">与容器同宽</view>
+                <image src="https://cdn4.buysellads.net/uu/1/41334/1550855391-cc_dark.png" class="_img img-fluid" alt="Responsive image"></image>
+            </view>
+        </view>
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead rounded-top  p-2">标题和段落</view>
+                <image src="https://cdn4.buysellads.net/uu/1/41334/1550855391-cc_dark.png" alt="..." class="_img img-thumbnail"></image>
+            </view>
+        </view>
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead rounded-top  p-2">标题和段落</view>
+
+            </view>
+        </view>
+
+        <view class="_div wbd-example-cd">
+            <view class="_p">
+                <text>\n</text>
+                <navigator url="/pages/web?url=https://getbootstrap.com/docs/4.3/content/typography/"  >
+                    <text class="_strong"> 详细用法</text>
+                </navigator>
+            </view>
+        </view>
+-->
+
+    </view>

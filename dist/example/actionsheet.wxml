@@ -1,0 +1,9 @@
+
+
+    <view class="_div wbd-example-cd card border-0">
+        <view class="_div card-body">
+            <view class="_div bg-light rounded-top  p-2">弹出式菜单，采用小程序原生的actionsheet</view>
+            <button class="btn btn-block btn-success" type="button" bindtap="open">ActionSheet</button>
+
+        </view>
+    </view>

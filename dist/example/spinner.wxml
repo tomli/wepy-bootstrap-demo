@@ -1,0 +1,113 @@
+
+
+    <view class="_div container">
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead rounded-top  p-2">彩色边框</view>
+                <view class="_div spinner-border text-primary" role="status">
+                    <text class="_span sr-only">Loading...</text>
+                </view>
+                <view class="_div spinner-border text-secondary" role="status">
+                    <text class="_span sr-only">Loading...</text>
+                </view>
+                <view class="_div spinner-border text-success" role="status">
+                    <text class="_span sr-only">Loading...</text>
+                </view>
+                <view class="_div spinner-border text-danger" role="status">
+                    <text class="_span sr-only">Loading...</text>
+                </view>
+                <view class="_div spinner-border text-warning" role="status">
+                    <text class="_span sr-only">Loading...</text>
+                </view>
+                <view class="_div spinner-border text-info" role="status">
+                    <text class="_span sr-only">Loading...</text>
+                </view>
+                <view class="_div spinner-border text-light" role="status">
+                    <text class="_span sr-only">Loading...</text>
+                </view>
+                <view class="_div spinner-border text-dark" role="status">
+                    <text class="_span sr-only">Loading...</text>
+                </view>
+
+            </view>
+        </view>
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead rounded-top  p-2">扩散</view>
+                <view class="_div spinner-grow text-primary" role="status">
+                    <text class="_span sr-only">Loading...</text>
+                </view>
+                <view class="_div spinner-grow text-secondary" role="status">
+                    <text class="_span sr-only">Loading...</text>
+                </view>
+                <view class="_div spinner-grow text-success" role="status">
+                    <text class="_span sr-only">Loading...</text>
+                </view>
+                <view class="_div spinner-grow text-danger" role="status">
+                    <text class="_span sr-only">Loading...</text>
+                </view>
+                <view class="_div spinner-grow text-warning" role="status">
+                    <text class="_span sr-only">Loading...</text>
+                </view>
+                <view class="_div spinner-grow text-info" role="status">
+                    <text class="_span sr-only">Loading...</text>
+                </view>
+                <view class="_div spinner-grow text-light" role="status">
+                    <text class="_span sr-only">Loading...</text>
+                </view>
+                <view class="_div spinner-grow text-dark" role="status">
+                    <text class="_span sr-only">Loading...</text>
+                </view>
+
+            </view>
+        </view>
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead rounded-top  p-2">不同大小</view>
+                <view class="_div spinner-border spinner-border-sm" role="status">
+                    <text class="_span sr-only">Loading...</text>
+                </view>
+                <view class="_div spinner-grow spinner-grow-sm" role="status">
+                    <text class="_span sr-only">Loading...</text>
+                </view>
+                <view class="_div spinner-border" style="width: 3rem; height: 3rem;" role="status">
+                    <text class="_span sr-only">Loading...</text>
+                </view>
+                <view class="_div spinner-grow" style="width: 3rem; height: 3rem;" role="status">
+                    <text class="_span sr-only">Loading...</text>
+                </view>
+            </view>
+        </view>
+
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead rounded-top  p-2">在按钮中使用</view>
+                <button class="btn btn-primary mx-2" type="button" disabled>
+                    <text class="_span spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></text>
+                    <text class="_span sr-only">Loading...</text>
+                </button>
+                <button class="btn btn-primary" type="button" disabled>
+                    <text class="_span spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></text>
+                    Loading...
+                </button>
+
+            </view>
+        </view>
+
+
+<!--
+        <view class="_div wbd-example-cd">
+            <view class="_p">
+                <text>\n</text>
+                <navigator url="/pages/web?url=https://getbootstrap.com/docs/4.3/content/typography/"  >
+                    <text class="_strong"> 详细用法</text>
+                </navigator>
+            </view>
+        </view>
+        -->
+
+    </view>

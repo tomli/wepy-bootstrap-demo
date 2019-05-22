@@ -8,7 +8,7 @@
 
         <div class="wbd-example-cd card border-0">
             <div class="card-body">
-                <div class="bg-light lead rounded-top  p-2">Accordion</div>
+                <div class="text-center lead rounded-top  p-2">Accordion</div>
 
                 <div class="accordion" id="accordionExample">
                     <repeat for="{{list}}" key="id">

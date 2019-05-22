@@ -1,0 +1,39 @@
+
+
+    <view class="_div container">
+
+        <view class="_nav" aria-label="breadcrumb">
+            <view class="_ol breadcrumb">
+                <view class="_li breadcrumb-item active" aria-current="page">Home</view>
+            </view>
+        </view>
+
+        <view class="_nav" aria-label="breadcrumb">
+            <view class="_ol breadcrumb">
+                <view class="_li breadcrumb-item"><text class="_a" href="#">Home</text></view>
+                <view class="_li breadcrumb-item active" aria-current="page">Library</view>
+            </view>
+        </view>
+
+        <view class="_nav" aria-label="breadcrumb">
+            <view class="_ol breadcrumb">
+                <view class="_li breadcrumb-item"><text class="_a" href="#">Home</text></view>
+                <view class="_li breadcrumb-item"><text class="_a" href="#">Library</text></view>
+                <view class="_li breadcrumb-item active" aria-current="page">Data</view>
+            </view>
+        </view>
+
+        <!--
+
+                <view class="_div wbd-example-cd">
+                    <view class="_p">
+                        <text>\n</text>
+                        <navigator url="/pages/web?url=https://getbootstrap.com/docs/4.3/components/breadcrumb/"  >
+                            <text class="_strong"> 详细用法</text>
+                        </navigator>
+                    </view>
+                </view>
+        -->
+
+
+    </view>

@@ -28,21 +28,26 @@
             <div class="card-body">
                 <div class="bg-light lead rounded-top  p-2">无序列表</div>
                 <ul>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Consectetur adipiscing elit</li>
-                    <li>Integer molestie lorem at massa</li>
-                    <li>Facilisis in pretium nisl aliquet</li>
-                    <li>Nulla volutpat aliquam velit
+                    <li>两生花</li>
+                    <li>机遇之歌</li>
+                    <li>短暂的工作天 </li>
+                    <li>无休无止</li>
+                    <li>十诫
                         <ul>
-                            <li>Phasellus iaculis neque</li>
-                            <li>Purus sodales ultricies</li>
-                            <li>Vestibulum laoreet porttitor sem</li>
-                            <li>Ac tristique libero volutpat at</li>
+                            <li>唯孤真神</li>
+                            <li>勿妄称主名</li>
+                            <li>安息日守圣</li>
+                            <li>孝敬父母</li>
+                            <li>勿杀人</li>
+                            <li>勿沉湎于情欲</li>
+                            <li>勿偷盗</li>
+                            <li>勿假见证陷害人</li>
+                            <li>勿觊觎人妻</li>
+                            <li>不可贪恋别人的财物</li>
                         </ul>
                     </li>
-                    <li>Faucibus porta lacus fringilla vel</li>
-                    <li>Aenean sit amet erat nunc</li>
-                    <li>Eget porttitor lorem</li>
+                    <li>守夜者的观点</li>
+                    <li>生命的烙印</li>
                 </ul>
             </div>
         </div>
@@ -51,14 +56,18 @@
             <div class="card-body">
                 <div class="bg-light lead rounded-top  p-2">有序列表</div>
                     <ol>
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>Consectetur adipiscing elit</li>
-                        <li>Integer molestie lorem at massa</li>
-                        <li>Facilisis in pretium nisl aliquet</li>
-                        <li>Nulla volutpat aliquam velit</li>
-                        <li>Faucibus porta lacus fringilla vel</li>
-                        <li>Aenean sit amet erat nunc</li>
-                        <li>Eget porttitor lorem</li>
+                        <li>Airbag</li>
+                        <li>Paranoid Android</li>
+                        <li>Subterranean Homesick Alien</li>
+                        <li>Exit Music (For a Film)</li>
+                        <li>Let Down</li>
+                        <li>Karma Police</li>
+                        <li>Fitter Happier</li>
+                        <li>Electioneering</li>
+                        <li>Climbing up the Walls</li>
+                        <li>No Surprises</li>
+                        <li>Lucky</li>
+                        <li>The Tourist</li>
                     </ol>
             </div>
         </div>
@@ -67,13 +76,13 @@
             <div class="card-body">
                 <div class="bg-light lead rounded-top  p-2">标题和段落</div>
                 <dl>
-                    <dt>Description lists</dt>
-                    <dd>A description list is perfect for defining terms.</dd>
-                    <dt>Euismod</dt>
-                    <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem.</dd>
-                    <dd>Donec id elit non mi porta gravida at eget metus.</dd>
-                    <dt>Malesuada porta</dt>
-                    <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+                    <dt>古希腊哲学</dt>
+                    <dd>古希腊哲学是指公元前6～公元5世纪出现在希腊本土以及地中海沿岸，特别是小亚细亚西部、意大利南部的哲学学说。又称古希腊罗马哲学，是西方哲学最初发生和发展的阶段。代表人物是苏格拉底、柏拉图和亚里士多德。</dd>
+                    <dt>文艺复兴时期哲学</dt>
+                    <dd>由中世纪到近代的过渡期，即15—16世纪的所谓“文艺复兴”时期，是一个自我觉醒的时代。人们的思想从空幻的彼岸世界回到了现实的此岸，从清净的僧院走到了纷扰的尘世，从而发展了自然，也发现了人自身。</dd>
+                    <dd>追求科学知识，要求个性解放，反对宗教桎梏，这是当时人们的一般精神面貌。</dd>
+                    <dt>德国古典哲学</dt>
+                    <dd>18世纪末至19世纪上半叶的德国哲学。创始人为康德，黑格尔为集大成者，费尔巴哈为第一个走出德国古典哲学的人，而不是最后的代表。在这一过程中，最为重要的哲学家有康德、费希特、谢林、黑格尔等人。</dd>
                 </dl>
             </div>
         </div>
@@ -99,10 +108,10 @@
 
         <div class="wbd-example-cd card border-0">
             <div class="card-body">
-                <div class="bg-light lead rounded-top  p-2">引用文字</div>
+                <div class="bg-light lead rounded-top  p-2">突出引用(.blockquote)</div>
                 <blockquote class="blockquote">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                    <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                    <p>当粪也变得值钱，穷人将没有肛门。</p>
+                    <footer> -- <cite title="Source Title">戈达尔《芳名卡门》</cite></footer>
                 </blockquote>
             </div>
         </div>
@@ -112,7 +121,7 @@
             <div class="card-body">
                 <div class="bg-light lead rounded-top  p-2">段落突出(.lead)</div>
                 <p class="lead">
-                    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+                    所以活在中国就有这样可爱：脏与乱与忧伤之中，到处会发现珍贵的东西，使人高兴一上午，一天，一生一世。
                 </p>
             </div>
         </div>
@@ -120,14 +129,11 @@
         <div class="wbd-example-cd card border-0">
             <div class="card-body">
                 <div class="bg-light lead rounded-top  p-2">行内修饰//TODO:need check</div>
-                <p>You can use the mark tag to <mark>highlight</mark> text.</p>
-                <p><del>This line of text is meant to be treated as deleted text.</del></p>
-                <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
-                <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
-                <p><u>This line of text will render as underlined</u></p>
-                <p><small>This line of text is meant to be treated as fine print.</small></p>
-                <p><strong>This line rendered as bold text.</strong></p>
-                <p><em>This line rendered as italicized text.</em></p>
+                <p> 政治是<mark>平衡</mark>之术 .</p>
+                <p><small>有一样东西不会变，那就是人们渴望与他人沟通的欲望。</small></p>
+                <p><strong>流水落花春去也，天上人间。</strong></p>
+                <p><u>即使再新鲜的东西也会过期。</u></p>
+                <p class="font-italic">男女之间的阶级。</p>
             </div>
         </div>
 
@@ -135,8 +141,13 @@
             <div class="card-body">
                 <div class="bg-light lead rounded-top  p-2">声明出处</div>
                 <blockquote class="blockquote">
-                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                    <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+
+                    <p class="mb-0"> 好，你让我死，我就死吧。
+                    </p>
+                    <p class="mb-0">
+                        这时，云天明想起了卡夫卡的一篇小说，里面的主人公与父亲发生了口角，父亲随口骂道“你去死吧”，儿子立刻应声说“好，我去死”，就像说“好，我去倒垃圾”或“好，我去关门”一样轻快，然后儿子跑出家门，穿过马路，跑上一座大桥，跳下去死了。卡夫卡后来回忆说，他写到那里时有一种“射精般的快·感”。现在云天明理解了卡夫卡，理解了那个戴着礼帽夹着公文包、一百多年前沉默地行走在布拉格昏暗的街道上、与自己一样孤僻的男人。
+                    </p>
+                    <footer class="blockquote-footer text-right"> -- 三体3： <cite title="Source Title">死神永生</cite></footer>
                 </blockquote>
             </div>
         </div>
@@ -145,8 +156,8 @@
             <div class="card-body">
                 <div class="bg-light lead rounded-top  p-2">居中对齐</div>
                 <blockquote class="blockquote text-center">
-                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                    <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                    <p class="mb-0"> 人活在世上，有的活成了面子，有的人活成了里子，都是时事使然。</p>
+                    <footer class="blockquote-footer">取自<cite title="Source Title">电影《一代宗师》</cite></footer>
                 </blockquote>
             </div>
         </div>
@@ -154,27 +165,29 @@
             <div class="card-body">
                 <div class="bg-light lead rounded-top  p-2">列表对齐</div>
                 <dl class="row">
-                    <dt class="col-4">Description lists</dt>
-                    <dd class="col-8">A description list is perfect for defining terms.</dd>
+                    <dt class="col-4">希区柯克</dt>
+                    <dd class="col-8">希区柯克执导的影片最终的目标是——展现出人性最深层的恐怖和最异常的思想</dd>
 
-                    <dt class="col-4">Euismod</dt>
+                    <dt class="col-4">马丁·斯科塞斯</dt>
                     <dd class="col-8">
-                        <p>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</p>
-                        <p>Donec id elit non mi porta gravida at eget metus.</p>
+                        <p>马丁·斯科西斯有“电影社会学家”的美称，他始终以自己独特的视角，以电影冷静地剖析着社会和人类的种种顽症；在好莱坞只崇尚商业结果的环境下，却一直坚持自己的意愿，不遗余力地追求电影语言的探索。</p>
+                        <p>马丁·斯科西斯对于黑帮电影有着特殊的热情。</p>
                     </dd>
 
 
-                    <dt class="col-4">Malesuada porta</dt>
-                    <dd class="col-8">Etiam porta sem malesuada magna mollis euismod.</dd>
+                    <dt class="col-4">克里斯托弗·诺兰</dt>
+                    <dd class="col-8">诺兰的电影风格突出，以“烧脑”著称。</dd>
 
-                    <dt class="col-4 text-truncate">Truncated term is truncated</dt>
-                    <dd class="col-8">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+                    <dt class="col-4 text-truncate">大卫·林奇</dt>
+                    <dd class="col-8">大卫·林奇是一位带有鲜明的后现代主义色彩的导演，是美国非主流电影界的重要代表人物。</dd>
 
-                    <dt class="col-4">Nesting</dt>
+                    <dt class="col-4">科恩兄弟</dt>
                     <dd class="col-8">
                         <dl class="row">
-                            <dt class="col-4">Nested definition list</dt>
-                            <dd class="col-8">Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.</dd>
+                            <dt class="col-4">乔尔·科恩</dt>
+                            <dd class="col-8">1954年11月29日出生于美国明尼苏达州明尼阿波利斯市，编剧、制作人、导演、剪辑、演员</dd>
+                            <dt class="col-4">伊桑·科恩</dt>
+                            <dd class="col-8">凭借《老无所依》获得第80届奥斯卡最佳导演奖、最佳改编剧本奖</dd>
                         </dl>
                     </dd>
 
@@ -192,6 +205,7 @@
                 </blockquote>
             </div>
         </div>
+<!--
 
         <div class="wbd-example-cd">
             <p>
@@ -201,6 +215,7 @@
                 </navigator>
             </p>
         </div>
+-->
 
     </div>
 

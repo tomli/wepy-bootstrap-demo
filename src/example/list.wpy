@@ -10,11 +10,11 @@
             <div class="card-body">
                 <div class="bg-light lead rounded-top  p-2">普通列表</div>
                 <ul class="list-group">
-                    <li class="list-group-item">Cras justo odio</li>
-                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                    <li class="list-group-item">Morbi leo risus</li>
-                    <li class="list-group-item">Porta ac consectetur ac</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
+                    <li class="list-group-item">天地不仁，以万物为刍狗</li>
+                    <li class="list-group-item">人生天地之间，若白驹过隙，忽然而已</li>
+                    <li class="list-group-item">孝子不谀其亲，忠臣不谄其君，臣、子之盛也</li>
+                    <li class="list-group-item">持而盈之，不如其已；揣而锐之，不可长保</li>
+                    <li class="list-group-item">相濡以沫，不如相忘于江湖</li>
                 </ul>
             </div>
         </div>
@@ -23,11 +23,11 @@
             <div class="card-body">
                 <div class="bg-light lead rounded-top  p-2">选中高亮</div>
                 <ul class="list-group">
-                    <li class="list-group-item ">Cras justo odio</li>
-                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                    <li class="list-group-item">Morbi leo risus</li>
-                    <li class="list-group-item active">Porta ac consectetur ac</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
+                    <li class="list-group-item ">一花一世界，一叶一如来</li>
+                    <li class="list-group-item">大悲无泪，大悟无言，大笑无声</li>
+                    <li class="list-group-item">无我相，无人相，无众生相，无寿者相。</li>
+                    <li class="list-group-item active">凡所有相，皆是虚妄。若见诸相非相，则见如来</li>
+                    <li class="list-group-item">一切有为法 , 如梦幻泡影。如露亦如电 , 应作如是观</li>
                 </ul>
             </div>
         </div>
@@ -36,11 +36,11 @@
             <div class="card-body">
                 <div class="bg-light lead rounded-top  p-2">disabled</div>
                 <ul class="list-group">
-                    <li class="list-group-item disabled" aria-disabled="true">Cras justo odio</li>
-                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                    <li class="list-group-item">Morbi leo risus</li>
-                    <li class="list-group-item">Porta ac consectetur ac</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
+                    <li class="list-group-item disabled" aria-disabled="true">娄-里德</li>
+                    <li class="list-group-item">鲍勃·迪伦</li>
+                    <li class="list-group-item">特蕾西·查普曼</li>
+                    <li class="list-group-item">保罗·麦卡特尼</li>
+                    <li class="list-group-item">约翰尼·卡什</li>
                 </ul>
             </div>
         </div>
@@ -50,12 +50,12 @@
                 <div class="bg-light lead rounded-top  p-2">按钮风格</div>
                 <div class="list-group">
                     <button type="button" class="list-group-item list-group-item-action">
-                        Cras justo odio
+                        Perfect Day
                     </button>
-                    <button type="button" class="list-group-item list-group-item-action">Dapibus ac facilisis in</button>
-                    <button type="button" class="list-group-item list-group-item-action">Morbi leo risus</button>
-                    <button type="button" class="list-group-item list-group-item-action active">Porta ac consectetur ac</button>
-                    <button type="button" class="list-group-item list-group-item-action" disabled>Vestibulum at eros</button>
+                    <button type="button" class="list-group-item list-group-item-action">Knocking on heaven's door</button>
+                    <button type="button" class="list-group-item list-group-item-action">Stairway to Heaven</button>
+                    <button type="button" class="list-group-item list-group-item-action active">Hey Jude</button>
+                    <button type="button" class="list-group-item list-group-item-action" disabled>Like a Rolling Stone</button>
                 </div>
             </div>
         </div>
@@ -65,11 +65,11 @@
             <div class="card-body">
                 <div class="bg-light lead rounded-top  p-2">去边框</div>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Cras justo odio</li>
-                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                    <li class="list-group-item">Morbi leo risus</li>
-                    <li class="list-group-item">Porta ac consectetur ac</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
+                    <li class="list-group-item">大师</li>
+                    <li class="list-group-item">血色将至</li>
+                    <li class="list-group-item">猎鹿人</li>
+                    <li class="list-group-item">达拉斯买家俱乐部</li>
+                    <li class="list-group-item">楚门的世界</li>
                 </ul>
             </div>
         </div>
@@ -79,9 +79,9 @@
             <div class="card-body">
                 <div class="bg-light lead rounded-top  p-2">水平排列</div>
                 <ul class="list-group list-group-horizontal">
-                    <li class="list-group-item">Cras justo odio</li>
-                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                    <li class="list-group-item">Morbi leo risus</li>
+                    <li class="list-group-item">民谣</li>
+                    <li class="list-group-item">布鲁斯</li>
+                    <li class="list-group-item">乡村</li>
                 </ul>
             </div>
         </div>
@@ -90,15 +90,15 @@
             <div class="card-body">
                 <div class="bg-light lead rounded-top  p-2">用不同色彩来体现上下文含义</div>
                 <ul class="list-group">
-                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                    <li class="list-group-item list-group-item-primary">A simple primary list group item</li>
-                    <li class="list-group-item list-group-item-secondary">A simple secondary list group item</li>
-                    <li class="list-group-item list-group-item-success">A simple success list group item</li>
-                    <li class="list-group-item list-group-item-danger">A simple danger list group item</li>
-                    <li class="list-group-item list-group-item-warning">A simple warning list group item</li>
-                    <li class="list-group-item list-group-item-info">A simple info list group item</li>
-                    <li class="list-group-item list-group-item-light">A simple light list group item</li>
-                    <li class="list-group-item list-group-item-dark">A simple dark list group item</li>
+                    <li class="list-group-item">《阿飞正传》</li>
+                    <li class="list-group-item list-group-item-primary">《恋恋风尘》 - primary</li>
+                    <li class="list-group-item list-group-item-secondary">《一代宗师》 - secondary</li>
+                    <li class="list-group-item list-group-item-success">《南国再见，南国》 - success</li>
+                    <li class="list-group-item list-group-item-danger">《春光乍泄》 - danger</li>
+                    <li class="list-group-item list-group-item-warning">《霸王别姬》 - warning</li>
+                    <li class="list-group-item list-group-item-info">《倾城之恋》 - info</li>
+                    <li class="list-group-item list-group-item-light">《悲情城市》 - light</li>
+                    <li class="list-group-item list-group-item-dark">《重庆森林》 - dark</li>
                 </ul>
 
             </div>
@@ -110,31 +110,32 @@
                 <div class="list-group">
                     <div class="list-group-item list-group-item-action active">
                         <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1">List group item heading</h5>
-                            <small>3 days ago</small>
+                            <h5 class="mb-1">戛纳国际电影节 </h5>
+                            <small>金棕榈奖</small>
                         </div>
-                        <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                        <small>Donec id elit non mi porta.</small>
+                        <p class="mb-1">戛纳国际电影节（英文：Cannes International Film Festival，法文：Festival De Cannes），亦译作坎城国际电影节。</p>
+                        <small>创立于1946年</small>
                     </div>
                     <div class="list-group-item list-group-item-action">
                         <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1">List group item heading</h5>
-                            <small class="text-muted">3 days ago</small>
+                            <h5 class="mb-1">威尼斯国际电影节</h5>
+                            <small class="text-muted">金马奖</small>
                         </div>
-                        <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                        <small class="text-muted">Donec id elit non mi porta.</small>
+                        <p class="mb-1">是世界上历史最悠久的电影节，即世界上第一个国际电影节，号称“国际电影节之父”。在电影黄金年代（30年代—60年代），威尼斯电影节是诸多电影大师的摇篮。</p>
+                        <small class="text-muted">创办于1932年</small>
                     </div>
                     <div class="list-group-item list-group-item-action">
                         <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1">List group item heading</h5>
-                            <small class="text-muted">3 days ago</small>
+                            <h5 class="mb-1">柏林国际电影节</h5>
+                            <small class="text-muted">金熊奖</small>
                         </div>
-                        <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                        <small class="text-muted">Donec id elit non mi porta.</small>
+                        <p class="mb-1">柏林国际电影节（英文：Berlin International Film Festival，德文：Internationale Filmfestspiele Berlin），原名西柏林国际电影节。</p>
+                        <small class="text-muted">创办于1951年.</small>
                     </div>
                 </div>
             </div>
         </div>
+<!--
 
         <div class="wbd-example-cd">
             <p>
@@ -144,6 +145,7 @@
                 </navigator>
             </p>
         </div>
+-->
 
     </div>
 

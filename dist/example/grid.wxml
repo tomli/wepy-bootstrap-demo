@@ -1,0 +1,266 @@
+
+
+    <view class="_div container">
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead rounded-top  p-2">行内等宽</view>
+                <view class="_div container ">
+                    <view class="_div row">
+                        <view class="_div col border">
+                            1 of 2
+                        </view>
+                        <view class="_div col border">
+                            2 of 2
+                        </view>
+                    </view>
+                    <view class="_div row">
+                        <view class="_div col border">
+                            1 of 3
+                        </view>
+                        <view class="_div col border">
+                            2 of 3
+                        </view>
+                        <view class="_div col border">
+                            3 of 3
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead rounded-top  p-2">非等宽</view>
+
+                <view class="_div container">
+                    <view class="_div row">
+                        <view class="_div col">
+                            1 of 3
+                        </view>
+                        <view class="_div col-6">
+                            2 of 3 (wider)
+                        </view>
+                        <view class="_div col">
+                            3 of 3
+                        </view>
+                    </view>
+                    <view class="_div row">
+                        <view class="_div col">
+                            1 of 3
+                        </view>
+                        <view class="_div col-5">
+                            2 of 3 (wider)
+                        </view>
+                        <view class="_div col">
+                            3 of 3
+                        </view>
+                    </view>
+                </view>
+
+            </view>
+        </view>
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead rounded-top  p-2">宽度与内容适应</view>
+                <view class="_div container">
+                    <view class="_div row justify-content-center">
+                        <view class="_div col col-2">
+                            1
+                        </view>
+                        <view class="_div col-auto">
+                            Variable width content
+                        </view>
+                        <view class="_div col col-2">
+                            3
+                        </view>
+                    </view>
+                    <view class="_div row">
+                        <view class="_div col">
+                            1
+                        </view>
+                        <view class="_div col-auto">
+                            Variable width content
+                        </view>
+                        <view class="_div col">
+                            3
+                        </view>
+                    </view>
+                </view>
+
+            </view>
+
+
+
+            <view class="_div wbd-example-cd card border-0">
+                <view class="_div card-body">
+                    <view class="_div bg-light lead rounded-top  p-2">混合宽度组合</view>
+
+                    <view class="_div container">
+                        <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+                        <view class="_div row">
+                            <view class="_div col-8">.col-8</view>
+                            <view class="_div col-4">.col-4</view>
+                        </view>
+
+                        <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+                        <view class="_div row">
+                            <view class="_div col-4">.col-4</view>
+                            <view class="_div col-4">.col-4</view>
+                            <view class="_div col-4"> .col-4</view>
+                        </view>
+
+                        <!-- Columns are always 50% wide, on mobile and desktop -->
+                        <view class="_div row">
+                            <view class="_div col-6">.col-6</view>
+                            <view class="_div col-6">.col-6</view>
+                        </view>
+                    </view>
+
+                </view>
+            </view>
+
+            <view class="_div wbd-example-cd card border-0">
+                <view class="_div card-body">
+                    <view class="_div bg-light lead rounded-top  p-2">竖直对齐(Vertical alignment)</view>
+                    <view class="_div container">
+                        <view class="_div row" style="min-height: 300rpx;">
+                            <view class="_div col align-self-start">
+                                The Doors
+                            </view>
+                            <view class="_div col align-self-center">
+                                The Doors
+                            </view>
+                            <view class="_div col align-self-end">
+                                The Doors
+                            </view>
+                        </view>
+                    </view>
+
+                </view>
+            </view>
+
+            <view class="_div wbd-example-cd card border-0">
+                <view class="_div card-body">
+                    <view class="_div bg-light lead rounded-top  p-2">水平对齐(Horizontal alignment)</view>
+
+                    <view class="_div container">
+                        <view class="_div row justify-content-start">
+                            <view class="_div col-4">
+                                R.E.M.
+                            </view>
+                            <view class="_div col-4">
+                                R.E.M.
+                            </view>
+                        </view>
+                        <view class="_div row justify-content-center">
+                            <view class="_div col-4">
+                                R.E.M.
+                            </view>
+                            <view class="_div col-4">
+                                R.E.M.
+                            </view>
+                        </view>
+                        <view class="_div row justify-content-end">
+                            <view class="_div col-4">
+                                R.E.M.
+                            </view>
+                            <view class="_div col-4">
+                                R.E.M.
+                            </view>
+                        </view>
+                        <view class="_div row justify-content-around">
+                            <view class="_div col-4">
+                                R.E.M.
+                            </view>
+                            <view class="_div col-4">
+                                R.E.M.
+                            </view>
+                        </view>
+                        <view class="_div row justify-content-between">
+                            <view class="_div col-4">
+                                R.E.M.
+                            </view>
+                            <view class="_div col-4">
+                                R.E.M.
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+
+
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead rounded-top  p-2">强制换行</view>
+                <view class="_div container">
+                    <view class="_div row">
+                        <view class="_div col-4 ">Metallica</view>
+                        <view class="_div col-4 ">Metallica</view>
+
+                        <!-- Force next columns to break to new line -->
+                        <view class="_div w-100"></view>
+
+                        <view class="_div col-4 ">Metallica</view>
+                        <view class="_div col-4 ">Metallica</view>
+                    </view>
+                </view>
+
+            </view>
+        </view>
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead rounded-top  p-2">宽度占位</view>
+                <view class="_div container">
+                    <view class="_div row">
+                        <view class="_div col-4">U2</view>
+                        <view class="_div col-4 offset-md-4">U2</view>
+                    </view>
+                    <view class="_div row">
+                        <view class="_div col-3 offset-3">U2</view>
+                        <view class="_div col-3 offset-3">U2</view>
+                    </view>
+                    <view class="_div row">
+                        <view class="_div col-6 offset-3">U2</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead rounded-top  p-2">嵌套</view>
+                <view class="_div container">
+                    <view class="_div row">
+                        <view class="_div col-9">
+                            L1: Neil Young
+                            <view class="_div row">
+                                <view class="_div col-6">
+                                    L2: Elton John
+                                </view>
+                                <view class="_div col-4">
+                                    L2: The Eagles
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+
+            </view>
+        </view>
+<!--
+        <view class="_div wbd-example-cd">
+            <view class="_p">
+                <text>\n</text>
+                <navigator url="/pages/web?url=https://getbootstrap.com/docs/4.3/content/typography/"  >
+                    <text class="_strong"> 详细用法</text>
+                </navigator>
+            </view>
+        </view>
+        -->
+
+    </view>

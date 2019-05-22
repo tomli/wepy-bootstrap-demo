@@ -1,5 +1,7 @@
 <style type="less">
-
+    .wbd-example-cd > .card-body >  .bg-light{
+        margin-bottom: 55rpx;
+    }
 </style>
 <template>
 
@@ -9,26 +11,27 @@
             <div class="card-body">
             </div>
         </div>
-
+        
         <div class="wbd-example-cd card border-0">
             <div class="card-body">
-                <div class="bg-light lead rounded-top  p-2">项目卡片</div>
+                <div class="bg-light lead p-2">项目卡片</div>
                 <div class="card" >
-                    <img src="https://cdn4.buysellads.net/uu/1/41334/1550855391-cc_dark.png" class="card-img-top" alt="..." />
-                    <h5 class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </h5>
+                    <img src="http://5b0988e595225.cdn.sohucs.com/images/20171221/bb6a89b638844a63ab3bb3ab95e10df1.jpeg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <h5 class="card-title">月之暗面</h5>
+                        <p class="card-text">《The Dark Side Of The Moon》被认为是代表Pink Floyd创作理念的巅峰之作，理解这张专的内涵比较有难度，因为内容比较隐晦，而且极具个性。
+                            它的封面设计也极具科幻色彩，一束白光穿过三棱镜被分成6色彩，这6种色彩在背面又被融为一束白光。这个极具科技色彩的设计到底表达什么意义到现在都是众说纷纭。</p>
+                        <button class="btn btn-primary">购买</button>
+                    </div>
                 </div>
             </div>
 
             <div class="wbd-example-cd card border-0">
                 <div class="card-body">
-                    <div class="bg-light lead rounded-top  p-2">光秃秃的卡片</div>
+                    <div class="bg-light lead p-2">光秃秃的卡片</div>
                     <div class="card">
                         <div class="card-body">
-                            This is some text within a card body.
+                            双腿夹着灵魂，赶路匆忙。.
                         </div>
                     </div>
                 </div>
@@ -36,13 +39,13 @@
 
             <div class="wbd-example-cd card border-0">
                 <div class="card-body">
-                    <div class="bg-light lead rounded-top  p-2">带header的卡片</div>
+                    <div class="bg-light lead p-2">带header的卡片</div>
                     <div class="card">
-                        <h5 class="card-header">Featured</h5>
+                        <h5 class="card-header">Neuralink</h5>
                         <div class="card-body">
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title">人类巨人</h5>
+                            <p class="card-text">我们作为整体沟通得越好，我们的物种就越能够发挥作用，就像一个单一的有机体。集体知识塔是它的大脑，每个人的大脑就像一个神经或它身上的肌肉纤维。随着我们时代大众传播的兴盛，人类的集体形态——人类巨人，出现了。</p>
+                            <button class="btn btn-primary">Go somewhere</button>
                         </div>
                     </div>
                 </div>
@@ -50,14 +53,14 @@
 
             <div class="wbd-example-cd card border-0">
                 <div class="card-body">
-                    <div class="bg-light lead rounded-top  p-2">带footer的卡片</div>
+                    <div class="bg-light lead p-2">带footer的卡片</div>
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <h5 class="card-title">Meat Is Murder</h5>
+                            <p class="card-text">公元445年匈奴仁君莫特（Mort the Sensitive Hun）出版宣扬动物权至上的铿锵巨著《肉食无异谋杀》（Meat Is Murder），力图藉此唤起四方蛮夷从此放下屠刀。</p>
                         </div>
                         <div class="card-footer text-muted">
-                            2 days ago
+                            THE SMITHS
                         </div>
                     </div>
                 </div>
@@ -66,23 +69,23 @@
 
         <div class="wbd-example-cd card border-0">
             <div class="card-body">
-                <div class="bg-light lead rounded-top  p-2">并排排列</div>
+                <div class="bg-light lead p-2">并排排列</div>
                 <div class="row">
                     <div class="col-6">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title">Spetreatment</h5>
-                                <p class="card-text">With supporting text below.</p>
-                                <a href="#" class="btn-sm btn-primary">Go</a>
+                                <h5 class="card-title">Speak to Me</h5>
+                                <p class="card-text">“I've been mad for fucking years, absolutely years……”</p>
+                                <button class="btn-sm btn-primary">试听</button>
                             </div>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title">Special title</h5>
-                                <p class="card-text">natural lead-in to content.</p>
-                                <a href="#" class="btn-sm btn-primary">Go</a>
+                                <h5 class="card-title">Breathe</h5>
+                                <p class="card-text">真正的旋律随着吉他和键盘开始出现，缓缓的、从容不迫地带你进入梦幻状态……</p>
+                                <button class="btn-sm btn-primary">试听</button>
                             </div>
                         </div>
                     </div>
@@ -92,25 +95,24 @@
 
         <div class="wbd-example-cd card border-0">
             <div class="card-body">
-                <div class="bg-light lead rounded-top  p-2">带tab页的卡片</div>
+                <div class="bg-light lead p-2">带tab页的卡片</div>
                 <div class="card text-center">
                     <div class="card-header">
                         <ul class="nav nav-tabs card-header-tabs">
                             <li class="nav-item">
-                                <a class="nav-link active" href="#">Active</a>
+                                <a class="nav-link active">人物概况</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
+                                <a class="nav-link">电影创作</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                                <a class="nav-link disabled" tabindex="-1" aria-disabled="true">艺术创作</a>
                             </li>
                         </ul>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">安迪·沃霍尔</h5>
+                        <p class="card-text text-left">出生于美国宾夕法尼亚州的匹兹堡，是一位美国艺术家、印刷家、电影摄影师，被誉为20世纪艺术界最有名的人物之一。沃霍尔是视觉艺术运动波普艺术最有名的开创者之一，他大胆尝试凸版印刷、橡皮或木料拓印、金箔技术、照片投影等各种复制技法。他不仅是波普艺术的领袖人物，还是电影制片人、作家、摇滚乐作曲者、出版商，他是纽约社交界、艺术界大红大紫的明星式艺术家。沃霍尔发明了广为流传的“成名十五分钟”理论，在宾夕法尼亚州匹兹堡，有安迪·沃霍的博物馆纪念这位伟大艺术家的作品及不平凡的一生。2014年，他的作品毛泽东画像在英国以760万英镑（约合人民币7663万元）的高价被拍卖。</p>
                     </div>
                 </div>
 
@@ -119,13 +121,13 @@
 
         <div class="wbd-example-cd card border-0">
             <div class="card-body">
-                <div class="bg-light lead rounded-top  p-2">用图片作背景</div>
+                <div class="bg-light lead p-2">用图片作背景</div>
                 <div class="card bg-dark text-white">
-                    <img src="https://cdn4.buysellads.net/uu/1/41334/1550855391-cc_dark.png" class="card-img" alt="..." />
+                    <img src="http://5b0988e595225.cdn.sohucs.com/images/20171221/e9d5117b498a408b92f2868d8b95fd35.jpeg" class="card-img" alt="..." />
                     <div class="card-img-overlay">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text">Last updated 3 mins ago</p>
+                        <h5 class="card-title">Bob Marley</h5>
+                        <p class="card-text">Bob Marley 将牙买加民间的Reggae音乐发扬光大，走向世界。当他36岁因癌症逝世的时候，举国哀悼，举行了隆重的国葬。这张1984年发行的精选集是对他短暂而精彩的一生的总结。</p>
+                        <p class="card-text">Legend (1984)</p>
                     </div>
                 </div>
             </div>
@@ -133,17 +135,17 @@
 
         <div class="wbd-example-cd card border-0">
             <div class="card-body">
-                <div class="bg-light lead rounded-top  p-2">卡片内水平布局</div>
+                <div class="bg-light lead p-2">卡片内水平布局</div>
                 <div class="card" >
                     <div class="row no-gutters">
                         <div class="col-4">
-                            <img src="https://cdn4.buysellads.net/uu/1/41334/1550855391-cc_dark.png" class="card-img" style="height:100%;" />
+                            <img src="https://image.tmdb.org/t/p/w220_and_h330_face/dLWCaKcdspaFPZoZCKDVogioAep.jpg" class="card-img" style="height:100%;" />
                         </div>
                         <div class="col-8">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                <h5 class="card-title">雨月物語</h5>
+                                <p class="card-text">改編自上田秋成的鬼怪小說《雨月物語》中「蛇性的婬」和「淺芒宿驛」兩個故事。溝口健二的「全景長鏡頭」美學，在本片中給人留下了深刻的印象。</p>
+                                <p class="card-text"><small class="text-muted">◎本片入選日本名片200部</small></p>
                             </div>
                         </div>
                     </div>
@@ -155,61 +157,62 @@
 
         <div class="wbd-example-cd card border-0">
             <div class="card-body">
-                <div class="bg-light lead rounded-top  p-2">带字体颜色和背景色</div>
+                <div class="bg-light lead p-2">带字体颜色和背景色</div>
                 <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-                    <div class="card-header">Header</div>
+                    <div class="card-header">导演</div>
                     <div class="card-body">
-                        <h5 class="card-title">Primary card title</h5>
+                        <h5 class="card-title">沟口健二</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
                 </div>
                 <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
-                    <div class="card-header">Header</div>
+                    <div class="card-header">原著</div>
                     <div class="card-body">
-                        <h5 class="card-title">Secondary card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <h5 class="card-title">上田秋成</h5>
+                        <p class="card-text">日本江户时代后期的小说家、歌人，出身大阪。本名东作。幼名仙次郎，秋成为其雅号。主要是在日本国学方面有所建树。</p>
                     </div>
                 </div>
                 <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
-                    <div class="card-header">Header</div>
+                    <div class="card-header">角色</div>
                     <div class="card-body">
-                        <h5 class="card-title">Success card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <h5 class="card-title">源十郎</h5>
+                        <p class="card-text">陶瓷工，他打算烧些瓷器出售发战争财，并动员妻子宫木、妹妹阿滨和妹夫藤兵和他一起干。在他们用船运卖陶瓷途中，源十郎遇见一个美艳女子要买他的瓷器，并被她迷住，后被一行脚僧告知此女子原为一个全家都已死亡的女鬼，行脚僧替他写了一套咒语，才使他脱身回到故乡。</p>
                     </div>
                 </div>
                 <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
-                    <div class="card-header">Header</div>
+                    <div class="card-header">角色</div>
                     <div class="card-body">
-                        <h5 class="card-title">Danger card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <h5 class="card-title">若狭</h5>
+                        <p class="card-text">妖艳女子，虽为城主的女儿，却是一个在战争中全家都已死亡的女鬼，她假称要买源十郎的瓷器，然后迷惑了他，让其沉迷肉体之欢，但最终源十郎挣脱了她的控制。</p>
                     </div>
                 </div>
                 <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
-                    <div class="card-header">Header</div>
+                    <div class="card-header">角色</div>
                     <div class="card-body">
-                        <h5 class="card-title">Warning card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <h5 class="card-title">宫木</h5>
+                        <p class="card-text">源十郎的妻子，被丈夫动员一起去运卖陶瓷，途中发现风险很大，她不得已自己带着孩子回乡，但在回家途中被人杀害变成了女鬼。</p>
                     </div>
                 </div>
                 <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
-                    <div class="card-header">Header</div>
+                    <div class="card-header">角色</div>
                     <div class="card-body">
-                        <h5 class="card-title">Info card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <h5 class="card-title">藤兵卫</h5>
+                        <p class="card-text">源十郎的妹夫，渴望并追求当一个武士，他被源十郎动员一起去运卖陶瓷，后来他抛下妻子去加入了军队，在战争中捡到一敌将首领的头颅拿去邀功，因此备受重用，但当他得知阿滨已经沦为娼妓后，毅然带着阿滨回到了故乡</p>
                     </div>
                 </div>
                 <div class="card bg-light mb-3" style="max-width: 18rem;">
-                    <div class="card-header">Header</div>
+                    <div class="card-header">角色</div>
                     <div class="card-body">
-                        <h5 class="card-title">Light card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <h5 class="card-title">阿滨</h5>
+                        <p class="card-text">源十郎的妹妹，被源十郎动员一起去运卖陶瓷，后来被藤兵卫抛弃，她去追赶丈夫途中，被一些士兵轮奸，沦为娼妓，最终她跟随丈夫回到了故乡，二人过起了自食其力的平静生活。</p>
                     </div>
                 </div>
                 <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-                    <div class="card-header">Header</div>
+                    <div class="card-header">主演</div>
                     <div class="card-body">
-                        <h5 class="card-title">Dark card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <h5 class="card-title">森雅之</h5>
+                        <p class="card-text">森雅之（Masayuki Mori，1911年1月13日～1973年10月7日）本名有岛行光（ありしま ゆきてる）。小说家有岛武郎之子，日本男演员。
+                            在《电影旬报》评选的日本最佳男演员上总能位居前列。</p>
                     </div>
                 </div>
 
@@ -220,61 +223,61 @@
 
         <div class="wbd-example-cd card border-0">
             <div class="card-body">
-                <div class="bg-light lead rounded-top  p-2">带菜色边框</div>
+                <div class="bg-light lead p-2">带菜色边框</div>
                 <h5 class="card border-primary mb-3" style="max-width: 18rem;">
-                    <div class="card-header">Header</div>
+                    <div class="card-header">韩国</div>
                     <h5 class="card-body text-primary">
-                        <h5 class="card-title">Primary card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <h5 class="card-title">老男孩</h5>
+                        <p class="card-text">《老男孩》是由朴赞郁执导，崔岷植、刘智泰、姜惠贞等主演的一部惊悚电影。影片于2003年11月21日在韩国上映</p>
                 </h5>
             </h5>
             <div class="card border-secondary mb-3" style="max-width: 18rem;">
-                <div class="card-header">Header</div>
+                <div class="card-header">香港</div>
                 <div class="card-body text-secondary">
-                    <h5 class="card-title">Secondary card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h5 class="card-title">旺角黑夜</h5>
+                    <p class="card-text">是由尔冬升执导，张柏芝、吴彦祖、方中信等演员主演的动作剧情片。影片讲述了一个到香港打工的北方姑娘和一个枪手在24小时内发生的故事。</p>
                 </div>
             </div>
             <div class="card border-success mb-3" style="max-width: 18rem;">
-                <div class="card-header">Header</div>
+                <div class="card-header">美国</div>
                 <div class="card-body text-success">
-                    <h5 class="card-title">Success card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h5 class="card-title">致命魔术</h5>
+                    <p class="card-text">影片讲述的是在魔术产生盛行的维多利亚时期，出现了两位极有天赋的年轻魔术师、两个好朋友，罗伯特·安吉尔和阿尔弗雷德·伯登。两个人因为互相嫉妒猜疑，而成了势不两立的对手，他们用各种方法来证明自己是那个时代首席魔术师的故事</p>
                 </div>
             </div>
             <div class="card border-danger mb-3" style="max-width: 18rem;">
-                <div class="card-header">Header</div>
+                <div class="card-header">美国</div>
                 <div class="card-body text-danger">
-                    <h5 class="card-title">Danger card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h5 class="card-title">大开眼界</h5>
+                    <p class="card-text">由美国华纳兄弟公司出品的惊悚剧情片，由斯坦利·库布里克执导，汤姆·克鲁斯、妮可·基德曼、西德尼·波拉克联合主演。影片于1999年7月13日在美国上映 </p>
                 </div>
             </div>
             <div class="card border-warning mb-3" style="max-width: 18rem;">
-                <div class="card-header">Header</div>
+                <div class="card-header">瑞典</div>
                 <div class="card-body text-warning">
-                    <h5 class="card-title">Warning card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h5 class="card-title">在一起</h5>
+                    <p class="card-text">《在一起》是2000年上映的瑞典，丹麦，意大利合拍电影，由卢卡斯·莫迪森导演。</p>
                 </div>
             </div>
             <div class="card border-info mb-3" style="max-width: 18rem;">
-                <div class="card-header">Header</div>
+                <div class="card-header">台湾</div>
                 <div class="card-body text-info">
-                    <h5 class="card-title">Info card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h5 class="card-title">饮食男女</h5>
+                    <p class="card-text">是由李安执导，郎雄、吴倩莲、杨贵媚、王渝文主演的剧情片，于1994年8月3日在美国上映。该片讲述了妻子去世多年的老朱和三个女儿在家庭生活中的观念冲突和各自的情感故事。</p>
                 </div>
             </div>
             <div class="card border-light mb-3" style="max-width: 18rem;">
-                <div class="card-header">Header</div>
+                <div class="card-header">法国</div>
                 <div class="card-body">
-                    <h5 class="card-title">Light card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h5 class="card-title">巴黎野玫瑰</h5>
+                    <p class="card-text">该片讲述了法国巴黎一对年轻的情侣过着坎坷的爱情和悲惨的生活故事。影片于1986年4月9日在法国上映。</p>
                 </div>
             </div>
             <div class="card border-dark mb-3" style="max-width: 18rem;">
-                <div class="card-header">Header</div>
+                <div class="card-header">越南</div>
                 <div class="card-body text-dark">
-                    <h5 class="card-title">Dark card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h5 class="card-title">《三轮车夫》</h5>
+                    <p class="card-text">是由陈英雄执导，黎文禄、陈女燕溪、梁朝伟、阮如琼等主演的剧情片。1995年该片获得第52届威尼斯电影节金狮奖。</p>
                 </div>
             </div>
 
@@ -284,19 +287,19 @@
 
     <div class="wbd-example-cd card border-0">
         <div class="card-body">
-            <div class="bg-light lead rounded-top  p-2">去掉header和footer的背景色</div>
+            <div class="bg-light lead p-2">去掉header和footer的背景色</div>
                 <div class="card border-success mb-3" style="max-width: 18rem;">
-                    <div class="card-header bg-transparent border-success">Header</div>
+                    <div class="card-header bg-transparent border-success">第一章</div>
                     <div class="card-body text-success">
-                        <h5 class="card-title">Success card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <h5 class="card-title">安妮·海瑟薇</h5>
+                        <p class="card-text">大自然是残忍的,恐怖的,但是你不能说它是邪恶的。就象狮子撕碎一只羚羊,你不能说它是邪恶的。</p>
                     </div>
-                    <div class="card-footer bg-transparent border-success">Footer</div>
+                    <div class="card-footer bg-transparent border-success">《星际穿越》</div>
                 </div>
             </div>
         </div>
 
-
+<!--
         <div class="wbd-example-cd">
             <p>
                 <br/>
@@ -305,6 +308,7 @@
                 </navigator>
             </p>
         </div>
+        -->
 
     </div>
 

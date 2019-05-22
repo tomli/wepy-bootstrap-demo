@@ -1,0 +1,11 @@
+.wbd-example-cd .border {
+  position: relative;
+  padding: 15rpx;
+  border: solid #f8f9fa;
+  border-width: 2rpx 0 0;
+}
+.wbd-example-cd .row > .col,
+.wbd-example-cd .row > .col-6 {
+  background-color: rgba(86, 61, 124, 0.15);
+  border: 1px solid rgba(86, 61, 124, 0.2);
+}

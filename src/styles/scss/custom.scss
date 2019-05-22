@@ -1,10 +1,4 @@
-
-// Required
-@import "node_modules/bootstrap/scss/functions";
-@import "node_modules/bootstrap/scss/variables";
-//$primary:      $cyan;
-
-@import "node_modules/bootstrap/scss/mixins";
+/*
 
 $theme-colors: (
         "primary": #563d7c,
@@ -16,9 +10,18 @@ $theme-colors: (
         "light": $gray-100,
         "dark": $gray-800
 );
+*/
 
+$primary:       #563d7c;
 $font-size-base:              0.8rem; // Assumes the browser default, typically `16px`
+//$blockquote-font-size:        $font-size-base * 1.25;
 
+// Required
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+//$primary:      $cyan;
+
+@import "node_modules/bootstrap/scss/mixins";
 
 //@import "node_modules/bootstrap/scss/mixins/background-variant";
 

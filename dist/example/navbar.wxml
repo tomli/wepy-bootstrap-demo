@@ -1,0 +1,166 @@
+
+
+    <view class="_div container">
+
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div border-bottom lead rounded-top  p-2">普通导航栏</view>
+
+                <view class="_ul nav">
+                    <view class="_li nav-item">
+                        <text class="_a nav-link active" href="#">Pop</text>
+                    </view>
+                    <view class="_li nav-item">
+                        <text class="_a nav-link" href="#">Rock</text>
+                    </view>
+                    <view class="_li nav-item">
+                        <text class="_a nav-link" href="#">Class</text>
+                    </view>
+                    <view class="_li nav-item">
+                        <text class="_a nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Jazz</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div border-bottom lead rounded-top  p-2">带高亮导航栏</view>
+
+                <view class="_ul nav nav-pills">
+                    <view class="_li nav-item">
+                        <text class="_a nav-link active" href="#">Pop</text>
+                    </view>
+                    <view class="_li nav-item">
+                        <text class="_a nav-link" href="#">Rock</text>
+                    </view>
+                    <view class="_li nav-item">
+                        <text class="_a nav-link" href="#">Class</text>
+                    </view>
+                </view>
+
+            </view>
+        </view>
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div border-bottom lead rounded-top  p-2">均匀分布</view>
+                <view class="_ul nav nav-pills nav-fill">
+                    <view class="_li nav-item">
+                        <text class="_a nav-link active" href="#">Pop</text>
+                    </view>
+                    <view class="_li nav-item">
+                        <text class="_a nav-link" href="#">Rock</text>
+                    </view>
+                    <view class="_li nav-item">
+                        <text class="_a nav-link" href="#">Class</text>
+                    </view>
+                </view>
+
+            </view>
+        </view>
+
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div border-bottom lead rounded-top  p-2">带tab页的导航栏</view>
+                <view class="_ul nav nav-tabs" id="myTab" role="tablist">
+                    <view class="_li nav-item">
+                        <text class="_a nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Jazz</text>
+                    </view>
+                    <view class="_li nav-item">
+                        <text class="_a nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Blues</text>
+                    </view>
+                    <view class="_li nav-item">
+                        <text class="_a nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Regge</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div border-bottom lead rounded-top  p-2">带图标的导航栏</view>
+
+                <!-- Image and text -->
+                <view class="_nav navbar navbar-light bg-light">
+                    <view class="_div navbar-brand" href="#">
+                        <image src="https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-solid.svg" style="width: 60rpx; height: 60rpx" class="_img d-inline-block align-top" alt=""></image>
+                        Bootstrap
+                    </view>
+                </view>
+
+            </view>
+        </view>
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div border-bottom lead rounded-top  p-2">有背景色的导航栏</view>
+
+                <view class="_nav navbar navbar-dark bg-dark">
+                    <view class="_div navbar-brand" href="#">
+                        台北金马影展
+                    </view>
+                </view>
+
+                <view class="_nav navbar navbar-dark bg-primary">
+                    <view class="_div navbar-brand" href="#">
+                        柏林影展
+                    </view>
+                </view>
+
+                <view class="_nav navbar navbar-light" style="background-color: #e3f2fd;">
+
+                    <view class="_div navbar-brand" href="#">
+                        旧金山嬉皮士电影节
+                    </view>
+                </view>
+            </view>
+        </view>
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div border-bottom lead rounded-top  p-2">带菜单收缩功能(未完成。。)</view>
+
+                <view class="_nav navbar navbar-expand-lg navbar-light bg-light">
+                    <text class="_a navbar-brand" href="#">Navbar</text>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <text class="_span navbar-toggler-icon"></text>
+                    </button>
+                    <view class="_div collapse navbar-collapse" id="navbarNav">
+                        <view class="_ul navbar-nav">
+                            <view class="_li nav-item active">
+                                <text class="_a nav-link" href="#">Home <text class="_span sr-only">(current)</text></text>
+                            </view>
+                            <view class="_li nav-item">
+                                <text class="_a nav-link" href="#">Features</text>
+                            </view>
+                            <view class="_li nav-item">
+                                <text class="_a nav-link" href="#">Pricing</text>
+                            </view>
+                            <view class="_li nav-item">
+                                <text class="_a nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</text>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+
+            </view>
+        </view>
+
+
+
+<!--
+        <view class="_div wbd-example-cd">
+            <view class="_p">
+                <text>\n</text>
+                <navigator url="/pages/web?url=https://getbootstrap.com/docs/4.3/content/typography/"  >
+                    <text class="_strong"> 详细用法</text>
+                </navigator>
+            </view>
+        </view>
+        -->
+
+    </view>

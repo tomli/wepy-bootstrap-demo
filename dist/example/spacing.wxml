@@ -1,0 +1,48 @@
+
+
+    <view class="_div container">
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead rounded-top  p-2">居中显示</view>
+                <view class="_div border">
+                    <view class="_div mx-auto" style="width: 400rpx;background-color: rgba(86,61,124,.15);">
+                        Wish You Were Here
+                    </view>
+                </view>
+
+            </view>
+        </view>
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead rounded-top  p-2">给col增加间距</view>
+                <view class="_div row">
+                    <view class="_div col px-2"><view class="_div p-3 border bg-light">Custom column padding</view></view>
+                    <view class="_div col px-2"><view class="_div p-3 border bg-light">Custom column padding</view></view>
+                </view>
+            </view>
+        </view>
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead rounded-top  p-2">使用负margin</view>
+                <view class="_div row mx-n5">
+                    <view class="_div col px-5"><view class="_div p-3 border bg-light">Custom column padding</view></view>
+                    <view class="_div col px-5"><view class="_div p-3 border bg-light">Custom column padding</view></view>
+                </view>
+
+            </view>
+        </view>
+<!--
+        <view class="_div wbd-example-cd">
+            <view class="_p">
+                <text>\n</text>
+                <navigator url="/pages/web?url=https://getbootstrap.com/docs/4.3/content/typography/"  >
+                    <text class="_strong"> 详细用法</text>
+                </navigator>
+            </view>
+        </view>
+        -->
+
+    </view>

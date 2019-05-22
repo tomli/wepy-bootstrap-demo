@@ -1,0 +1,43 @@
+
+
+    <view class="_div container">
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead rounded-top  p-2">设置相对于父容器的宽度</view>
+
+                <view class="_div w-25 p-3" style="background-color: #eee;">Width 25%</view>
+                <view class="_div w-50 p-3" style="background-color: #eee;">Width 50%</view>
+                <view class="_div w-75 p-3" style="background-color: #eee;">Width 75%</view>
+                <view class="_div w-100 p-3" style="background-color: #eee;">Width 100%</view>
+                <view class="_div w-auto p-3" style="background-color: #eee;">Width auto</view>
+
+            </view>
+        </view>
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead rounded-top  p-2">设置相对于父容器的高度</view>
+
+                <view class="_div" style="height: 100px; background-color: rgba(255,0,0,0.1);">
+                    <view class="_div h-25 d-inline-block" style="width: 120rpx; background-color: rgba(0,0,255,.1)">Height 25%</view>
+                    <view class="_div h-50 d-inline-block" style="width: 120rpx; background-color: rgba(0,0,255,.1)">Height 50%</view>
+                    <view class="_div h-75 d-inline-block" style="width: 120rpx; background-color: rgba(0,0,255,.1)">Height 75%</view>
+                    <view class="_div h-100 d-inline-block" style="width: 120rpx; background-color: rgba(0,0,255,.1)">Height 100%</view>
+                    <view class="_div h-auto d-inline-block" style="width: 120rpx; background-color: rgba(0,0,255,.1)">Height auto</view>
+                </view>
+
+            </view>
+        </view>
+<!--
+        <view class="_div wbd-example-cd">
+            <view class="_p">
+                <text>\n</text>
+                <navigator url="/pages/web?url=https://getbootstrap.com/docs/4.3/content/typography/"  >
+                    <text class="_strong"> 详细用法</text>
+                </navigator>
+            </view>
+        </view>
+        -->
+
+    </view>

@@ -1,0 +1,147 @@
+
+
+    <view class="_div container">
+
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead rounded-top  p-2">普通列表</view>
+                <view class="_ul list-group">
+                    <view class="_li list-group-item">天地不仁，以万物为刍狗</view>
+                    <view class="_li list-group-item">人生天地之间，若白驹过隙，忽然而已</view>
+                    <view class="_li list-group-item">孝子不谀其亲，忠臣不谄其君，臣、子之盛也</view>
+                    <view class="_li list-group-item">持而盈之，不如其已；揣而锐之，不可长保</view>
+                    <view class="_li list-group-item">相濡以沫，不如相忘于江湖</view>
+                </view>
+            </view>
+        </view>
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead rounded-top  p-2">选中高亮</view>
+                <view class="_ul list-group">
+                    <view class="_li list-group-item ">一花一世界，一叶一如来</view>
+                    <view class="_li list-group-item">大悲无泪，大悟无言，大笑无声</view>
+                    <view class="_li list-group-item">无我相，无人相，无众生相，无寿者相。</view>
+                    <view class="_li list-group-item active">凡所有相，皆是虚妄。若见诸相非相，则见如来</view>
+                    <view class="_li list-group-item">一切有为法 , 如梦幻泡影。如露亦如电 , 应作如是观</view>
+                </view>
+            </view>
+        </view>
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead rounded-top  p-2">disabled</view>
+                <view class="_ul list-group">
+                    <view class="_li list-group-item disabled" aria-disabled="true">娄-里德</view>
+                    <view class="_li list-group-item">鲍勃·迪伦</view>
+                    <view class="_li list-group-item">特蕾西·查普曼</view>
+                    <view class="_li list-group-item">保罗·麦卡特尼</view>
+                    <view class="_li list-group-item">约翰尼·卡什</view>
+                </view>
+            </view>
+        </view>
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead rounded-top  p-2">按钮风格</view>
+                <view class="_div list-group">
+                    <button type="button" class="list-group-item list-group-item-action">
+                        Perfect Day
+                    </button>
+                    <button type="button" class="list-group-item list-group-item-action">Knocking on heaven's door</button>
+                    <button type="button" class="list-group-item list-group-item-action">Stairway to Heaven</button>
+                    <button type="button" class="list-group-item list-group-item-action active">Hey Jude</button>
+                    <button type="button" class="list-group-item list-group-item-action" disabled>Like a Rolling Stone</button>
+                </view>
+            </view>
+        </view>
+
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead rounded-top  p-2">去边框</view>
+                <view class="_ul list-group list-group-flush">
+                    <view class="_li list-group-item">大师</view>
+                    <view class="_li list-group-item">血色将至</view>
+                    <view class="_li list-group-item">猎鹿人</view>
+                    <view class="_li list-group-item">达拉斯买家俱乐部</view>
+                    <view class="_li list-group-item">楚门的世界</view>
+                </view>
+            </view>
+        </view>
+
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead rounded-top  p-2">水平排列</view>
+                <view class="_ul list-group list-group-horizontal">
+                    <view class="_li list-group-item">民谣</view>
+                    <view class="_li list-group-item">布鲁斯</view>
+                    <view class="_li list-group-item">乡村</view>
+                </view>
+            </view>
+        </view>
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead rounded-top  p-2">用不同色彩来体现上下文含义</view>
+                <view class="_ul list-group">
+                    <view class="_li list-group-item">《阿飞正传》</view>
+                    <view class="_li list-group-item list-group-item-primary">《恋恋风尘》 - primary</view>
+                    <view class="_li list-group-item list-group-item-secondary">《一代宗师》 - secondary</view>
+                    <view class="_li list-group-item list-group-item-success">《南国再见，南国》 - success</view>
+                    <view class="_li list-group-item list-group-item-danger">《春光乍泄》 - danger</view>
+                    <view class="_li list-group-item list-group-item-warning">《霸王别姬》 - warning</view>
+                    <view class="_li list-group-item list-group-item-info">《倾城之恋》 - info</view>
+                    <view class="_li list-group-item list-group-item-light">《悲情城市》 - light</view>
+                    <view class="_li list-group-item list-group-item-dark">《重庆森林》 - dark</view>
+                </view>
+
+            </view>
+        </view>
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead rounded-top  p-2">可包含任意内容</view>
+                <view class="_div list-group">
+                    <view class="_div list-group-item list-group-item-action active">
+                        <view class="_div d-flex w-100 justify-content-between">
+                            <view class="_h5 mb-1">戛纳国际电影节 </view>
+                            <text class="_small">金棕榈奖</text>
+                        </view>
+                        <view class="_p mb-1">戛纳国际电影节（英文：Cannes International Film Festival，法文：Festival De Cannes），亦译作坎城国际电影节。</view>
+                        <text class="_small">创立于1946年</text>
+                    </view>
+                    <view class="_div list-group-item list-group-item-action">
+                        <view class="_div d-flex w-100 justify-content-between">
+                            <view class="_h5 mb-1">威尼斯国际电影节</view>
+                            <text class="_small text-muted">金马奖</text>
+                        </view>
+                        <view class="_p mb-1">是世界上历史最悠久的电影节，即世界上第一个国际电影节，号称“国际电影节之父”。在电影黄金年代（30年代—60年代），威尼斯电影节是诸多电影大师的摇篮。</view>
+                        <text class="_small text-muted">创办于1932年</text>
+                    </view>
+                    <view class="_div list-group-item list-group-item-action">
+                        <view class="_div d-flex w-100 justify-content-between">
+                            <view class="_h5 mb-1">柏林国际电影节</view>
+                            <text class="_small text-muted">金熊奖</text>
+                        </view>
+                        <view class="_p mb-1">柏林国际电影节（英文：Berlin International Film Festival，德文：Internationale Filmfestspiele Berlin），原名西柏林国际电影节。</view>
+                        <text class="_small text-muted">创办于1951年.</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+<!--
+
+        <view class="_div wbd-example-cd">
+            <view class="_p">
+                <text>\n</text>
+                <navigator url="/pages/web?url=https://getbootstrap.com/docs/4.3/components/list-group/"  >
+                    <text class="_strong"> 详细用法</text>
+                </navigator>
+            </view>
+        </view>
+-->
+
+    </view>

@@ -1,0 +1,203 @@
+
+
+    <view class="_div container">
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead rounded-top  p-2">简单的flexbox 容器</view>
+                <view class="_div d-flex p-2 bd-highlight justify-content-around">
+                    <view class="_div">珍惜生命</view>
+                    <view class="_div">远离９９６</view>
+                </view>
+
+            </view>
+        </view>
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead rounded-top  p-2">行内flexbox容器</view>
+                <view class="_div d-inline-flex p-2 bd-highlight justify-content-around">
+                    <view class="_div">珍惜生命</view>
+                    <view class="_div">远离９９６</view>
+                </view>
+            </view>
+        </view>
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead rounded-top  p-2">水平排列</view>
+                <view class="_div d-flex flex-row bd-highlight mb-3">
+                    <view class="_div p-2 bd-highlight">Red Hot Chili Peppers</view>
+                    <view class="_div p-2 bd-highlight">Nirvana</view>
+                    <view class="_div p-2 bd-highlight">The Smashing Pumpkins</view>
+                </view>
+                <view class="_div d-flex flex-row-reverse bd-highlight">
+                    <view class="_div p-2 bd-highlight">Red Hot Chili Peppers</view>
+                    <view class="_div p-2 bd-highlight">Nirvana</view>
+                    <view class="_div p-2 bd-highlight">The Smashing Pumpkins</view>
+                </view>
+
+            </view>
+        </view>
+
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead rounded-top  p-2">竖直排列</view>
+                <view class="_div d-flex flex-row bd-highlight mb-3">
+                    <view class="_div p-2 bd-highlight">Red Hot Chili Peppers</view>
+                    <view class="_div p-2 bd-highlight">Nirvana</view>
+                    <view class="_div p-2 bd-highlight">The Smashing Pumpkins</view>
+                </view>
+                <view class="_div d-flex flex-row-reverse bd-highlight">
+                    <view class="_div p-2 bd-highlight">Red Hot Chili Peppers</view>
+                    <view class="_div p-2 bd-highlight">Nirvana</view>
+                    <view class="_div p-2 bd-highlight">The Smashing Pumpkins</view>
+                </view>
+
+            </view>
+        </view>
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead rounded-top  p-2">调整内容（justify-content）</view>
+                <view class="_div d-flex justify-content-start bd-highlight mb-3">
+                    <view class="_div p-2 bd-highlight">Blur</view>
+                    <view class="_div p-2 bd-highlight">The Cure</view>
+                    <view class="_div p-2 bd-highlight">Radiohead</view>
+                </view>
+                <view class="_div d-flex justify-content-end bd-highlight  mb-3">
+                    <view class="_div p-2 bd-highlight">Blur</view>
+                    <view class="_div p-2 bd-highlight">The Cure</view>
+                    <view class="_div p-2 bd-highlight">Radiohead</view>
+                </view>
+                <view class="_div d-flex justify-content-center bd-highlight  mb-3">
+                    <view class="_div p-2 bd-highlight">Blur</view>
+                    <view class="_div p-2 bd-highlight">The Cure</view>
+                    <view class="_div p-2 bd-highlight">Radiohead</view>
+                </view>
+                <view class="_div d-flex justify-content-between bd-highlight  mb-3">
+                    <view class="_div p-2 bd-highlight">Blur</view>
+                    <view class="_div p-2 bd-highlight">The Cure</view>
+                    <view class="_div p-2 bd-highlight">Radiohead</view>
+                </view>
+                <view class="_div d-flex justify-content-around bd-highlight  mb-3">
+                    <view class="_div p-2 bd-highlight">Blur</view>
+                    <view class="_div p-2 bd-highlight">The Cure</view>
+                    <view class="_div p-2 bd-highlight">Radiohead</view>
+                </view>
+
+            </view>
+        </view>
+
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead rounded-top  p-2">元素排列（align-items）</view>
+                <view class="_div d-flex align-items-start bd-highlight mb-3" style="height: 150rpx">
+                    <view class="_div p-2 bd-highlight">Blur</view>
+                    <view class="_div p-2 bd-highlight">The Cure</view>
+                    <view class="_div p-2 bd-highlight">Radiohead</view>
+                </view>
+                <view class="_div d-flex align-items-end bd-highlight  mb-3" style="height: 150rpx">
+                    <view class="_div p-2 bd-highlight">Blur</view>
+                    <view class="_div p-2 bd-highlight">The Cure</view>
+                    <view class="_div p-2 bd-highlight">Radiohead</view>
+                </view>
+                <view class="_div d-flex align-items-center bd-highlight  mb-3" style="height: 150rpx">
+                    <view class="_div p-2 bd-highlight">Blur</view>
+                    <view class="_div p-2 bd-highlight">The Cure</view>
+                    <view class="_div p-2 bd-highlight">Radiohead</view>
+                </view>
+                <view class="_div d-flex align-items-baseline bd-highlight  mb-3" style="height: 150rpx">
+                    <view class="_div p-2 bd-highlight">Blur</view>
+                    <view class="_div p-2 bd-highlight">The Cure</view>
+                    <view class="_div p-2 bd-highlight">Radiohead</view>
+                </view>
+                <view class="_div d-flex align-items-stretch bd-highlight  mb-3" style="height: 150rpx">
+                    <view class="_div p-2 bd-highlight">Blur</view>
+                    <view class="_div p-2 bd-highlight">The Cure</view>
+                    <view class="_div p-2 bd-highlight">Radiohead</view>
+                </view>
+            </view>
+        </view>
+
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead rounded-top  p-2">自身排列（align-self）</view>
+                <view class="_div d-flex bd-highlight mb-3" style="height: 150rpx">
+                    <view class="_div p-2 bd-highlight">Blur</view>
+                    <view class="_div p-2 align-self-start bd-highlight">The Cure</view>
+                    <view class="_div p-2 bd-highlight">Radiohead</view>
+                </view>
+                <view class="_div d-flex bd-highlight  mb-3" style="height: 150rpx">
+                    <view class="_div p-2 bd-highlight">Blur</view>
+                    <view class="_div p-2 align-self-end bd-highlight">The Cure</view>
+                    <view class="_div p-2 bd-highlight">Radiohead</view>
+                </view>
+                <view class="_div d-flex bd-highlight  mb-3" style="height: 150rpx">
+                    <view class="_div p-2 bd-highlight">Blur</view>
+                    <view class="_div p-2 align-self-center bd-highlight">The Cure</view>
+                    <view class="_div p-2 bd-highlight">Radiohead</view>
+                </view>
+                <view class="_div d-flex bd-highlight  mb-3" style="height: 150rpx">
+                    <view class="_div p-2 bd-highlight">Blur</view>
+                    <view class="_div p-2 align-self-baseline bd-highlight">The Cure</view>
+                    <view class="_div p-2 bd-highlight">Radiohead</view>
+                </view>
+                <view class="_div d-flex bd-highlight  mb-3" style="height: 150rpx">
+                    <view class="_div p-2 bd-highlight">Blur</view>
+                    <view class="_div p-2 align-self-stretch bd-highlight">The Cure</view>
+                    <view class="_div p-2 bd-highlight">Radiohead</view>
+                </view>
+            </view>
+        </view>
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead rounded-top  p-2">自动填充</view>
+                <view class="_div d-flex bd-highlight">
+                    <view class="_div p-2 flex-fill bd-highlight">Ludwig van Beethoven</view>
+                    <view class="_div p-2 flex-fill bd-highlight">Bach</view>
+                    <view class="_div p-2 flex-fill bd-highlight">Mozart</view>
+                </view>
+
+            </view>
+        </view>
+
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead rounded-top  p-2">伸长第一个元素</view>
+                <view class="_div d-flex bd-highlight">
+                    <view class="_div p-2 flex-grow-1 bd-highlight">Bach</view>
+                    <view class="_div p-2 bd-highlight">Mozart</view>
+                    <view class="_div p-2 bd-highlight">Ludwig van Beethoven</view>
+                </view>
+            </view>
+        </view>
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead rounded-top  p-2">压缩某个元素</view>
+                <view class="_div d-flex bd-highlight">
+                    <view class="_div p-2 w-100 bd-highlight">Mozart</view>
+                    <view class="_div p-2 flex-shrink-1 bd-highlight">Ludwig van Beethoven</view>
+                </view>
+            </view>
+        </view>
+
+        未完待续。。。
+<!--
+        <view class="_div wbd-example-cd">
+            <view class="_p">
+                <text>\n</text>
+                <navigator url="/pages/web?url=https://getbootstrap.com/docs/4.3/content/typography/"  >
+                    <text class="_strong"> 详细用法</text>
+                </navigator>
+            </view>
+        </view>
+        -->
+
+    </view>

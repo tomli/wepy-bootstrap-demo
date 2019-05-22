@@ -1,0 +1,89 @@
+<style type="less">
+
+</style>
+<template>
+
+
+        <div class="wbd-example-cd card border-0">
+            <div class="card-body">
+                <div class="bg-light lead rounded-top  p-2">Accordion</div>
+
+                <div class="accordion" id="accordionExample">
+                    <repeat for="{{list}}" key="id">
+                        <div class="card">
+                            <div class="card-header"   @tap="toggle({{item.id}})">
+                                <h2 class="mb-0">
+                                    <div class="btn" type="button" >
+                                        {{item.name}}
+                                    </div>
+                                </h2>
+                            </div>
+                            <div id="collapseOne" class="collapse {{item.open ? 'show' : ''}}">
+                                <div class="card-body">
+                                    <ul class="list-group list-group-flush">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center" wx:for="{{item.pages}}" wx:for-item="page" wx:key="*this">
+                                        {{page}}
+                                    </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </repeat>
+                </div>
+            </div>
+        </div>
+
+
+</template>
+
+<script>
+    import wepy from 'wepy'
+
+    export default class AccordionComponent extends wepy.component {
+/*
+   data = {
+        list: [
+          {
+            id: 'DE',
+            name: '德国新电影运动',
+            open: false,
+            pages: ['法斯宾德', '沃纳·赫尔佐格', '维姆·文德斯', '沃尔克·施隆多夫']
+          },
+          {
+            id: 'FR',
+            name: '法國新浪潮',
+            open: false,
+            pages: ['特吕弗', '戈达尔', '阿伦雷乃', '埃里克·侯麦', '夏布罗尔', '阿涅斯·瓦尔达']
+          },
+          {
+            id: 'IT',
+            name: '意大利新现实主义',
+            open: false,
+            pages: ['维斯康蒂', '德·西卡', '罗西里尼', '费里尼', '安东尼奥尼']
+          },
+          {
+            id: 'JP',
+            name: '日本新浪潮',
+            open: false,
+            pages: ['大岛渚', '今村昌平', '吉田喜重', '筱田正浩', '寺山修司']
+          },
+          {
+            id: 'US',
+            name: '美国独立电影',
+            open: false,
+            pages: ['科恩兄弟', '昆汀·塔伦蒂诺', '吉姆•贾木许', '史蒂文•索德伯格', '大卫·林奇']
+          }
+        ]
+      }
+      */
+      props=['list']
+
+      methods = {
+        toggle (id) {
+          this.list.forEach(v => {
+            v.open = (v.id === id) ? !v.open : false
+          })
+        }
+      }
+    }
+</script>

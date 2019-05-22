@@ -1,0 +1,23 @@
+
+
+    <view class="_div container">
+
+        待完成。。。
+<!--
+
+        <text class="_label" for="customRange1">Example range</text>
+        <input type="range" class="custom-range" id="customRange1" />
+-->
+<!--
+
+        <view class="_div wbd-example-cd">
+            <view class="_p">
+                <text>\n</text>
+                <navigator url="/pages/web?url=https://getbootstrap.com/docs/4.3/components/breadcrumb/"  >
+                    <text class="_small"> 详细用法 https://getbootstrap.com/docs/4.3/content/typography/ </small >
+                </navigator>
+            </view>
+        </view>
+-->
+
+    </view>

@@ -1,0 +1,10 @@
+
+
+    <view class="_div wbd-example-cd card border-0">
+        <view class="_div card-body">
+            <view class="_div bg-light rounded-top  p-2">对话框，采用小程序原生的modal</view>
+            <button class="btn btn-block btn-success" type="button" bindtap="openConfirm">Confirm Dialog</button>
+            <button class="btn btn-block btn-success" type="button" bindtap="openAlert">Alert Dialog</button>
+
+        </view>
+    </view>

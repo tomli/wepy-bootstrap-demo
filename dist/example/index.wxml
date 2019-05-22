@@ -1,6 +1,6 @@
 
   <view class="_div container">
-    <view class="_div jumbotron bg-white mb-n3 border-primary border">
+    <view class="_div jumbotron bg-white mb-n4 border-primary border">
         <view class="_h2"><text class="_strong">Bootstrap Demo</text></view>
       <view class="_p lead">这是一个使用Bootstrap4开发小程序的小样，希望能够帮助到习惯BS开发模式的码农朋友们.</view>
       <view class="_hr my-4"></view>
@@ -25,7 +25,7 @@
                       <view class="_div card-body">
                           <view class="_ul list-group list-group-flush">
                               <navigator url="./{{page}}"  wx:for="{{item.pages}}" wx:for-item="page" wx:key="*this">
-                                  <view class="_li list-group-item d-flex justify-content-between align-items-center border-bottom">
+                                  <view class="_li list-group-item d-flex justify-content-between align-items-center ">
                                       {{page}}
                                       <text class="_span arrow-most-right"></text>
                                   </view>

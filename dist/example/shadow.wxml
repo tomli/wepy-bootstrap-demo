@@ -1,0 +1,25 @@
+
+
+    <view class="_div container">
+
+        <view class="_div lead rounded-top text-center p-2">阴影效果</view>
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div shadow-none p-3 mb-5 bg-light rounded">No shadow</view>
+                <view class="_div shadow-sm p-3 mb-5 bg-white rounded">Small shadow</view>
+                <view class="_div shadow p-3 mb-5 bg-white rounded">Regular shadow</view>
+                <view class="_div shadow-lg p-3 mb-5 bg-white rounded">Larger shadow</view>
+            </view>
+        </view>
+<!--
+        <view class="_div wbd-example-cd">
+            <view class="_p">
+                <text>\n</text>
+                <navigator url="/pages/web?url=https://getbootstrap.com/docs/4.3/content/typography/"  >
+                    <text class="_strong"> 详细用法</text>
+                </navigator>
+            </view>
+        </view>
+        -->
+
+    </view>

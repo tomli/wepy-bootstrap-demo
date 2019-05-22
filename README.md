@@ -18,10 +18,14 @@ _已经有适合微信开发的WeUI和无数花里胡梢的第三方小程序组
 
             npm install      
             
-3. 开启wepy实时编译, 在dist目录下生成微信小程序项目， 可以在微信开发工具中导入. app.wxss文件可以看到生成的代码中包含已转换的bootstrap代码
+3. 开启wepy实时编译, 在dist目录下生成微信小程序项目， 可以在微信开发工具中导入. 
+    打开app.wxss文件可以看到生成的代码中包含已转换的bootstrap代码
     
             wepy build --watch           
 
+**如何在已有小程序项目中直接使用bootstrap**
+
+   下载 [dist/app.wxss](URL 'https://github.com/tomli/wepy-bootstrap-demo/tree/master/dist/app.wxss') 文件后，将里面的代码全部copy到你的app.wxss文件中， 或将文件名改掉后在你的app.wxss文件中import进来.
 
 **如何在已有wepy项目中使用bootstrap**
 
@@ -32,7 +36,8 @@ _已经有适合微信开发的WeUI和无数花里胡梢的第三方小程序组
 
 3. 在project.config.json 的 devDependencies部分加入以下包：
           
-        "wepy-plugin-htmltag": "^1.0.0"
+        "wepy-compiler-sass": "^1.3.12",
+        "wepy-plugin-htmltag": "^1.0.0",
         "wepy-plugin-bootstrap": "^1.0.5",
             
 4. 安装依赖
@@ -55,7 +60,7 @@ _已经有适合微信开发的WeUI和无数花里胡梢的第三方小程序组
 6. 在src\styles\scss\目录下创建文件custom.scss, 在文件中bootstrap导入bootstrap的样式定义(由于小程序不支持所有的css标记， 所以只能部分导入)。如果需要使用自定义样式，可以在这个文件里定义变量来覆盖bootstrap默认的样式，自定义样式的详细方法请参考 https://getbootstrap.com/docs/4.3/getting-started/theming/
 
      ``` 
-     // Required
+         // Required
          @import "node_modules/bootstrap/scss/functions";
          @import "node_modules/bootstrap/scss/variables";
          @import "node_modules/bootstrap/scss/mixins";

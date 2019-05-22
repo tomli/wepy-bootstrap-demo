@@ -1,0 +1,308 @@
+
+
+    <view class="_div container">
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+            </view>
+        </view>
+        
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead p-2">项目卡片</view>
+                <view class="_div card">
+                    <image src="http://5b0988e595225.cdn.sohucs.com/images/20171221/bb6a89b638844a63ab3bb3ab95e10df1.jpeg" class="_img card-img-top" alt="..."></image>
+                    <view class="_div card-body">
+                        <view class="_h5 card-title">月之暗面</view>
+                        <view class="_p card-text">《The Dark Side Of The Moon》被认为是代表Pink Floyd创作理念的巅峰之作，理解这张专的内涵比较有难度，因为内容比较隐晦，而且极具个性。
+                            它的封面设计也极具科幻色彩，一束白光穿过三棱镜被分成6色彩，这6种色彩在背面又被融为一束白光。这个极具科技色彩的设计到底表达什么意义到现在都是众说纷纭。</view>
+                        <button class="btn btn-primary">购买</button>
+                    </view>
+                </view>
+            </view>
+
+            <view class="_div wbd-example-cd card border-0">
+                <view class="_div card-body">
+                    <view class="_div bg-light lead p-2">光秃秃的卡片</view>
+                    <view class="_div card">
+                        <view class="_div card-body">
+                            双腿夹着灵魂，赶路匆忙。.
+                        </view>
+                    </view>
+                </view>
+            </view>
+
+            <view class="_div wbd-example-cd card border-0">
+                <view class="_div card-body">
+                    <view class="_div bg-light lead p-2">带header的卡片</view>
+                    <view class="_div card">
+                        <view class="_h5 card-header">Neuralink</view>
+                        <view class="_div card-body">
+                            <view class="_h5 card-title">人类巨人</view>
+                            <view class="_p card-text">我们作为整体沟通得越好，我们的物种就越能够发挥作用，就像一个单一的有机体。集体知识塔是它的大脑，每个人的大脑就像一个神经或它身上的肌肉纤维。随着我们时代大众传播的兴盛，人类的集体形态——人类巨人，出现了。</view>
+                            <button class="btn btn-primary">Go somewhere</button>
+                        </view>
+                    </view>
+                </view>
+            </view>
+
+            <view class="_div wbd-example-cd card border-0">
+                <view class="_div card-body">
+                    <view class="_div bg-light lead p-2">带footer的卡片</view>
+                    <view class="_div card">
+                        <view class="_div card-body">
+                            <view class="_h5 card-title">Meat Is Murder</view>
+                            <view class="_p card-text">公元445年匈奴仁君莫特（Mort the Sensitive Hun）出版宣扬动物权至上的铿锵巨著《肉食无异谋杀》（Meat Is Murder），力图藉此唤起四方蛮夷从此放下屠刀。</view>
+                        </view>
+                        <view class="_div card-footer text-muted">
+                            THE SMITHS
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead p-2">并排排列</view>
+                <view class="_div row">
+                    <view class="_div col-6">
+                        <view class="_div card">
+                            <view class="_div card-body">
+                                <view class="_h5 card-title">Speak to Me</view>
+                                <view class="_p card-text">“I've been mad for fucking years, absolutely years……”</view>
+                                <button class="btn-sm btn-primary">试听</button>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="_div col-6">
+                        <view class="_div card">
+                            <view class="_div card-body">
+                                <view class="_h5 card-title">Breathe</view>
+                                <view class="_p card-text">真正的旋律随着吉他和键盘开始出现，缓缓的、从容不迫地带你进入梦幻状态……</view>
+                                <button class="btn-sm btn-primary">试听</button>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead p-2">带tab页的卡片</view>
+                <view class="_div card text-center">
+                    <view class="_div card-header">
+                        <view class="_ul nav nav-tabs card-header-tabs">
+                            <view class="_li nav-item">
+                                <text class="_a nav-link active">人物概况</text>
+                            </view>
+                            <view class="_li nav-item">
+                                <text class="_a nav-link">电影创作</text>
+                            </view>
+                            <view class="_li nav-item">
+                                <text class="_a nav-link disabled" tabindex="-1" aria-disabled="true">艺术创作</text>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="_div card-body">
+                        <view class="_h5 card-title">安迪·沃霍尔</view>
+                        <view class="_p card-text text-left">出生于美国宾夕法尼亚州的匹兹堡，是一位美国艺术家、印刷家、电影摄影师，被誉为20世纪艺术界最有名的人物之一。沃霍尔是视觉艺术运动波普艺术最有名的开创者之一，他大胆尝试凸版印刷、橡皮或木料拓印、金箔技术、照片投影等各种复制技法。他不仅是波普艺术的领袖人物，还是电影制片人、作家、摇滚乐作曲者、出版商，他是纽约社交界、艺术界大红大紫的明星式艺术家。沃霍尔发明了广为流传的“成名十五分钟”理论，在宾夕法尼亚州匹兹堡，有安迪·沃霍的博物馆纪念这位伟大艺术家的作品及不平凡的一生。2014年，他的作品毛泽东画像在英国以760万英镑（约合人民币7663万元）的高价被拍卖。</view>
+                    </view>
+                </view>
+
+            </view>
+        </view>
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead p-2">用图片作背景</view>
+                <view class="_div card bg-dark text-white">
+                    <image src="http://5b0988e595225.cdn.sohucs.com/images/20171221/e9d5117b498a408b92f2868d8b95fd35.jpeg" class="_img card-img" alt="..."></image>
+                    <view class="_div card-img-overlay">
+                        <view class="_h5 card-title">Bob Marley</view>
+                        <view class="_p card-text">Bob Marley 将牙买加民间的Reggae音乐发扬光大，走向世界。当他36岁因癌症逝世的时候，举国哀悼，举行了隆重的国葬。这张1984年发行的精选集是对他短暂而精彩的一生的总结。</view>
+                        <view class="_p card-text">Legend (1984)</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead p-2">卡片内水平布局</view>
+                <view class="_div card">
+                    <view class="_div row no-gutters">
+                        <view class="_div col-4">
+                            <image src="https://image.tmdb.org/t/p/w220_and_h330_face/dLWCaKcdspaFPZoZCKDVogioAep.jpg" class="_img card-img" style="height:100%;"></image>
+                        </view>
+                        <view class="_div col-8">
+                            <view class="_div card-body">
+                                <view class="_h5 card-title">雨月物語</view>
+                                <view class="_p card-text">改編自上田秋成的鬼怪小說《雨月物語》中「蛇性的婬」和「淺芒宿驛」兩個故事。溝口健二的「全景長鏡頭」美學，在本片中給人留下了深刻的印象。</view>
+                                <view class="_p card-text"><text class="_small text-muted">◎本片入選日本名片200部</text></view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+
+
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead p-2">带字体颜色和背景色</view>
+                <view class="_div card text-white bg-primary mb-3" style="max-width: 18rem;">
+                    <view class="_div card-header">导演</view>
+                    <view class="_div card-body">
+                        <view class="_h5 card-title">沟口健二</view>
+                        <view class="_p card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</view>
+                    </view>
+                </view>
+                <view class="_div card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                    <view class="_div card-header">原著</view>
+                    <view class="_div card-body">
+                        <view class="_h5 card-title">上田秋成</view>
+                        <view class="_p card-text">日本江户时代后期的小说家、歌人，出身大阪。本名东作。幼名仙次郎，秋成为其雅号。主要是在日本国学方面有所建树。</view>
+                    </view>
+                </view>
+                <view class="_div card text-white bg-success mb-3" style="max-width: 18rem;">
+                    <view class="_div card-header">角色</view>
+                    <view class="_div card-body">
+                        <view class="_h5 card-title">源十郎</view>
+                        <view class="_p card-text">陶瓷工，他打算烧些瓷器出售发战争财，并动员妻子宫木、妹妹阿滨和妹夫藤兵和他一起干。在他们用船运卖陶瓷途中，源十郎遇见一个美艳女子要买他的瓷器，并被她迷住，后被一行脚僧告知此女子原为一个全家都已死亡的女鬼，行脚僧替他写了一套咒语，才使他脱身回到故乡。</view>
+                    </view>
+                </view>
+                <view class="_div card text-white bg-danger mb-3" style="max-width: 18rem;">
+                    <view class="_div card-header">角色</view>
+                    <view class="_div card-body">
+                        <view class="_h5 card-title">若狭</view>
+                        <view class="_p card-text">妖艳女子，虽为城主的女儿，却是一个在战争中全家都已死亡的女鬼，她假称要买源十郎的瓷器，然后迷惑了他，让其沉迷肉体之欢，但最终源十郎挣脱了她的控制。</view>
+                    </view>
+                </view>
+                <view class="_div card text-white bg-warning mb-3" style="max-width: 18rem;">
+                    <view class="_div card-header">角色</view>
+                    <view class="_div card-body">
+                        <view class="_h5 card-title">宫木</view>
+                        <view class="_p card-text">源十郎的妻子，被丈夫动员一起去运卖陶瓷，途中发现风险很大，她不得已自己带着孩子回乡，但在回家途中被人杀害变成了女鬼。</view>
+                    </view>
+                </view>
+                <view class="_div card text-white bg-info mb-3" style="max-width: 18rem;">
+                    <view class="_div card-header">角色</view>
+                    <view class="_div card-body">
+                        <view class="_h5 card-title">藤兵卫</view>
+                        <view class="_p card-text">源十郎的妹夫，渴望并追求当一个武士，他被源十郎动员一起去运卖陶瓷，后来他抛下妻子去加入了军队，在战争中捡到一敌将首领的头颅拿去邀功，因此备受重用，但当他得知阿滨已经沦为娼妓后，毅然带着阿滨回到了故乡</view>
+                    </view>
+                </view>
+                <view class="_div card bg-light mb-3" style="max-width: 18rem;">
+                    <view class="_div card-header">角色</view>
+                    <view class="_div card-body">
+                        <view class="_h5 card-title">阿滨</view>
+                        <view class="_p card-text">源十郎的妹妹，被源十郎动员一起去运卖陶瓷，后来被藤兵卫抛弃，她去追赶丈夫途中，被一些士兵轮奸，沦为娼妓，最终她跟随丈夫回到了故乡，二人过起了自食其力的平静生活。</view>
+                    </view>
+                </view>
+                <view class="_div card text-white bg-dark mb-3" style="max-width: 18rem;">
+                    <view class="_div card-header">主演</view>
+                    <view class="_div card-body">
+                        <view class="_h5 card-title">森雅之</view>
+                        <view class="_p card-text">森雅之（Masayuki Mori，1911年1月13日～1973年10月7日）本名有岛行光（ありしま ゆきてる）。小说家有岛武郎之子，日本男演员。
+                            在《电影旬报》评选的日本最佳男演员上总能位居前列。</view>
+                    </view>
+                </view>
+
+            </view>
+        </view>
+
+
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead p-2">带菜色边框</view>
+                <view class="_h5 card border-primary mb-3" style="max-width: 18rem;">
+                    <view class="_div card-header">韩国</view>
+                    <view class="_h5 card-body text-primary">
+                        <view class="_h5 card-title">老男孩</view>
+                        <view class="_p card-text">《老男孩》是由朴赞郁执导，崔岷植、刘智泰、姜惠贞等主演的一部惊悚电影。影片于2003年11月21日在韩国上映</view>
+                </view>
+            </view>
+            <view class="_div card border-secondary mb-3" style="max-width: 18rem;">
+                <view class="_div card-header">香港</view>
+                <view class="_div card-body text-secondary">
+                    <view class="_h5 card-title">旺角黑夜</view>
+                    <view class="_p card-text">是由尔冬升执导，张柏芝、吴彦祖、方中信等演员主演的动作剧情片。影片讲述了一个到香港打工的北方姑娘和一个枪手在24小时内发生的故事。</view>
+                </view>
+            </view>
+            <view class="_div card border-success mb-3" style="max-width: 18rem;">
+                <view class="_div card-header">美国</view>
+                <view class="_div card-body text-success">
+                    <view class="_h5 card-title">致命魔术</view>
+                    <view class="_p card-text">影片讲述的是在魔术产生盛行的维多利亚时期，出现了两位极有天赋的年轻魔术师、两个好朋友，罗伯特·安吉尔和阿尔弗雷德·伯登。两个人因为互相嫉妒猜疑，而成了势不两立的对手，他们用各种方法来证明自己是那个时代首席魔术师的故事</view>
+                </view>
+            </view>
+            <view class="_div card border-danger mb-3" style="max-width: 18rem;">
+                <view class="_div card-header">美国</view>
+                <view class="_div card-body text-danger">
+                    <view class="_h5 card-title">大开眼界</view>
+                    <view class="_p card-text">由美国华纳兄弟公司出品的惊悚剧情片，由斯坦利·库布里克执导，汤姆·克鲁斯、妮可·基德曼、西德尼·波拉克联合主演。影片于1999年7月13日在美国上映 </view>
+                </view>
+            </view>
+            <view class="_div card border-warning mb-3" style="max-width: 18rem;">
+                <view class="_div card-header">瑞典</view>
+                <view class="_div card-body text-warning">
+                    <view class="_h5 card-title">在一起</view>
+                    <view class="_p card-text">《在一起》是2000年上映的瑞典，丹麦，意大利合拍电影，由卢卡斯·莫迪森导演。</view>
+                </view>
+            </view>
+            <view class="_div card border-info mb-3" style="max-width: 18rem;">
+                <view class="_div card-header">台湾</view>
+                <view class="_div card-body text-info">
+                    <view class="_h5 card-title">饮食男女</view>
+                    <view class="_p card-text">是由李安执导，郎雄、吴倩莲、杨贵媚、王渝文主演的剧情片，于1994年8月3日在美国上映。该片讲述了妻子去世多年的老朱和三个女儿在家庭生活中的观念冲突和各自的情感故事。</view>
+                </view>
+            </view>
+            <view class="_div card border-light mb-3" style="max-width: 18rem;">
+                <view class="_div card-header">法国</view>
+                <view class="_div card-body">
+                    <view class="_h5 card-title">巴黎野玫瑰</view>
+                    <view class="_p card-text">该片讲述了法国巴黎一对年轻的情侣过着坎坷的爱情和悲惨的生活故事。影片于1986年4月9日在法国上映。</view>
+                </view>
+            </view>
+            <view class="_div card border-dark mb-3" style="max-width: 18rem;">
+                <view class="_div card-header">越南</view>
+                <view class="_div card-body text-dark">
+                    <view class="_h5 card-title">《三轮车夫》</view>
+                    <view class="_p card-text">是由陈英雄执导，黎文禄、陈女燕溪、梁朝伟、阮如琼等主演的剧情片。1995年该片获得第52届威尼斯电影节金狮奖。</view>
+                </view>
+            </view>
+
+        </view>
+    </view>
+
+
+    <view class="_div wbd-example-cd card border-0">
+        <view class="_div card-body">
+            <view class="_div bg-light lead p-2">去掉header和footer的背景色</view>
+                <view class="_div card border-success mb-3" style="max-width: 18rem;">
+                    <view class="_div card-header bg-transparent border-success">第一章</view>
+                    <view class="_div card-body text-success">
+                        <view class="_h5 card-title">安妮·海瑟薇</view>
+                        <view class="_p card-text">大自然是残忍的,恐怖的,但是你不能说它是邪恶的。就象狮子撕碎一只羚羊,你不能说它是邪恶的。</view>
+                    </view>
+                    <view class="_div card-footer bg-transparent border-success">《星际穿越》</view>
+                </view>
+            </view>
+        </view>
+
+<!--
+        <view class="_div wbd-example-cd">
+            <view class="_p">
+                <text>\n</text>
+                <navigator url="https://getbootstrap.com/docs/4.3/components/card/"  >
+                    <text class="_strong"> 详细用法</text>
+                </navigator>
+            </view>
+        </view>
+        -->
+
+    </view>

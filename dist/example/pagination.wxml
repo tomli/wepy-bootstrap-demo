@@ -1,0 +1,137 @@
+
+
+    <view class="_div container">
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead rounded-top  p-2">普通翻页</view>
+
+                <view class="_nav" aria-label="Page navigation example">
+                    <view class="_ul pagination">
+                        <view class="_li page-item"><text class="_a page-link" href="#">上一页</text></view>
+                        <view class="_li page-item"><text class="_a page-link" href="#">1</text></view>
+                        <view class="_li page-item"><text class="_a page-link" href="#">2</text></view>
+                        <view class="_li page-item"><text class="_a page-link" href="#">3</text></view>
+                        <view class="_li page-item"><text class="_a page-link" href="#">下一页</text></view>
+                    </view>
+                </view>
+
+            </view>
+        </view>
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead rounded-top  p-2">带符号翻页</view>
+
+                <view class="_nav" aria-label="Page navigation example">
+                    <view class="_ul pagination">
+                        <view class="_li page-item">
+                            <text class="_a page-link" href="#" aria-label="Previous">
+                                <text class="_span" aria-hidden="true">«</text>
+                            </text>
+                        </view>
+                        <view class="_li page-item"><text class="_a page-link" href="#">1</text></view>
+                        <view class="_li page-item"><text class="_a page-link" href="#">2</text></view>
+                        <view class="_li page-item"><text class="_a page-link" href="#">3</text></view>
+                        <view class="_li page-item">
+                            <text class="_a page-link" href="#" aria-label="Next">
+                                <text class="_span" aria-hidden="true">»</text>
+                            </text>
+                        </view>
+                    </view>
+                </view>
+
+            </view>
+        </view>
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead rounded-top  p-2">高亮激活项</view>
+
+                <view class="_nav" aria-label="...">
+                    <view class="_ul pagination">
+                        <view class="_li page-item disabled">
+                            <text class="_a page-link" href="#" tabindex="-1" aria-disabled="true">Previous</text>
+                        </view>
+                        <view class="_li page-item"><text class="_a page-link" href="#">1</text></view>
+                        <view class="_li page-item active" aria-current="page">
+                            <text class="_a page-link" href="#">2 <text class="_span sr-only">(current)</text></text>
+                        </view>
+                        <view class="_li page-item"><text class="_a page-link" href="#">3</text></view>
+                        <view class="_li page-item">
+                            <text class="_a page-link" href="#">Next</text>
+                        </view>
+                    </view>
+                </view>
+
+            </view>
+        </view>
+
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead rounded-top  p-2">居中</view>
+                <view class="_nav" aria-label="Page navigation example">
+                    <view class="_ul pagination justify-content-center">
+                        <view class="_li page-item disabled">
+                            <text class="_a page-link" href="#" tabindex="-1" aria-disabled="true">Previous</text>
+                        </view>
+                        <view class="_li page-item"><text class="_a page-link" href="#">1</text></view>
+                        <view class="_li page-item"><text class="_a page-link" href="#">2</text></view>
+                        <view class="_li page-item"><text class="_a page-link" href="#">3</text></view>
+                        <view class="_li page-item">
+                            <text class="_a page-link" href="#">Next</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead rounded-top  p-2">居右</view>
+                <view class="_nav" aria-label="Page navigation example">
+                    <view class="_ul pagination justify-content-end">
+                        <view class="_li page-item disabled">
+                            <text class="_a page-link" href="#" tabindex="-1" aria-disabled="true">Previous</text>
+                        </view>
+                        <view class="_li page-item"><text class="_a page-link" href="#">1</text></view>
+                        <view class="_li page-item"><text class="_a page-link" href="#">2</text></view>
+                        <view class="_li page-item"><text class="_a page-link" href="#">3</text></view>
+                        <view class="_li page-item">
+                            <text class="_a page-link" href="#">Next</text>
+                        </view>
+                    </view>
+                </view>
+
+            </view>
+        </view>
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead rounded-top  p-2">放大</view>
+
+                <view class="_nav" aria-label="...">
+                    <view class="_ul pagination pagination-lg">
+                        <view class="_li page-item active">
+                            <text class="_a page-link" href="#"> 1</text>
+                        </view>
+                        <view class="_li page-item"><text class="_a page-link" href="#">2</text></view>
+                        <view class="_li page-item"><text class="_a page-link" href="#">3</text></view>
+                    </view>
+                </view>
+
+            </view>
+        </view>
+<!--
+        <view class="_div wbd-example-cd">
+            <view class="_p">
+                <text>\n</text>
+                <navigator url="/pages/web?url=https://getbootstrap.com/docs/4.3/content/typography/"  >
+                    <text class="_strong"> 详细用法</text>
+                </navigator>
+            </view>
+        </view>
+        -->
+
+    </view>

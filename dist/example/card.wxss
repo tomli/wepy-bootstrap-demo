@@ -1,0 +1,3 @@
+.wbd-example-cd > .card-body > .bg-light {
+  margin-bottom: 55rpx;
+}

@@ -1,0 +1,60 @@
+
+
+    <view class="_div container">
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead rounded-top  p-2">与标题分行排列</view>
+                <form>
+                    <view class="_div form-group">
+                        <text class="_label" for="exampleInputEmail1">Email address</text>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/>
+                        <text id="emailHelp" class="_small form-text text-muted">We'll never share your email with anyone else.</text>
+                    </view>
+                    <view class="_div form-group">
+                        <text class="_label" for="exampleInputPassword1">Password</text>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"/>
+                    </view>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </view>
+        </view>
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead rounded-top  p-2">与标题同行排列</view>
+                <form>
+                    <view class="_div form-group row">
+                        <text for="inputEmail3" class="_label col-4 col-form-label">Email</text>
+                        <view class="_div col-8">
+                            <input type="email" class="form-control" id="inputEmail3" placeholder="Email"/>
+                        </view>
+                    </view>
+                    <view class="_div form-group row">
+                        <text for="inputPassword3" class="_label col-4 col-form-label">Password</text>
+                        <view class="_div col-8">
+                            <input type="password" class="form-control" id="inputPassword3" placeholder="Password"/>
+                        </view>
+                    </view>
+                </form>
+            </view>
+        </view>
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead rounded-top  p-2">带验证提示</view>
+                待完成。。。
+            </view>
+        </view>
+
+<!--
+        <view class="_div wbd-example-cd">
+            <view class="_p">
+                <text>\n</text>
+                <navigator url="/pages/web?url=https://getbootstrap.com/docs/4.3/content/typography/"  >
+                    <text class="_strong"> 详细用法</text>
+                </navigator>
+            </view>
+        </view>-->
+
+    </view>

@@ -1,0 +1,10 @@
+
+
+    <view class="_div wbd-example-cd card border-0">
+        <view class="_div card-body">
+            <view class="_div bg-light rounded-top  p-2">弹出式提示，采用小程序原生的toast</view>
+            <button class="btn btn-block btn-success" type="button" bindtap="openToast">成功提示</button>
+            <button class="btn btn-block btn-success" type="button" bindtap="openLoading">加载中提示</button>
+
+        </view>
+    </view>

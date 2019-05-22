@@ -13,7 +13,6 @@
     .wbd-example-cd {
         /*margin-top: 58rpx;*/
     }
-
     navigator.wbd-example-cd{
         display: none;
     }
@@ -37,7 +36,6 @@
         line-height: inherit; }
         */
 
-    
 </style>
 
 <script>
@@ -51,6 +49,9 @@ export default class extends wepy.app {
   config = {
     pages: [
       'example/index',
+      'example/list',
+      'example/article',
+      'example/card',
       'example/jumbotron',
       'example/accordion',
       'example/text',
@@ -76,11 +77,8 @@ export default class extends wepy.app {
       'example/slider',
       'example/breadcrumb',
       'example/input',
-      'example/article',
       'example/uploader',
       'example/images',
-      'example/card',
-      'example/list',
       'example/badge',
       'example/button',
       // 'example/weui/actionsheet',

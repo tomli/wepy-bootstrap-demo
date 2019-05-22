@@ -1,12 +1,40 @@
+._li{
+  display: list-item; }
+._ol{
+  list-style-type: decimal;
+  padding-left: 1.15rpx; }
+._ul ._ul{
+  list-style-type: circle; }
+._ul{
+  list-style-type: disc;
+  padding-left: 1.15rpx; }
+text,
+    text::before,
+    text::after{
+  box-sizing: border-box; }
+view,
+    view::before,
+    view::after{
+  box-sizing: border-box; }
 @import "./../npm/wepy-com-toast/toast.wxss";
 .arrow-most-right:after {
-  content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPjxwYXRoIGQ9Ik0yLjUgMEwxIDEuNSAzLjUgNCAxIDYuNSAyLjUgOGw0LTQtNC00eiIgZmlsbD0iY3VycmVudENvbG9yIi8+PC9zdmc+);
-}
+  content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPjxwYXRoIGQ9Ik0yLjUgMEwxIDEuNSAzLjUgNCAxIDYuNSAyLjUgOGw0LTQtNC00eiIgZmlsbD0iY3VycmVudENvbG9yIi8+PC9zdmc+); }
+
 .card-header:first-child {
-  border-radius: 0 0 0 0;
-}
+  border-radius: 0 0 0 0; }
+
 .accordion > .card:first-of-type {
   border-top: 0;
   border-top-right-radius: 0;
-  border-top-left-radius: 0;
-}
+  border-top-left-radius: 0; }
+
+.accordion .card-header {
+  height: 100rpx;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx; }
+
+.list-group-flush > navigator {
+  border-bottom: 1px solid #dee2e6; }
+
+.list-group-flush > navigator:last-child {
+  border-bottom: 0 !important; }
