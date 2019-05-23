@@ -9,7 +9,6 @@
 3. 在project.config.json 的 devDependencies部分加入以下包：
           
         "wepy-compiler-sass": "^1.3.12",
-        "wepy-plugin-htmltag": "^1.0.0",
         "wepy-plugin-bootstrap": "^1.0.5",
             
 4. 安装依赖
@@ -22,6 +21,8 @@
       plugins: {
         'bootstrap': {
           filter: /(app|index)\.(wxss)$/, // 匹配需转换的css文件
+          //  示例： 如果需要转换 index.wxss 和 app.wxss 两个文件, 则将filter设为下面的形式
+          // filter: /(app|index)\.(wxss)$/,
           remToRpx: 35// 这个参数可以用来调整转换rem单位到rpx单位时使用的比例
         },
         'htmltag': {
