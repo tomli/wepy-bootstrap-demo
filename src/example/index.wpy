@@ -28,10 +28,10 @@
 <template>
   <div class="container">
     <div class="jumbotron bg-white mb-n4 border-primary border">
-        <h2 ><strong>Bootstrap Demo</strong></h2>
+        <h2 class="text-primary"><strong>Bootstrap Demo</strong></h2>
       <p class="lead">这是一个使用Bootstrap4开发小程序的小样，希望能够帮助到习惯BS开发模式的码农朋友们.</p>
       <hr class="my-4" />
-      <p>下面是一些适用于小程序的bootsrap组件展示, 详细用法请下载源代码 <br/>
+      <p>下面是一些适用于小程序的bootsrap组件展示, 详细用法请下载源代码查看 <br/>
           <small>https://github.com/tomli/wepy-bootstrap-demo.git</small>
       </p>
       <!--<a class="btn btn-success btn-lg" href="#" role="button">Learn more</a>-->

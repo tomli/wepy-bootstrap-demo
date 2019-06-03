@@ -50,12 +50,12 @@
         <div class="wbd-example-cd card border-0">
             <div class="card-body">
                 <div class="bg-light lead rounded-top  p-2">竖直排列</div>
-                <div class="d-flex flex-row bd-highlight mb-3">
+                <div class="d-flex flex-column bd-highlight mb-3">
                     <div class="p-2 bd-highlight">Red Hot Chili Peppers</div>
                     <div class="p-2 bd-highlight">Nirvana</div>
                     <div class="p-2 bd-highlight">The Smashing Pumpkins</div>
                 </div>
-                <div class="d-flex flex-row-reverse bd-highlight">
+                <div class="d-flex flex-column-reverse bd-highlight">
                     <div class="p-2 bd-highlight">Red Hot Chili Peppers</div>
                     <div class="p-2 bd-highlight">Nirvana</div>
                     <div class="p-2 bd-highlight">The Smashing Pumpkins</div>

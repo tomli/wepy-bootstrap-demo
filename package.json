@@ -18,10 +18,8 @@
   "license": "MIT",
   "dependencies": {
     "wepy": "^1.6.0",
-    "wepy-async-function": "^1.4.4",
+    "wepy-async-function": "^1.4.7",
     "wepy-com-toast": "^1.0.2",
-    "jquery": "3",
-    "popper.js": "^1.14.7",
     "bootstrap": "4.3.1"
   },
   "devDependencies": {

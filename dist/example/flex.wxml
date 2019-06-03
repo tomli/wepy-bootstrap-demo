@@ -44,12 +44,12 @@
         <view class="_div wbd-example-cd card border-0">
             <view class="_div card-body">
                 <view class="_div bg-light lead rounded-top  p-2">竖直排列</view>
-                <view class="_div d-flex flex-row bd-highlight mb-3">
+                <view class="_div d-flex flex-column bd-highlight mb-3">
                     <view class="_div p-2 bd-highlight">Red Hot Chili Peppers</view>
                     <view class="_div p-2 bd-highlight">Nirvana</view>
                     <view class="_div p-2 bd-highlight">The Smashing Pumpkins</view>
                 </view>
-                <view class="_div d-flex flex-row-reverse bd-highlight">
+                <view class="_div d-flex flex-column-reverse bd-highlight">
                     <view class="_div p-2 bd-highlight">Red Hot Chili Peppers</view>
                     <view class="_div p-2 bd-highlight">Nirvana</view>
                     <view class="_div p-2 bd-highlight">The Smashing Pumpkins</view>
