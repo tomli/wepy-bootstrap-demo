@@ -48,6 +48,7 @@ import wepy from 'wepy'
 export default class extends wepy.app {
   config = {
     pages: [
+      'example/input',
       'example/index',
       'example/list',
       'example/article',
@@ -76,7 +77,6 @@ export default class extends wepy.app {
       'example/icons',
       'example/slider',
       'example/breadcrumb',
-      'example/input',
       'example/uploader',
       'example/images',
       'example/badge',

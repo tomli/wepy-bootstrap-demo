@@ -180,7 +180,7 @@ button:focus {
 button,
 ._select,
 ._optgroup,
-._textarea {
+textarea {
   margin: 0;
   font-family: inherit;
   font-size: inherit;
@@ -226,7 +226,7 @@ button::-moz-focus-inner,
 ._input[type="month"] {
   -webkit-appearance: listbox; }
 
-._textarea {
+textarea {
   overflow: auto;
   resize: vertical; }
 
@@ -2528,8 +2528,8 @@ button.close {
 ._select.form-control[size], ._select.form-control[multiple] {
   height: auto; }
 
-._textarea.form-control {
-  height: auto; }
+textarea.form-control {
+  width: auto; }
 
 .form-group {
   margin-bottom: 35rpx; }
@@ -2678,7 +2678,7 @@ button.close {
   .form-control.is-valid+ .valid-tooltip {
     display: block; }
 
-.was-validated ._textarea.form-control:valid, ._textarea.form-control.is-valid {
+.was-validated textarea.form-control:valid, textarea.form-control.is-valid {
   padding-right: calc(1.5em + 26.25rpx);
   background-position: top calc(0.375em + 6.5625rpx) right calc(0.375em + 6.5625rpx); }
 
@@ -2775,7 +2775,7 @@ button.close {
   .form-control.is-invalid+ .invalid-tooltip {
     display: block; }
 
-.was-validated ._textarea.form-control:invalid, ._textarea.form-control.is-invalid {
+.was-validated textarea.form-control:invalid, textarea.form-control.is-invalid {
   padding-right: calc(1.5em + 26.25rpx);
   background-position: top calc(0.375em + 6.5625rpx) right calc(0.375em + 6.5625rpx); }
 

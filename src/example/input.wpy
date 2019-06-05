@@ -45,6 +45,13 @@
 
         <div class="wbd-example-cd card border-0">
             <div class="card-body">
+                <div class="bg-light lead rounded-top  p-2">Textarea</div>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="30"></textarea>
+            </div>
+        </div>
+
+        <div class="wbd-example-cd card border-0">
+            <div class="card-body">
                 <div class="bg-light lead rounded-top  p-2">带验证提示</div>
                 待完成。。。
             </div>

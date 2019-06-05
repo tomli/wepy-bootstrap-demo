@@ -42,7 +42,7 @@
     "wepy-compiler-less": "^1.3.10",
     "wepy-compiler-sass": "^1.3.12",
     "wepy-eslint": "^1.5.3",
-    "wepy-plugin-bootstrap": "^1.0.5",
+    "wepy-plugin-bootstrap": "^1.0.9",
     "wepy-plugin-htmltag": "^1.0.0"
   }
 }
