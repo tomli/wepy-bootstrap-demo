@@ -3,10 +3,12 @@
 </style>
 <template>
 
+    <div class="container">
+
 
         <div class="wbd-example-cd card border-0">
             <div class="card-body">
-                <div class="bg-light lead rounded-top  p-2">Accordion</div>
+                <div class="text-center lead rounded-top  p-2">Accordion</div>
 
                 <div class="accordion" id="accordionExample">
                     <repeat for="{{list}}" key="id">
@@ -20,11 +22,11 @@
                             </div>
                             <div id="collapseOne" class="collapse {{item.open ? 'show' : ''}}">
                                 <div class="card-body">
-<!--                                    <slot name="content"></slot>-->
-                                    <slot name="todo" :todo="{{item}}">
-                                        <!-- Fallback content -->
-                                        {{ todo.open }}
-                                    </slot>
+                                    <ul class="list-group list-group-flush">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center" wx:for="{{item.pages}}" wx:for-item="page" wx:key="*this">
+                                        {{page}}
+                                    </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -33,15 +35,35 @@
             </div>
         </div>
 
+        <AccordionComponent :list="list">
+            <view slot="todo" slot-scope="{todo }">
+                {{ todo }}
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-between align-items-center" wx:for="{{todo.pages}}" wx:for-item="page" wx:key="*this">
+                        {{page}}
+                    </li>
+                </ul>
+            </view>
+        </AccordionComponent>
+
+    </div>
 
 </template>
 
 <script>
     import wepy from 'wepy'
+    import AccordionComponent from '../components/accordion_cmp'
 
-    export default class AccordionComponent extends wepy.component {
-/*
-   data = {
+    export default class AccordionCMP extends wepy.page {
+
+
+
+      components = {
+        AccordionComponent: AccordionComponent
+      }
+
+
+      data = {
         list: [
           {
             id: 'DE',
@@ -75,8 +97,6 @@
           }
         ]
       }
-      */
-      props=['list']
 
       methods = {
         toggle (id) {

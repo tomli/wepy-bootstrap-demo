@@ -1,7 +1,8 @@
 {
   "pages": [
-    "example/input",
     "example/index",
+    "example/accordioncmp",
+    "example/input",
     "example/list",
     "example/article",
     "example/card",

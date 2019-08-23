@@ -48,8 +48,9 @@ import wepy from 'wepy'
 export default class extends wepy.app {
   config = {
     pages: [
-      'example/input',
       'example/index',
+      'example/accordioncmp',
+      'example/input',
       'example/list',
       'example/article',
       'example/card',
