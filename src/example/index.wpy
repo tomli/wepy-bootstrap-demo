@@ -117,7 +117,7 @@
           id: 'component',
           name: '动态组件',
           open: false,
-          pages: ['accordion', 'popover', 'scrollspy']
+          pages: ['accordion', 'selector', 'popover', 'scrollspy']
         }
       ]
     }

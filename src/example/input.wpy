@@ -50,6 +50,44 @@
             </div>
         </div>
 
+
+        <div class="wbd-example-cd card border-0">
+            <div class="card-body">
+                <div class="bg-light lead rounded-top  p-2">带head和tail的输入框</div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">$</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                    <div class="input-group-append">
+                        <span class="input-group-text">.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="wbd-example-cd card border-0">
+            <div class="card-body">
+                <div class="bg-light lead rounded-top  p-2">选择输入</div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" for="inputGroupSelect01">{{orientOptions.placeholderName}}</label>
+                    </div>
+                    <select class="custom-select  h-auto" id="inputGroupSelect01">
+                        <picker bindchange="bindPickerChange" value="{{orientOptions.idx}}" range="{{orientOptions.names}}" >
+                            {{orientOptions.idx==-1?'请选择':orientOptions.names[orientOptions.idx]}}
+                        </picker>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
         <div class="wbd-example-cd card border-0">
             <div class="card-body">
                 <div class="bg-light lead rounded-top  p-2">带验证提示</div>
@@ -75,6 +113,21 @@
     import wepy from 'wepy'
 
     export default class Input extends wepy.page {
+      data = {
+        orientOptions: {names:[
+            '希腊',
+            '巴比伦',
+            '埃及'],
+          placeholderName: '地区',
+          idx:-1
+        }
+      }
+      methods = {
+        bindPickerChange (e) {
+          this.orientOptions.idx = e.detail.value
+          this.$emit('picker-emit', this.orientOptions.idx)
+        }
+      }
 
     }
 </script>

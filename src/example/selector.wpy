@@ -1,0 +1,62 @@
+<style  lang='less' src="../styles/less/open-iconic.less" />
+<style scoped>
+    .list-group-item.active{
+        border-color:#fff;
+    }
+</style>
+<template>
+
+    <div class="container">
+
+
+        <div class="wbd-example-cd card border-0">
+            <div class="card-body">
+                <div class="bg-light lead rounded-top  p-2">单选 - 水平排列 </div>
+                <div class="form-group">
+                    <RadioSelector :target.sync="val" :options="list" horizontal="true"></RadioSelector>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="wbd-example-cd card border-0">
+            <div class="card-body">
+                <div class="bg-light lead rounded-top  p-2">单选 - 竖直排列 </div>
+                <div class="form-group">
+                    <RadioSelector2 :target.sync="val" :options="list2" ></RadioSelector2>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</template>
+
+<script>
+    import wepy from 'wepy'
+    import RadioSelector from '../components/radioSelector'
+
+    export default class Selector extends wepy.page {
+      data = {
+        val: null,
+        list: ['普通话', '粤语', '闽南语'],
+        list2: ['科恩兄弟', '昆汀·塔伦蒂诺', '吉姆•贾木许', '史蒂文•索德伯格', '大卫·林奇']
+      }
+
+      components = {
+        RadioSelector: RadioSelector,
+        RadioSelector2: RadioSelector
+      }
+
+      events = {
+        'radio-emit': (value) => {
+          wepy.showToast({
+            title: '选中"' + this.val + '"',
+            icon: 'none',
+            duration: 1000
+          })
+        }
+      }
+    }
+</script>

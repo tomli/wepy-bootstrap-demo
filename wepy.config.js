@@ -24,27 +24,6 @@ module.exports = {
     less: {
       compress: prod
     },
-    /*
-    scss2: {
-      // outputStyle: 'compressed',
-      // data: '@import "/src/assets/scss/custom.scss',
-      // includePaths: [path.join(__dirname, 'src/assets/scss')],
-      postcss: {
-        plugins: [
-          require('postcss-mpvue-wxss')({
-            remToRpx: 35,  // 这个参数可以用来调整转换rem单位到rpx单位时使用的比例
-            replaceTagSelector: Object.assign(require('postcss-mpvue-wxss/lib/wxmlTagMap'), {
-              'button': 'button',
-              '*': 'view' // 将覆盖前面的 * 选择器被清理规则
-            })
-          }),
-          require('postcss-bootstrap-wxss')(),
-        ]
-      }
-    },
-    sass: {
-      outputStyle: 'compressed'
-    },*/
     babel: {
       sourceMap: true,
       presets: [

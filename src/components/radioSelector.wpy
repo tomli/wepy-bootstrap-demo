@@ -1,0 +1,62 @@
+<template>
+    <div class="list-group  {{horizontal?'list-group-horizontal':''}} text-center">
+        <repeat for="{{options}}" index="index" item="item">
+            <div class="list-group-item {{target===item?'oi':''}} btn-outline-light bg-primary text-white flex-fill px-3 py-{{horizontal?'1':'2'}}"
+                 data-glyph="circle-check"
+                 catchtap="changeFre({{item}})">
+                {{item}}
+            </div>
+            <!--                                            <div class="bg-white" style="width:2rpx"></div>-->
+            <!--                                            <div class="list-group-item btn-dark flex-fill border-left px-3 py-1" data-glyph="minus" catchtap="decreaseFrenqcy({{indexActivity}})"></div>-->
+        </repeat>
+    </div>
+</template>
+
+<script>
+    import wepy from 'wepy'
+
+export default class RadioSelector extends wepy.component {
+      data = {
+        options: null
+      }
+
+      props = {
+        target: {
+          default: null,
+          twoWay: true
+        },
+        horizontal: {
+          default: false
+        },
+        options: {
+          default: null
+        },
+        valuePropName: {
+          default: null
+        }
+      }
+
+        /*
+        watch = {
+          activity (newValue, oldValue) {
+            console.log(`num value: ${oldValue} -> ${newValue}`)
+            this.activity.frequency = this.activity.frequency || this.options[0].name
+          }
+        }
+        */
+      methods = {
+
+        changeFre(frequency) {
+          this.target = this.valuePropName ? frequency[this.valuePropName] : frequency
+          this.$apply()
+          this.$emit('radio-emit', this.target)
+        }
+      }
+      onLoad() {
+      }
+}
+</script>
+
+<style scoped>
+
+</style>
