@@ -1,8 +1,10 @@
 {
   "pages": [
+    "pages_ar/poster/coffeeshop",
+    "pages_ar/scene-ar-camera/index",
     "example/index",
+    "example/selector",
     "example/accordioncmp",
-    "example/input",
     "example/list",
     "example/article",
     "example/card",
@@ -42,5 +44,6 @@
     "navigationBarTitleText": "Bootstrap in WePY",
     "navigationBarTextStyle": "black"
   },
-  "sitemapLocation": "sitemap.json"
+  "lazyCodeLoading": "requiredComponents",
+  "sitemapLocation": "sitemap82.json"
 }

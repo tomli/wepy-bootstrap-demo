@@ -47,6 +47,44 @@
             </view>
         </view>
 
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead rounded-top  p-2">带head和tail的输入框</view>
+                <view class="_div input-group mb-3">
+                    <view class="_div input-group-prepend">
+                        <text class="_span input-group-text">$</text>
+                    </view>
+                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)"/>
+                    <view class="_div input-group-append">
+                        <text class="_span input-group-text">.00</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead rounded-top  p-2">选择输入</view>
+
+                <view class="_div input-group mb-3">
+                    <view class="_div input-group-prepend">
+                        <text class="_label input-group-text" for="inputGroupSelect01">{{orientOptions.placeholderName}}</text>
+                    </view>
+                    <select class="custom-select  h-auto" id="inputGroupSelect01">
+                        <picker bindchange="bindPickerChange" value="{{orientOptions.idx}}" range="{{orientOptions.names}}">
+                            {{orientOptions.idx==-1?'请选择':orientOptions.names[orientOptions.idx]}}
+                        </picker>
+                    </select>
+                </view>
+            </view>
+        </view>
+
+
+
+
+
         <view class="_div wbd-example-cd card border-0">
             <view class="_div card-body">
                 <view class="_div bg-light lead rounded-top  p-2">带验证提示</view>
