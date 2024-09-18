@@ -1,0 +1,48 @@
+<view class="demo-wrap">
+    <scroll-view class="demo-viewer" scroll-y="{{true}}">
+        <block bind:sceneReady="handleSceneReady">
+            <wall
+                    disable-scroll
+                    id="main-frame"
+                    width="{{renderWidth}}"
+                    height="{{renderHeight}}"
+                    captureState="{{captureState}}"
+                    bind:arTrackerState="handleMyARTrackerState"
+                    style="width:{{width}}px;height:{{height}}px;top:{{top}}px;left:{{left}}px;display:block;"
+            />
+        </block>
+        <view class="position-absolute" style="top:5px; left5px"></view>
+        <view class="intro">
+            <view class="intro-detail d-flex justify-content-around">
+                <button class="share" bindtap="flipX">X轴反转</button>
+                <button class="share" bindtap="flipY">Y轴反转</button>
+                <button class="share" bindtap="flipZ">Z轴反转</button>
+                <button class="share" bindtap="reset">reset</button>
+            </view>
+            <view class="intro-detail d-flex justify-content-around">
+                <view class="my-auto " bindtap="up">⬆</view>
+                <view class="my-auto " bindtap="down">⬇</view>
+                <view class="my-auto " bindtap="left">⬅</view>
+                <view class="my-auto " bindtap="right">➡︎</view>
+                <view>
+                    <button class=" btn btn-primary" bindtap="changeCaptureState">截屏分享</button>
+                </view>
+            </view>
+            <view class="intro-detail d-none">
+                <view class="intro-title " ><text>{{title}}</text> <button class="share" open-type="share">分享给好友</button></view>
+                <view class="description">{{intro}}</view>
+            </view>
+        </view>
+        <view wx:if="{{hint.length > 0}}" class="d-none">
+            <view class="hint-wrap">
+                <text class="hint-words" >{{hint}}</text>
+            </view>
+        </view>
+        <view class="holder d-none"></view>
+    </scroll-view>
+    <view class="back-btn-wrap" wx:if="{{showBackBtn}}" bind:tap="onClickBack">
+        <view class="back-line-t"></view>
+        <view class="back-line-b"></view>
+        <text class="text-white">{{hint}}</text>
+    </view>
+</view>

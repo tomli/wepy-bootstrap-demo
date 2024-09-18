@@ -1,0 +1,11 @@
+Model Information:
+* title:	Poster Frame
+* source:	https://sketchfab.com/3d-models/poster-frame-fb500d75d785433c8b82fdafac9e18cb
+* author:	rkochstudent (https://sketchfab.com/rkochstudent)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Poster Frame" (https://sketchfab.com/3d-models/poster-frame-fb500d75d785433c8b82fdafac9e18cb) by rkochstudent (https://sketchfab.com/rkochstudent) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

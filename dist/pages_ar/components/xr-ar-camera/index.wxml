@@ -1,0 +1,30 @@
+<xr-scene id="xr-scene" ar-system bind:ready="handleReady" bind:ar-ready="handleARReady" bind:ar-error="handleARError">
+  <xr-assets bind:progress="handleAssetsProgress" bind:loaded="handleAssetsLoaded">
+<!--    <xr-asset-load type="gltf" asset-id="gltf-table" src="https://mmbizwxaminiprogram-1258344707.cos.ap-guangzhou.myqcloud.com/xr-frame/demo/metal_table/scene.gltf" />-->
+<!--    <xr-asset-load type="gltf" asset-id="gltf-frame" src="https://6d6f-movief-b3iye-1300901012.tcb.qcloud.la/3d/poster/framed_image/framed_image.gltf" />-->
+    <xr-asset-load type="gltf" asset-id="gltf-frame" src="https://6d6f-movief-b3iye-1300901012.tcb.qcloud.la/3d/poster/poster_frame/scene.gltf" />
+    <xr-asset-material asset-id="moon-mat" effect="standard" uniforms="u_baseColorMap: moon-texture" render-queue="503"/>
+    <xr-asset-material asset-id="moon-silhouette" effect="simple" uniforms="u_baseColorFactor: 0.476 0.82 0.957 1.0" states="depthTestWrite: false" render-queue="502"/>
+  </xr-assets>
+  <xr-env env-data="gz-haixinsha"/>
+  <xr-node>
+    <xr-node node-id="camera-target" position="0 0 0"></xr-node>
+    <xr-node node-id="table-wrap" position="0 0 0">
+      <xr-mesh node-id="mesh-moon" position="10 0 0" scale="1.5 1.5 1.5" rotation="0 90 0" geometry="sphere" material="moon-mat"  receive-shadow cast-shadow>
+      <xr-mesh node-id="moon-silhouette"  position="0 0 0" scale="1.1 1.1 1.1" geometry="cube" material="moon-silhouette" bind:drag-shape="handleDragMoon"  cube-shape="radius: 1.5">
+          <xr-gltf id="frame" node-id="mesh-gltf-frame" position="0 -1 0" rotation="0 45 0" scale="5 5 5" model="gltf-frame" />
+      </xr-mesh>
+      </xr-mesh>
+<!--        <xr-gltf id="frame" node-id="mesh-gltf-frame" position="0 -1 0" rotation="0 45 0" scale="5 5 5" model="gltf-frame" />-->
+        <!--      <xr-gltf node-id="mesh-gltf-table" position="0 -1 0" rotation="0 45 0" scale="0.5 0.5 0.5" model="gltf-table" />-->
+    </xr-node>
+    <xr-camera
+      clear-color="0.925 0.925 0.925 1"
+      position="0 20 -35" target="camera-target"
+    />
+  </xr-node>
+  <xr-node node-id="lights">
+    <xr-light type="ambient" color="1 1 1" intensity="0.2" />
+    <xr-light type="directional" rotation="180 0 0" color="1 1 1" intensity="2" />
+  </xr-node>
+</xr-scene>

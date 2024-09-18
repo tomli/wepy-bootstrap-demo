@@ -1,0 +1,90 @@
+<xr-scene id="xr-scene" ar-system bind:ready="handleReady" bind:ar-ready="handleARReady" bind:ar-error="handleARError">
+    <xr-assets bind:progress="handleAssetsProgress" bind:loaded="handleAssetsLoaded">
+        <xr-asset-load type="gltf" asset-id="anchor" src="https://mmbizwxaminiprogram-1258344707.cos.ap-guangzhou.myqcloud.com/xr-frame/demo/ar-plane-marker.glb" />
+            <xr-asset-load type="gltf" asset-id="gltf-table" src="https://mmbizwxaminiprogram-1258344707.cos.ap-guangzhou.myqcloud.com/xr-frame/demo/metal_table/scene.gltf" />
+<!--        <xr-asset-load type="gltf" asset-id="gltf-frame" src="https://6d6f-movief-b3iye-1300901012.tcb.qcloud.la/3d/poster/poster_frame/scene.gltf" />-->
+<!--        <xr-asset-load type="gltf" asset-id="gltf-frame" src="https://6d6f-movief-b3iye-1300901012.tcb.qcloud.la/3d/poster/poster_frame/output/s.gltf" />-->
+<!--        <xr-asset-load type="gltf" asset-id="gltf-frame" src="https://6d6f-movief-b3iye-1300901012.tcb.qcloud.la/3d/poster/photo_frame/scene.gltf" />-->
+<!--        <xr-asset-load type="gltf" asset-id="gltf-frame" src="https://6d6f-movief-b3iye-1300901012.tcb.qcloud.la/3d/poster/picture_frame/scene.gltf" />-->
+        <xr-asset-load type="gltf" asset-id="gltf-frame" src="https://6d6f-movief-b3iye-1300901012.tcb.qcloud.la/3d/poster/framed_image/framed_image.gltf" />
+<!--        <xr-asset-load type="gltf" asset-id="gltf-frame" src="https://6d6f-movief-b3iye-1300901012.tcb.qcloud.la/3d/poster/ss.gltf" />-->
+<!--        <xr-asset-load type="gltf" asset-id="gltf-frame" src="https://6d6f-movief-b3iye-1300901012.tcb.qcloud.la/3d/poster/mountain-lake_picture/scene.gltf" />-->
+        <xr-asset-material asset-id="moon-silhouette" effect="simple" uniforms="u_baseColorFactor: 0.476 0.82 0.957 1.0" states="depthTestWrite: false" render-queue="502"/>
+<!--        <xr-asset-load type="texture" asset-id="surface_texture1" src="https://6d6f-movief-b3iye-1300901012.tcb.qcloud.la/blank_kanagawa.png" />-->
+    </xr-assets>
+<!--    <xr-env env-data="gz-haixinsha"/>-->
+    <xr-node>
+        <xr-ar-tracker mode="Plane" bind:ar-tracker-state="handleARTrackerState">
+            <xr-gltf model="anchor" node-id="gltf-anchor"></xr-gltf>
+        </xr-ar-tracker>
+
+        <!--
+        <xr-node node-id="setitem" visible="true">
+&lt;!&ndash;            <xr-gltf model="gltf-frame" scale="5 5 5"></xr-gltf>&ndash;&gt;
+&lt;!&ndash;            <xr-gltf id="frame2" node-id="mesh-gltf-frame2" position="0 15 0" rotation="180 90 90" scale="1 1 1" model="gltf-frame" />&ndash;&gt;
+            <xr-mesh node-id="moon-silhouette"  position="0 15 0" scale="1.1 1.1 1.1" geometry="sphere"
+                     material="moon-silhouette"
+                     bind:drag-shape="handleDragMoon" >
+                <xr-gltf id="frame" node-id="gltf-frame" position="0 -1 0" rotation="180 90 90" scale="1 1 1" model="gltf-frame" />
+            </xr-mesh>
+        </xr-node>-->
+            <xr-node node-id="setitem" position="0 0 0" visible="false" >
+<!--                <xr-gltf id="frame"  node-id="mesh-gltf-table" position="0 0 0" rotation="0 90 0" scale="5 5 5" model="gltf-frame" />-->
+                <xr-gltf id="frame"  node-id="mesh-gltf-table" position="0 0 0" rotation="0 -90 0" scale=".1 .1 .1" model="gltf-frame" />
+            </xr-node>
+<!--                <xr-gltf id="frame"  node-id="mesh-gltf-table" position="0 0 0" rotation="0 90 0" scale=".5 .5 .5" model="gltf-table" />-->
+        <!--
+
+&lt;!&ndash;        <xr-node node-id="camera-target" position="0 0 0"></xr-node>&ndash;&gt;
+        <xr-node node-id="table-wrap" position="0 0 0">
+            <xr-mesh node-id="moon-silhouette"  position="10 0 0" scale="1.1 1.1 1.1" geometry="sphere"
+                     material="moon-silhouette"
+                     bind:drag-shape="handleDragMoon" >
+                <xr-gltf id="frame" node-id="mesh-gltf-frame" position="0 -1 0" rotation="-90 180 0" scale="1 1 1" model="gltf-frame"
+                />
+            </xr-mesh>
+&lt;!&ndash;            <xr-gltf id="frame2" node-id="mesh-gltf-frame2" position="0 -1 0" rotation="-90 180 0" scale="50 50 50" model="gltf-frame" />&ndash;&gt;
+
+            &lt;!&ndash;      <xr-gltf node-id="mesh-gltf-table" position="0 -1 0" rotation="0 45 0" scale="0.5 0.5 0.5" model="gltf-table" />&ndash;&gt;
+
+        </xr-node>
+
+        -->
+        <!-- 坐标系提示，单位1 的坐标轴
+        <xr-mesh node-id="mesh-x" position="1 0 0"  scale="2 0.02 0.02" geometry="cube" uniforms="u_baseColorFactor:0.7 0.3 0.3 1" ></xr-mesh>
+        <xr-mesh node-id="mesh-y" position="0 1 0"  scale="0.02 2 0.02" geometry="cube" uniforms="u_baseColorFactor:0.3 0.7 0.3 1"></xr-mesh>
+        <xr-mesh node-id="mesh-z" position="0 0 1"  scale="0.02 0.02 2" geometry="cube" uniforms="u_baseColorFactor:0.3 0.3 0.7 1"></xr-mesh>
+
+        -->
+        <!--
+        文字没法用：
+        1. camera加上target属性ar就不work了
+        2. 没法静止不动
+        <xr-node node-id="camera-target" position="0 2 0">
+        </xr-node>
+        <xr-node node-id="text-wrap" scale="0.05 0.05 0.05" position="0 2 0" visible="false" >
+            <xr-node position="-10 11 0">
+                <xr-mesh position="0 0 -0.01" rotation="0 0 0" scale="8 1 8" geometry="plane" states="renderQueue: 2009, alphaMode: BLEND, cullOn: false" uniforms="u_baseColorFactor:0.2 0.6 0.2 0.8"></xr-mesh>
+                <xr-text
+                        value="居中"
+                        position="0 0 0" never-cull
+                        rotation="90 90 0"
+                        size="2" anchor="0.5 0.5" uniforms="u_baseColorFactor:1.0 1.0 1.0 1"
+                ></xr-text>
+            </xr-node>
+        </xr-node>
+
+        -->
+        <xr-camera
+                id="camera"
+                node-id="camera"
+                clear-color="0.925 0.925 0.925 1"
+                position="0 2 4"
+                background="ar" is-ar-camera
+        />
+    </xr-node>
+    <xr-node node-id="lights">
+        <xr-light type="ambient" color="1 1 1" intensity="0.2" />
+        <xr-light type="directional" rotation="180 0 0" color="1 1 1" intensity="2" />
+    </xr-node>
+</xr-scene>
