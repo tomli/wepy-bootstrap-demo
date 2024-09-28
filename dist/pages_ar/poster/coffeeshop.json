@@ -1,5 +1,8 @@
 {
   "usingComponents": {
+    "mp-icon": "/miniprogram_npm/weui-miniprogram/icon/icon",
+    "mp-searchbar": "/miniprogram_npm/weui-miniprogram/searchbar/searchbar",
+    "mp-halfScreenDialog": "/miniprogram_npm/weui-miniprogram/half-screen-dialog/half-screen-dialog",
     "xr-demo-viewer": "../components/xr-demo-viewer/index",
     "wall": "../components/ar-poster/wall"
   },

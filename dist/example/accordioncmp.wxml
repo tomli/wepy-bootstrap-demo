@@ -1,0 +1,74 @@
+
+
+    <view class="_div container">
+
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div text-center lead rounded-top  p-2">Accordion</view>
+
+                <view class="_div accordion" id="accordionExample">
+                    <block wx:for="{{list}}" wx:for-index="index" wx:for-item="item" wx:key="id">
+                        <view class="_div card">
+                            <view class="_div card-header" bindtap="toggle" data-wpytoggle-a="{{item.id}}">
+                                <view class="_h2 mb-0">
+                                    <view class="_div btn" type="button">
+                                        {{item.name}}
+                                    </view>
+                                </view>
+                            </view>
+                            <view id="collapseOne" class="_div collapse {{item.open ? 'show' : ''}}">
+                                <view class="_div card-body">
+                                    <view class="_ul list-group list-group-flush">
+                                    <view class="_li list-group-item d-flex justify-content-between align-items-center"  wx:for="{{item.pages}}" wx:for-item="page" wx:key="*this">
+                                        {{page}}
+                                    </view>
+                                    </view>
+                                </view>
+                            </view>
+                        </view>
+                    </block>
+                </view>
+            </view>
+        </view>
+
+        
+
+
+        <view class="_div wbd-example-cd card border-0">
+            <view class="_div card-body">
+                <view class="_div bg-light lead rounded-top  p-2">Accordion</view>
+
+                <view class="_div accordion" id="accordionExample">
+                    <block wx:for="{{$AccordionComponent$list}}" wx:for-index="$AccordionComponent$index" wx:for-item="$AccordionComponent$item" wx:key="$AccordionComponent$id">
+                        <view class="_div card">
+                            <view class="_div card-header" bindtap="$AccordionComponent$toggle" data-wpytoggle-a="{{$AccordionComponent$item.id}}">
+                                <view class="_h2 mb-0">
+                                    <view class="_div btn" type="button">
+                                        {{$AccordionComponent$item.name}}
+                                    </view>
+                                </view>
+                            </view>
+                            <view id="collapseOne" class="_div collapse {{$AccordionComponent$item.open ? 'show' : ''}}">
+                                <view class="_div card-body">
+<!--                                    <slot name="content"></slot>-->
+                                    <view slot-scope="{todo }">
+                {{ todo }}
+                <view class="_ul list-group list-group-flush">
+                    <view class="_li list-group-item d-flex justify-content-between align-items-center"  wx:for="{{todo.pages}}" wx:for-item="page" wx:key="*this">
+                        {{page}}
+                    </view>
+                </view>
+            </view>
+                                </view>
+                            </view>
+                        </view>
+                    </block>
+                </view>
+            </view>
+        </view>
+
+
+
+
+    </view>

@@ -1,5 +1,8 @@
 
-  <view class="_div container">
+  <view class="_div container py-5 d-flex ">
+      <navigator url="/pages_ar/poster/coffeeshop" class="btn btn-block btn-dark mx-4 my-auto mt-5">enter AR demo</navigator>
+  </view>
+  <view class="_div container " style="margin-top: 500px" wx:if="{{true}}">
     <view class="_div jumbotron bg-white mb-n4 border-primary border">
         <view class="_h2 text-primary"><text class="_strong">Bootstrap Demo</text></view>
       <view class="_p lead">这是一个使用Bootstrap4开发小程序的小样，希望能够帮助到习惯BS开发模式的码农朋友们.</view>

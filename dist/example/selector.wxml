@@ -1,0 +1,43 @@
+
+
+    <view class="_div container _b462818">
+
+
+        <view class="_div wbd-example-cd card border-0 _b462818">
+            <view class="_div card-body _b462818">
+                <view class="_div bg-light lead rounded-top  p-2 _b462818">单选 - 水平排列 </view>
+                <view class="_div form-group _b462818">
+                    
+    <view class="_div list-group  {{$RadioSelector$horizontal?'list-group-horizontal':''}} text-center _8534316 _b462818">
+        <block class="_8534316" wx:for="{{$RadioSelector$options}}" wx:for-index="$RadioSelector$index" wx:for-item="$RadioSelector$item" wx:key="$RadioSelector$key">
+            <view class="_div list-group-item {{$RadioSelector$target===$RadioSelector$item?'oi':''}} btn-outline-light bg-primary text-white flex-fill px-3 py-{{$RadioSelector$horizontal?'1':'2'}} _8534316" data-glyph="circle-check" catchtap="$RadioSelector$changeFre" data-wpychangefre-a="{{$RadioSelector$item}}">
+                {{$RadioSelector$item}}
+            </view>
+            <!--                                            <view class="_div bg-white" style="width:2rpx"></view>-->
+            <!--                                            <view class="_div list-group-item btn-dark flex-fill border-left px-3 py-1" data-glyph="minus" catchtap="decreaseFrenqcy({{indexActivity}})"></view>-->
+        </block>
+    </view>
+                </view>
+            </view>
+        </view>
+
+
+        <view class="_div wbd-example-cd card border-0 _b462818">
+            <view class="_div card-body _b462818">
+                <view class="_div bg-light lead rounded-top  p-2 _b462818">单选 - 竖直排列 </view>
+                <view class="_div form-group _b462818">
+                    
+    <view class="_div list-group  {{$RadioSelector2$horizontal?'list-group-horizontal':''}} text-center _8534316 _b462818">
+        <block class="_8534316" wx:for="{{$RadioSelector2$options}}" wx:for-index="$RadioSelector2$index" wx:for-item="$RadioSelector2$item" wx:key="$RadioSelector2$key">
+            <view class="_div list-group-item {{$RadioSelector2$target===$RadioSelector2$item?'oi':''}} btn-outline-light bg-primary text-white flex-fill px-3 py-{{$RadioSelector2$horizontal?'1':'2'}} _8534316" data-glyph="circle-check" catchtap="$RadioSelector2$changeFre" data-wpychangefre-a="{{$RadioSelector2$item}}">
+                {{$RadioSelector2$item}}
+            </view>
+            <!--                                            <view class="_div bg-white" style="width:2rpx"></view>-->
+            <!--                                            <view class="_div list-group-item btn-dark flex-fill border-left px-3 py-1" data-glyph="minus" catchtap="decreaseFrenqcy({{indexActivity}})"></view>-->
+        </block>
+    </view>
+                </view>
+            </view>
+        </view>
+
+    </view>

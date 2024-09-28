@@ -31,7 +31,7 @@ var _default = function (_wepy$app) {
     var _this = _possibleConstructorReturn(this, (_default.__proto__ || Object.getPrototypeOf(_default)).call(this));
 
     _this.config = {
-      pages: ['example/index', 'example/selector', 'example/accordioncmp', 'example/list', 'example/article', 'example/card', 'example/jumbotron', 'example/accordion', 'example/text', 'example/shadow', 'example/sizing', 'example/pagination', 'example/popover', 'example/scrollspy', 'example/searchbar', 'example/navbar', 'example/media', 'example/tabbar', 'example/spinner', 'example/spacing', 'example/grid', 'example/flex', 'example/progress', 'example/toast', 'example/actionsheet', 'example/picker', 'example/dialog', 'example/icons', 'example/slider', 'example/breadcrumb', 'example/uploader', 'example/images', 'example/badge', 'example/button',
+      pages: ["pages_ar/poster/coffeeshop", 'example/index', 'example/selector', 'example/accordioncmp', 'example/list', 'example/article', 'example/card', 'example/jumbotron', 'example/accordion', 'example/text', 'example/shadow', 'example/sizing', 'example/pagination', 'example/popover', 'example/scrollspy', 'example/searchbar', 'example/navbar', 'example/media', 'example/tabbar', 'example/spinner', 'example/spacing', 'example/grid', 'example/flex', 'example/progress', 'example/toast', 'example/actionsheet', 'example/picker', 'example/dialog', 'example/icons', 'example/slider', 'example/breadcrumb', 'example/uploader', 'example/images', 'example/badge', 'example/button',
       // 'example/weui/actionsheet',
       // 'example/weui/picker',
       // 'example/weui/toast',

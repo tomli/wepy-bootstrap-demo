@@ -1,4 +1,5 @@
 {
+  "entryPagePath": "example/index",
   "pages": [
     "pages_ar/poster/coffeeshop",
     "pages_ar/scene-ar-camera/index",
@@ -43,6 +44,9 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "Bootstrap in WePY",
     "navigationBarTextStyle": "black"
+  },
+  "useExtendedLib": {
+    "weui": true
   },
   "lazyCodeLoading": "requiredComponents",
   "sitemapLocation": "sitemap82.json"

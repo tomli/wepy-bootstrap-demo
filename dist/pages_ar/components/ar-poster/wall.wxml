@@ -1,41 +1,44 @@
-<xr-scene id="xr-scene" ar-system bind:ready="handleReady" bind:ar-ready="handleARReady" bind:ar-error="handleARError">
+<xr-scene id="xr-scene"  ar-system="modes:Plane; planeMode: 2" bind:ready="handleReady" bind:ar-ready="handleARReady" bind:ar-error="handleARError" bind:tick="handleTick">
     <xr-assets bind:progress="handleAssetsProgress" bind:loaded="handleAssetsLoaded">
         <xr-asset-load type="gltf" asset-id="anchor" src="https://mmbizwxaminiprogram-1258344707.cos.ap-guangzhou.myqcloud.com/xr-frame/demo/ar-plane-marker.glb" />
-            <xr-asset-load type="gltf" asset-id="gltf-table" src="https://mmbizwxaminiprogram-1258344707.cos.ap-guangzhou.myqcloud.com/xr-frame/demo/metal_table/scene.gltf" />
+<!--            <xr-asset-load type="gltf" asset-id="gltf-table" src="https://mmbizwxaminiprogram-1258344707.cos.ap-guangzhou.myqcloud.com/xr-frame/demo/metal_table/scene.gltf" />-->
 <!--        <xr-asset-load type="gltf" asset-id="gltf-frame" src="https://6d6f-movief-b3iye-1300901012.tcb.qcloud.la/3d/poster/poster_frame/scene.gltf" />-->
 <!--        <xr-asset-load type="gltf" asset-id="gltf-frame" src="https://6d6f-movief-b3iye-1300901012.tcb.qcloud.la/3d/poster/poster_frame/output/s.gltf" />-->
 <!--        <xr-asset-load type="gltf" asset-id="gltf-frame" src="https://6d6f-movief-b3iye-1300901012.tcb.qcloud.la/3d/poster/photo_frame/scene.gltf" />-->
 <!--        <xr-asset-load type="gltf" asset-id="gltf-frame" src="https://6d6f-movief-b3iye-1300901012.tcb.qcloud.la/3d/poster/picture_frame/scene.gltf" />-->
-        <xr-asset-load type="gltf" asset-id="gltf-frame" src="https://6d6f-movief-b3iye-1300901012.tcb.qcloud.la/3d/poster/framed_image/framed_image.gltf" />
-<!--        <xr-asset-load type="gltf" asset-id="gltf-frame" src="https://6d6f-movief-b3iye-1300901012.tcb.qcloud.la/3d/poster/ss.gltf" />-->
+<!--        <xr-asset-load type="gltf" asset-id="gltf-frame" src="https://6d6f-movief-b3iye-1300901012.tcb.qcloud.la/3d/poster/framed_image/framed_image.gltf" />-->
+<!--        <xr-asset-load type="gltf"asset-id="gltf-frame" src="https://6d6f-movief-b3iye-1300901012.tcb.qcloud.la/3d/poster/poster_frame/output/sss.gltf" />-->
 <!--        <xr-asset-load type="gltf" asset-id="gltf-frame" src="https://6d6f-movief-b3iye-1300901012.tcb.qcloud.la/3d/poster/mountain-lake_picture/scene.gltf" />-->
-        <xr-asset-material asset-id="moon-silhouette" effect="simple" uniforms="u_baseColorFactor: 0.476 0.82 0.957 1.0" states="depthTestWrite: false" render-queue="502"/>
+<!--        <xr-asset-material asset-id="moon-silhouette" effect="simple" uniforms="u_baseColorFactor: 0.476 0.82 0.957 1.0" states="depthTestWrite: false" render-queue="502"/>-->
 <!--        <xr-asset-load type="texture" asset-id="surface_texture1" src="https://6d6f-movief-b3iye-1300901012.tcb.qcloud.la/blank_kanagawa.png" />-->
     </xr-assets>
 <!--    <xr-env env-data="gz-haixinsha"/>-->
-    <xr-node>
+    <xr-node id="root">
+
         <xr-ar-tracker mode="Plane" bind:ar-tracker-state="handleARTrackerState">
-            <xr-gltf model="anchor" node-id="gltf-anchor"></xr-gltf>
+            <xr-gltf model="anchor" node-id="gltf-anchor" visible="{{filmOnTheFly!==undefined && filmOnTheFly.image!==undefined}}"></xr-gltf>
         </xr-ar-tracker>
 
-        <!--
-        <xr-node node-id="setitem" visible="true">
+        <!--<xr-node node-id="setitem" visible="true">
 &lt;!&ndash;            <xr-gltf model="gltf-frame" scale="5 5 5"></xr-gltf>&ndash;&gt;
 &lt;!&ndash;            <xr-gltf id="frame2" node-id="mesh-gltf-frame2" position="0 15 0" rotation="180 90 90" scale="1 1 1" model="gltf-frame" />&ndash;&gt;
             <xr-mesh node-id="moon-silhouette"  position="0 15 0" scale="1.1 1.1 1.1" geometry="sphere"
                      material="moon-silhouette"
                      bind:drag-shape="handleDragMoon" >
-                <xr-gltf id="frame" node-id="gltf-frame" position="0 -1 0" rotation="180 90 90" scale="1 1 1" model="gltf-frame" />
             </xr-mesh>
+            <xr-gltf id="frame" node-id="gltf-frame" position="0 -1 0" rotation="180 90 90" scale="10 10 10" model="gltf-frame" />
         </xr-node>-->
-            <xr-node node-id="setitem" position="0 0 0" visible="false" >
-<!--                <xr-gltf id="frame"  node-id="mesh-gltf-table" position="0 0 0" rotation="0 90 0" scale="5 5 5" model="gltf-frame" />-->
-                <xr-gltf id="frame"  node-id="mesh-gltf-table" position="0 0 0" rotation="0 -90 0" scale=".1 .1 .1" model="gltf-frame" />
+<!--
+        <xr-node wx:for="{{[0,1,2,3,4,5]}}" node-id="{{'frameWrapper'+item}}" position="0 0 0" visible="false"  wx:for-index="idx"  wx:key="*this">
+                <xr-gltf id="{{'poster'+item}}"  node-id="{{'mesh-gltf-table'+item}}" position="0 0 0" rotation="0 -90 0" scale=".1 .1 .1" model="gltf-frame" />
             </xr-node>
+        -->
 <!--                <xr-gltf id="frame"  node-id="mesh-gltf-table" position="0 0 0" rotation="0 90 0" scale=".5 .5 .5" model="gltf-table" />-->
+
+<!--        <xr-node node-id="camera-target" position="0 0 0"></xr-node>-->
+
         <!--
 
-&lt;!&ndash;        <xr-node node-id="camera-target" position="0 0 0"></xr-node>&ndash;&gt;
         <xr-node node-id="table-wrap" position="0 0 0">
             <xr-mesh node-id="moon-silhouette"  position="10 0 0" scale="1.1 1.1 1.1" geometry="sphere"
                      material="moon-silhouette"
@@ -74,17 +77,30 @@
             </xr-node>
         </xr-node>
 
+                background="ar" is-ar-camera
+                background="skybox"   target="camera-target"  camera-orbit-control=""
         -->
         <xr-camera
                 id="camera"
                 node-id="camera"
                 clear-color="0.925 0.925 0.925 1"
                 position="0 2 4"
+                rotation="0 0 0"
                 background="ar" is-ar-camera
         />
+
     </xr-node>
+
     <xr-node node-id="lights">
         <xr-light type="ambient" color="1 1 1" intensity="0.2" />
-        <xr-light type="directional" rotation="180 0 0" color="1 1 1" intensity="2" />
+        <xr-light type="directional"  node-id="light"  rotation="0 0 0" color="1 1 1" intensity="2" />
+        <xr-light type="directional"  node-id="light"  rotation="0 90 0" color="1 1 1" intensity="2" />
+        <xr-light type="directional"  node-id="light"  rotation="180 0 0" color="1 1 1" intensity="2" />
+        <xr-light type="directional"  node-id="light"  rotation="0 270 0" color="1 1 1" intensity="2" />
+<!--        <xr-light type="point" position="0 0 0" color="1 1 1" range="3" intensity="3" />-->
+<!--        <xr-light type="spot" position="0 0 0"  color="1 1 1" range="12" intensity="10" rotation="0 120 0" inner-cone-angle="80" outer-cone-angle="90" />-->
     </xr-node>
+
+
+
 </xr-scene>

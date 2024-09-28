@@ -1,23 +1,38 @@
-<view class="demo-wrap">
-    <scroll-view class="demo-viewer" scroll-y="{{true}}">
+<view  class="{{'demo-wrap '+(platform === 'devtools'?'bg-dark':'')}}">
+<!--<view  class="{{'demo-wrap '+(platform === 'devtools'?'':'')}}">-->
+    <scroll-view class="demo-viewer" scroll-y="{{true}}" >
         <block bind:sceneReady="handleSceneReady">
             <wall
                     disable-scroll
                     id="main-frame"
+                    touchMode="{{touchMode}}"
                     width="{{renderWidth}}"
                     height="{{renderHeight}}"
                     captureState="{{captureState}}"
+                    selectedPosterIdx="{{selectedPosterIdx}}"
+                    filmOnTheFly="{{filmOnTheFly}}"
+                    posters="{{posters}}"
+                    transferData="{{transferData}}"
                     bind:arTrackerState="handleMyARTrackerState"
+                    bind:posterPlaced="handlePosterPlaced"
+                    bindinfoListener="handleInfoListener"
                     style="width:{{width}}px;height:{{height}}px;top:{{top}}px;left:{{left}}px;display:block;"
             />
         </block>
-        <view class="position-absolute" style="top:5px; left5px"></view>
+        <view class="position-absolute" style="top:5px; left:5px"></view>
+    </scroll-view>
+    <view wx:if="{{false}}" class="xr-control w-100" style="bottom: 0rpx; right:1rpx">
+        <view class="position-relative  img-wrap" style="top: 15rpx; right:10rpx" bind:tap="toggleDisplaySetting">
+            <mp-icon icon="close" extClass="mt-1" type="field" color="white"  size="{{32}}"></mp-icon>
+            <!--                <image class="hint-img" src="https://mmbizwxaminiprogram-1258344707.cos.ap-guangzhou.myqcloud.com/xr-frame/demo/wxball.jpg" />-->
+        </view>
         <view class="intro">
             <view class="intro-detail d-flex justify-content-around">
                 <button class="share" bindtap="flipX">X轴反转</button>
                 <button class="share" bindtap="flipY">Y轴反转</button>
                 <button class="share" bindtap="flipZ">Z轴反转</button>
                 <button class="share" bindtap="reset">reset</button>
+                <button class="share" bindtap="resetPlane">resetPlane</button>
             </view>
             <view class="intro-detail d-flex justify-content-around">
                 <view class="my-auto " bindtap="up">⬆</view>
@@ -25,12 +40,15 @@
                 <view class="my-auto " bindtap="left">⬅</view>
                 <view class="my-auto " bindtap="right">➡︎</view>
                 <view>
-                    <button class=" btn btn-primary" bindtap="changeCaptureState">截屏分享</button>
+                    <button class=" btn btn-primary" bindtap="changeCaptureState">拍照</button>
+                </view>
+                <view>
+                    <button class=" btn btn-primary" bindtap="changeLight">灯光</button>
                 </view>
             </view>
-            <view class="intro-detail d-none">
-                <view class="intro-title " ><text>{{title}}</text> <button class="share" open-type="share">分享给好友</button></view>
-                <view class="description">{{intro}}</view>
+            <view class="intro-detail">
+                <view class="intro-title  d-none" ><text>{{title}}</text> <button class="share" open-type="share">分享给好友</button></view>
+                <view class="description">showARTrackerState={{intro}}｜trackerUpdateTimes ={{trackerUpdateTimes}}</view>
             </view>
         </view>
         <view wx:if="{{hint.length > 0}}" class="d-none">
@@ -39,10 +57,175 @@
             </view>
         </view>
         <view class="holder d-none"></view>
-    </scroll-view>
+    </view>
     <view class="back-btn-wrap" wx:if="{{showBackBtn}}" bind:tap="onClickBack">
         <view class="back-line-t"></view>
         <view class="back-line-b"></view>
-        <text class="text-white">{{hint}}</text>
+    </view>
+
+
+    <text class="position-absolute w-100 text-white text-center" wx:if="{{!displayMovieSearch && filmOnTheFly}}"  style="top: 50%;">{{hint}}</text>
+<!--    <text class="position-absolute text-white pl-2 info-text"  wx:if="{{posters[selectedPosterIdx]}}"   style="bottom: 5rpx">操作中海报：No.{{selectedPosterIdx+1}}《{{posters[selectedPosterIdx].film}}》</text>-->
+
+    <view class="xr-info" style="z-index: 1999">
+        <view class="text-center"  wx:if="{{filmOnTheFly}}" bindtap="toggleDisplayMovieSearch">
+
+                <image class=" image-small mx-3 border border-white" src="{{filmOnTheFly.image}}"   ></image>
+            <!--        src="https://img9.doubanio.com/view/photo/l_ratio_poster/public/p2900433324.jpg"           -->
+            <view class="text-white info-text" >
+                《{{filmOnTheFly.film}}》
+<!--                《伊拉克已逝之美伊拉克已逝之美》-->
+                <view  class="text-muted" wx:if="{{displayMovieSearch}}" >点击使用这张海报</view></view>
+<!--            <text class="text-white" style="font-size: 16rpx" wx:else >{{hint}}</text>-->
+        </view>
+        <block wx:else>
+
+            <view class="info-text title">监听列表</view>
+            <!--        <view class="info-text">小球速度:</view>-->
+            <!--        <view class="info-text">X: {{speedX}}  Z: {{speedZ}}</view>-->
+            <view class="info-text">海报位置:</view>
+            <view class="info-text">X: {{posX}} Y: {{posY}}  Z: {{posZ}}</view>
+            <view class="info-text">TrackerState: {{arTrackerState}}</view>
+        </block>
+    </view>
+
+    <!-- Marker控制 -->
+    <view class="xr-control" style="bottom: 20rpx; right:2rpx; z-index: 999">
+        <view class="control-item active" bindtap="addPoster" wx:if="{{addedCount<6}}">
+            <view class="img-wrap my-auto">
+                <!--                <mp-icon icon="add" extClass="mt-1" type="field" color="white"  size="{{32}}"></mp-icon>-->
+                <!--                <image class="hint-img" src="https://cdn-icons-png.flaticon.com/512/10272/10272767.png" />-->
+                <!--                <image class="hint-img" src="https://cdn-icons-png.flaticon.com/512/17135/17135016.png" />-->
+                <image class="hint-img" src="https://cdn-icons-png.flaticon.com/128/15742/15742831.png" />
+                <!--                <image class="hint-img" src="https://cdn-icons-png.flaticon.com/128/15162/15162480.png" />-->
+            </view>
+        </view>
+        <view class="control-item mt-1" bindtap="toggleDisplaySetting"  wx:if="{{addedCount>1}}">
+            <!--            <view class="item-title">扫描显示识别框</view>-->
+            <view class="img-wrap my-auto">
+                <!--                <mp-icon icon="album" extClass="mt-1" type="field" color="white"  size="{{32}}"></mp-icon>-->
+                <!--                                <image class="hint-img" src="https://cdn-icons-png.flaticon.com/128/14018/14018163.png" />-->
+<!--                <image class="hint-img" src="https://cdn-icons-png.flaticon.com/128/10696/10696511.png" />-->
+<!--                <image class="hint-img" src="https://cdn-icons-png.flaticon.com/128/1040/1040256.png" />-->
+<!--                <image class="hint-img" src="https://cdn-icons-png.flaticon.com/128/3168/3168278.png" />-->
+<!--                <image class="hint-img" src="https://cdn-icons-png.flaticon.com/128/5575/5575720.png" />-->
+<!--                <image class="hint-img" src="https://cdn-icons-png.flaticon.com/128/10991/10991031.png" />-->
+<!--                <image class="hint-img" src="https://cdn-icons-png.flaticon.com/128/10942/10942037.png" />-->
+                <image class="hint-img" src="https://cdn-icons-png.flaticon.com/128/16011/16011460.png" />
+<!--                <image class="hint-img" src="https://cdn-icons-png.flaticon.com/128/9646/9646550.png" />-->
+            </view>
+        </view>
+        <view class="control-item mt-1" bindtap="changeCaptureState">
+            <view class="img-wrap my-auto">
+                <!--   图片来自     https://www.flaticon.com/free-icons/color-->
+<!--                <image class="hint-img" src="https://6d6f-movief-b3iye-1300901012.tcb.qcloud.la/icons/photo.jpeg" />-->
+<!--                <image class="mt-1" style="width: 70%;height: 70%;" src="https://cdn-icons-png.flaticon.com/128/15742/15742853.png" />-->
+
+<!--                <image class="hint-img"   src="https://cdn-icons-png.flaticon.com/128/3687/3687416.png" />-->
+<!--                <image class="hint-img"   src="https://cdn-icons-png.flaticon.com/128/5708/5708327.png" />-->
+                <image class="hint-img"   src="https://cdn-icons-png.flaticon.com/128/17362/17362350.png" />
+<!--                <image class="hint-img"   src="https://cdn-icons-png.flaticon.com/128/17478/17478651.png" />-->
+            </view>
+        </view>
     </view>
 </view>
+
+
+<!-- 旋转区域 -->
+<!--<view class="rt-area"
+      style="height: {{height}}px"
+      catchtouchstart='touchRotateStart'
+      catchtouchmove='touchRotateMove'
+      bindtouchend='touchRotateEnd'>
+</view>-->
+
+<!-- 摇杆区域 -->
+<!--<view class="mv-area"
+      style="top: {{height - 100}}px;"
+      catchtouchstart='touchStart'
+      catchtouchmove='touchMove'
+      bindtouchend='touchEnd'>
+    <image class="mv-bg" src="https://6d6f-movief-b3iye-1300901012.tcb.qcloud.la/icons/ar/background.png" />
+    <image class="mv-handle" style="left:{{hLeft}}px; top:{{hTop}}px;" src="https://6d6f-movief-b3iye-1300901012.tcb.qcloud.la/icons/ar/handle.png" />
+</view>-->
+<view class="mv-area w-100  d-flex justify-content-center" wx:if="{{posters[selectedPosterIdx]}}"
+      style="left:0;bottom:5%;font-size: 21rpx" >
+    <!--
+    <image class="mv-handle" style="left:0px; top:50px; rotate: 270deg;" src="https://cdn-icons-png.flaticon.com/128/10255/10255559.png" />
+    <image class="mv-handle" style="left:0px; top:-10px; rotate: 90deg;" src="https://cdn-icons-png.flaticon.com/128/10255/10255559.png" />
+    <image class="mv-handle" style="left:30px; top:20px; rotate: 180deg;" src="https://cdn-icons-png.flaticon.com/128/10255/10255559.png" />
+    <image class="mv-handle" style="left:-30px; top:20px; " src="https://cdn-icons-png.flaticon.com/128/10255/10255559.png" />
+-->
+    <view class="position-absolute" wx:if="{{optMode === 'move'}}">
+        <image bindtap="down" class="mv-handle" style="left:0px; top:55px; rotate: 180deg; opacity:.5;" src="https://cdn-icons-png.flaticon.com/128/9589/9589490.png" />
+        <image bindtap="up" class="mv-handle" style="left:0px; top:-15px; opacity:.5;" src="https://cdn-icons-png.flaticon.com/128/9589/9589490.png" />
+        <image bindtap="right" class="mv-handle" style="left:35px; top:20px; rotate: 90deg; opacity:.5;" src="https://cdn-icons-png.flaticon.com/128/9589/9589490.png" />
+        <image bindtap="left" class="mv-handle" style="left:-35px; top:20px;rotate: 270deg; opacity:.5;" src="https://cdn-icons-png.flaticon.com/128/9589/9589490.png" />
+
+    </view>
+    <view class="position-absolute" wx:if="{{optMode === 'rotate'}}">
+        <image bindtap="flipLeft" class="mv-handle" style="left:35px; top:20px; rotate: 180deg; opacity:.9;" src="https://cdn-icons-png.flaticon.com/128/16904/16904582.png" />
+        <image bindtap="flipRight" class="mv-handle" style="left:-35px; top:20px;rotate: 0deg; opacity:.9;" src="https://cdn-icons-png.flaticon.com/128/16904/16904582.png" />
+
+    </view>
+    <view class="position-absolute" wx:if="{{optMode === 'scale'}}">
+        <image bindtap="small" class="mv-handle" style="left:45px; top:20px; rotate: 180deg; opacity:.9;" src="https://cdn-icons-png.flaticon.com/128/13348/13348466.png" />
+        <image bindtap="large" class="mv-handle" style="left:-45px; top:20px;rotate: 0deg; opacity:.9;" src="https://cdn-icons-png.flaticon.com/128/13348/13348466.png" />
+
+    </view>
+    <image bindtap="changeOptMode" class="mv-handle" style="left:50%; top:20px;" src="https://6d6f-movief-b3iye-1300901012.tcb.qcloud.la/icons/ar/handle.png" />
+<!--    <text class="mv-handle " style="left:52%; top:27px; opacity:.5;font-size: 18rpx">移动海\n报位置</text>-->
+    <view class=" text-white" style="left:0px; top:85px; opacity:.5; margin-top: 90px">操作中海报：No.{{selectedPosterIdx+1}}《{{posters[selectedPosterIdx].film}}》</view>
+
+
+    <!--
+        <image class="mv-handle" style="left:0px; top:50px; rotate: 90deg;" src="https://cdn-icons-png.flaticon.com/128/7131/7131386.png" />
+        <image class="mv-handle" style="left:0px; top:-10px; rotate: 270deg;" src="https://cdn-icons-png.flaticon.com/128/7131/7131386.png" />
+        <image class="mv-handle" style="left:30px; top:20px; " src="https://cdn-icons-png.flaticon.com/128/7131/7131386.png" />
+        <image class="mv-handle" style="left:-30px; top:20px;rotate: 180deg; " src="https://cdn-icons-png.flaticon.com/128/7131/7131386.png" />
+        -->
+<!--    <image class="mv-handle" style="left:{{hLeft}}px; top:{{hTop}}px;" src="https://6d6f-movief-b3iye-1300901012.tcb.qcloud.la/icons/ar/handle.png" />-->
+</view>
+
+<mp-halfScreenDialog title="切换操作中海报"
+                     subTitle="点击海报图片切换"
+                     show="{{displaySetting}}"
+                     bindclose="toggleDisplaySetting" >
+    <view class="page-section mt-n5 d-flex justify-content-around" slot="footer" >
+
+        <view   class=" mx-auto"  style="width:570rpx;" >
+            <view  style="width:190rpx; height:270rpx;" class="float-left"  wx:for="{{posters}}" wx:for-index="idx" >
+                <image bindtap="selectPoster" data-idx="{{idx}}" class="{{'image-small '+(idx===selectedPosterIdx? 'active':'')}}"  src="{{item.image}}" wx:if="{{item}}" ></image>
+            </view>
+        </view>
+<!--        <image class="float-left mr-2 image"  src="https://image.tmdb.org/t/p/w220_and_h330_face/dLWCaKcdspaFPZoZCKDVogioAep.jpg" ></image>-->
+<!--        <image class="float-left image active"  src="https://6d6f-movief-b3iye-1300901012.tcb.qcloud.la/posters/test.png" ></image>-->
+    </view>
+</mp-halfScreenDialog>
+<mp-halfScreenDialog title="选择要上墙的海报"
+                     subTitle="点击海报图片切换"
+                     show="{{displayMovieSearch}}"
+                     bindclose="toggleDisplayMovieSearch">
+    <view class="page-section mt-n5" slot="footer" >
+        <scroll-view scroll-y  style="height: 750rpx" class="pb-3">
+            <view   class=" mx-auto"  style="width:570rpx;" >
+                <view  style="width:190rpx; height:270rpx;" class="float-left"  wx:for="{{fakePosters}}" wx:for-index="idx" >
+                    <image bindtap="selectFakePoster" data-idx="{{idx}}" class="{{'image-small '+(idx===selectedPosterIdx? 'active':'')}}"  src="{{item.image}}" wx:if="{{item}}" ></image>
+                </view>
+            </view>
+            <!--            https://wechat-miniprogram.github.io/weui/docs/search.html#%E5%B1%9E%E6%80%A7%E5%88%97%E8%A1%A8-->
+            <mp-searchbar placeholder="输入影片名查找" bindselectresult="selectResult" search="{{search}}" ext-class="searchBar pre-wrap"></mp-searchbar>
+        </scroll-view>
+        <view class="px-4" wx:if="{{selectedSearchResult}}" >
+            <button class="w-100 py-2 d-flex justify-content-center text-black-50 text-12" catchtap="selectPosterFromSearchResult">
+                <text class="icon ion-md-add-circle-outline my-auto mr-1 text-12" > </text>
+                <view class="my-auto">使用这张海报</view>
+                <view class="bg-light rounded p-2">
+                    <image class="image  mb-n2" data-openid="{{selectedUser.openid}}"
+                           src="{{selectedUser.avatarUrl||selectedUser.wxUserInfo.avatarUrl}}"></image>
+                </view>
+                <view class="my-auto"></view>
+            </button>
+        </view>
+    </view>
+</mp-halfScreenDialog>
